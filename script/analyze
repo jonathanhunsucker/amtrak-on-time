@@ -1,0 +1,3 @@
+#!/bin/sh
+
+grep NYP ./data/2018/2100/* | awk '{ print $7 }' | php src/toDelay.php
