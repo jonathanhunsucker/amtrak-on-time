@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="google-site-verification" content="NHrvKhiunQfON0ay47wSK6UQTdEeJAvmYZpi9Si68TY" />
+    <link href=data:, rel=icon>
     {{ $style := resources.Get "style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" />
     <title>{{ block "title" . }}{{ if isset .Params "title" }}{{ .Params.title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
