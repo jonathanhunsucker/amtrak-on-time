@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:0.59
+    working_directory: ~/website
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: script/deploy/build
+      - run:
+          name: Ship
+          command: script/deploy/ship
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master

@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+# build the site into public/
+HUGO_ENV=production hugo
+
+cp -r .circleci public/
