@@ -1,0 +1,83 @@
+/*
+ * treat everything as border-box
+ */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * remove default 8px margin on body
+ */
+body {
+  margin: 0;
+}
+
+/*
+ * provide single-column layout helper class, for at-most 740px wide
+ */
+.container--column {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/*
+ * in navigation, remove left padding on ul elements
+ */
+nav.main {
+
+  ul {
+    padding: 0;
+
+    /*
+     * in navigation, fit items into single line, spaced out 1em
+     */
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1em;
+
+      /*
+       * in navigation, last item lacks right spacing
+       */
+      &:last-child {
+        margin-right: 0em;
+      }
+    }
+  }
+}
+
+/*
+ * constrain all images to:
+ */
+img {
+  max-width: 100%; /* at most, the width of their parent element */
+  max-height: 90vh; /* at most, 90% of the viewport's height */
+  display: block; /* permit a margin to exist */
+  margin: 1em auto 1em auto; /* 1em top and bottom, and horizontally centered */
+}
+
+/*
+ * give tables a small ridged border by default
+ */
+th, td {
+  border-style: ridge;
+  padding: 0.2em;
+}
+
+/*
+ * collapse borders between adjacent cells
+ */
+table {
+    border-collapse: collapse;
+}
+
+/*
+ * switch from baseline to text-top to better align vertically with labels to the left
+ */
+input[type="range"] {
+    vertical-align: text-top;
+}

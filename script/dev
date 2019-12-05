@@ -1,0 +1,9 @@
+#!/bin/bash -e
+BIND="0.0.0.0"
+PORT="1315"
+
+# in background, wait a second and open browser tab
+sleep 1 && open "http://"$BIND":"$PORT &
+
+# in foreground, run server
+hugo server --environment development --disableFastRender --bind=$BIND --port=$PORT --watch
