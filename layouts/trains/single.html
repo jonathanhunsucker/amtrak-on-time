@@ -1,0 +1,12 @@
+{{ define "content" }}
+  {{ $data := getJSON (printf "%s%d%s" "data/train/" .Params.number ".json") }}
+  <h2>{{ $data.name }}</h2>
+  <p>Itinerary: Departs from {{ partial "stop" $data.origin.stop }} at {{ $data.origin.time }}, bound for {{ partial "stop" $data.destination.stop }} at {{ $data.destination.time }}</p>
+  <p>Route: {{ partial "route" $data.route }}</p>
+  <p>
+    {{ range $key, $value := $data.records }}
+      <h3>{{ $key }}</h3>
+      <pre>{{ $value }}</pre>
+    {{ end }}
+  </p>
+{{ end }}

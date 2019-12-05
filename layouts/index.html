@@ -1,3 +1,5 @@
 {{ define "content" }}
-  yo
+  {{ range .Pages }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ end }}
 {{ end}}

@@ -14,6 +14,10 @@
         {{ block "content" . }}{{ end }}
       </div>
     {{ end }}
+    <div class="container--column">
+      <hr>
+      <p>Data provided and maintained by <a href="http://dixielandsoftware.net/Amtrak/status/StatusMaps/">dixielandsoftware.net</a>. Site built by <a href="https://jonathanhunsucker.com">Jonathan Hunsucker</a>. Not affiliated with Amtrak.</p>
+    </div>
     {{ template "_internal/google_analytics_async.html" . }}
   </body>
 </html>

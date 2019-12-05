@@ -1,0 +1,6 @@
+{{ define "content" }}
+  <h2>Trains</h2>
+  {{ range .Pages }}
+    <a href="{{ .RelPermalink }}">{{ .Params.number }}</a>
+  {{ end }}
+{{ end}}
