@@ -3,6 +3,8 @@
   <h2>{{ $data.name }}</h2>
   <p>Itinerary: Departs from {{ partial "stop" $data.origin.stop }} at {{ $data.origin.time }}, bound for {{ partial "stop" $data.destination.stop }} at {{ $data.destination.time }}</p>
   <p>Route: {{ partial "route" $data.route }}</p>
+  <p>Data: {{ $data.stats.valid_records }} valid records found ({{ $data.stats.missing_data }} records excluded due to missing data)</p>
+  <p>Stats: median delay of {{ $data.stats.median }} minutes ({{ $data.stats.cancellations }} cancellations)</p>
   <p>
     {{ range $key, $value := $data.records }}
       <h3>{{ $key }}</h3>
