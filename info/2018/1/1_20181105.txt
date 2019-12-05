@@ -1,0 +1,32 @@
+* Sunset Limited
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NOL  *  *     1  900A  *     900A  Departed:  On time.
+* SCH  *  *     1  1030A *     1125A Departed:  55 minutes late.
+* NIB  *  *     1  1156A *     105P  Departed:  1 hour, 9 minutes late.
+* LFT  1  1224P 1  1224P 132P  139P  Arrived:  1 hour, 8 minutes late.    |  Departed:  1 hour, 15 minutes late.
+* LCH  *  *     1  155P  *     320P  Departed:  1 hour, 25 minutes late.
+* BMT  1  334P  1  348P  505P  513P  Arrived:  1 hour, 31 minutes late.   |  Departed:  1 hour, 25 minutes late.
+* HOS  1  618P  1  655P  744P  757P  Arrived:  1 hour, 26 minutes late.   |  Departed:  1 hour, 2 minutes late.
+* SAS  2  1205A 2  245A  1216A 246A  Arrived:  11 minutes late.           |  Departed:  1 minute late.
+* DRT  *  *     2  549A  *     559A  Departed:  10 minutes late.
+* SND  *  *     2  824A  *     832A  Departed:  8 minutes late.
+* ALP  2  1028A 2  1038A 1010A 1038A Arrived:  18 minutes early.          |  Departed:  On time.
+* ELP  2  122P  2  147P  114P  150P  Arrived:  8 minutes early.           |  Departed:  3 minutes late.
+  DEM  *  *     2  318P              MT
+* LDB  *  *     2  413P  *     413P  Departed:  On time.
+* BEN  *  *     2  618P  *     631P  Departed:  13 minutes late.
+* TUS  2  745P  2  835P  731P  837P  Arrived:  14 minutes early.          |  Departed:  2 minutes late.
+* MRC  2  952P  2  1002P 952P  1018P Arrived:  On time.                   |  Departed:  16 minutes late.
+* YUM  *  *     3  1249A *     104A  Departed:  15 minutes late.
+* PSN  *  *     3  202A  *     222A  Departed:  20 minutes late.
+* ONA  *  *     3  354A  *     357A  Departed:  3 minutes late.
+* POS  *  *     3  404A  *     406A  Departed:  2 minutes late.
+* LAX  3  535A  *  *     452A  *     Arrived:  43 minutes early.

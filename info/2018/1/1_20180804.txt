@@ -1,0 +1,32 @@
+* Sunset Limited
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NOL  *  *     1  900A  *     900A  Departed:  On time.
+* SCH  *  *     1  1030A *     1038A Departed:  8 minutes late.
+* NIB  *  *     1  1156A *     1207P Departed:  11 minutes late.
+* LFT  1  1224P 1  1224P 1229P 1235P Arrived:  5 minutes late.            |  Departed:  11 minutes late.
+* LCH  *  *     1  155P  *     206P  Departed:  11 minutes late.
+* BMT  1  334P  1  348P  437P  447P  Arrived:  1 hour, 3 minutes late.    |  Departed:  59 minutes late.
+  HOS  1  618P  1  655P              CT
+* SAS  2  1205A 2  245A  1110P 248A  Arrived:  55 minutes early.         | Departed:  3 minutes late.
+* DRT  *  *     2  549A  *     610A  Departed:  21 minutes late.
+* SND  *  *     2  824A  *     838A  Departed:  14 minutes late.
+* ALP  2  1028A 2  1038A 1032A 1047A Arrived:  4 minutes late.            |  Departed:  9 minutes late.
+* ELP  2  122P  2  147P  116P  147P  Arrived:  6 minutes early.           |  Departed:  On time.
+  DEM  *  *     2  318P              MT
+* LDB  *  *     2  413P  *     421P  Departed:  8 minutes late.
+  BEN  *  *     2  518P              MST
+* TUS  2  645P  2  735P  615P  737P  Arrived:  30 minutes early.          |  Departed:  2 minutes late.
+* MRC  2  852P  2  902P  847P  914P  Arrived:  5 minutes early.           |  Departed:  12 minutes late.
+* YUM  *  *     2  1149P *     1209A Departed:  20 minutes late.
+* PSN  *  *     3  202A  *     211A  Departed:  9 minutes late.
+* ONA  *  *     3  354A  *     450A  Departed:  56 minutes late.
+* POS  *  *     3  404A  *     500A  Departed:  56 minutes late.
+* LAX  3  535A  *  *     547A  *     Arrived:  12 minutes late.
