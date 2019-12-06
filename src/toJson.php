@@ -162,6 +162,16 @@ class Record
         return $this->lastLine()->missingData();
     }
 
+    public function getData()
+    {
+        return [
+            'cancelled' => $this->wasCancelled(),
+            'missing_data' => $this->missingData(),
+            'delay' => $this->delay(),
+            'raw' => $this->raw,
+        ];
+    }
+
     private function lastLine()
     {
         $line = $this->lines[count($this->lines) - 1];
@@ -210,7 +220,9 @@ class RecordSet
 
 $data = [
     'name' => 'Train ' . basename($source_directory),
-    'records' => (object) $records,
+    'records' => array_map(function ($record) {
+      return (new Record($record))->getData();
+    }, $records),
 ];
 
 if ($records) {
