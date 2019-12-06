@@ -136,15 +136,18 @@ class Record
 
     public function delay()
     {
-        $line = $this->lastLine();
-
         // time in minutes
-        $scheduled = toMinutes($line->scheduledArrival());
-        $actual = toMinutes($line->actualArrival());
+        $scheduled = toMinutes($this->lastLine()->scheduledArrival());
+        $actual = toMinutes($this->actualArrival());
 
         $delay = $actual - $scheduled;
 
         return $delay;
+    }
+
+    private function actualArrival()
+    {
+        return $this->lastLine()->actualArrival();
     }
 
     public function lastStop()
@@ -168,6 +171,7 @@ class Record
             'cancelled' => $this->wasCancelled(),
             'missing_data' => $this->missingData(),
             'delay' => $this->delay(),
+            'actual_arrival' => $this->actualArrival(),
             'raw' => $this->raw,
         ];
     }
