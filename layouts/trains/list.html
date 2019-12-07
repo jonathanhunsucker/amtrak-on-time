@@ -1,6 +1,8 @@
 {{ define "content" }}
   <h2>Trains</h2>
-  {{ range .Pages }}
-    <a href="{{ .RelPermalink }}">{{ .Params.number }}</a>
-  {{ end }}
+  <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Params.number }}</a></li>
+    {{ end }}
+  </ul>
 {{ end}}
