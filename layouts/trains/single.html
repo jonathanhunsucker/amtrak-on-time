@@ -9,6 +9,9 @@
       static get translucentBlue() {
         return 'rgba(0, 0, 255, 0.1)';
       }
+      static get red() {
+        return 'rgba(255, 0, 0, 0.8)';
+      }
     }
 
     class Functional {
@@ -168,29 +171,43 @@
 
       const context = canvasElement.getContext("2d");
 
-      const datasets = Object.entries(raw.records).map(([key, record]) => {
+      function dataset(data, color, pointRadius) {
         return {
           fill: false,
           lineTension: 0,
+          borderWidth: 1,
+          pointRadius: pointRadius !== undefined ? pointRadius : 2,
           showLabel: false,
           label: 'Arrival delay',
-          data: record.lines.map((line, index) => {
-            if (line.missing_data) {
-              return null;
-            }
-
-            var time = line.actual_departure || line.actual_arrival;
-            
-            if (index === record.lines.length - 1) {
-              time = line.actual_arrival;
-            }
-
-            return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
-          }).filter((point) => point !== null),
-          backgroundColor: Defaults.translucentBlue,
-          borderColor: Defaults.translucentBlue,
+          data: data,
+          backgroundColor: color,
+          borderColor: color,
         };
-      });
+      }
+
+      const datasets = [dataset(Object.values(raw.records)[0].lines.map((line, index) => {
+        let time = line.scheduled_departure;
+        if (time === '*' || !time) {
+          time = line.scheduled_arrival;
+        }
+        return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
+      }), Defaults.red, 0)].concat(Object.entries(raw.records).map(([key, record]) => {
+        const data = record.lines.map((line, index) => {
+          if (line.missing_data) {
+            return null;
+          }
+
+          var time = line.actual_departure || line.actual_arrival;
+
+          if (index === record.lines.length - 1) {
+            time = line.actual_arrival;
+          }
+
+          return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
+        }).filter((point) => point !== null);
+
+        return dataset(data, Defaults.translucentBlue);
+      }));
 
       const data = {
         // Labels should be Date objects
@@ -206,6 +223,9 @@
         type: 'line',
         data: data,
         options: {
+          tooltips: {
+            enabled: false,
+          },
           animation: {
             duration: 0,
           },
