@@ -70,7 +70,7 @@ class Line
 
     public function stop()
     {
-        return substr($this->raw, 2, 3);
+        return trim(substr($this->raw, 2, 3));
     }
 
     public function scheduledDeparture()
@@ -81,6 +81,11 @@ class Line
     public function scheduledArrival()
     {
         return trim(substr($this->raw, 10, 4));
+    }
+
+    public function actualDeparture()
+    {
+        return trim(substr($this->raw, 30, 5));
     }
 
     public function actualArrival()
@@ -96,6 +101,22 @@ class Line
     public function missingData()
     {
         return $this->actualArrival() === '';
+    }
+
+    public function getData()
+    {
+        $data = [
+            'stop' => $this->stop(),
+        ];
+
+        if (!($data['missing_data'] = $this->missingData())) {
+            $data['scheduled_arrival'] = $this->scheduledArrival();
+            $data['actual_arrival'] = $this->actualArrival();
+            $data['scheduled_departure'] = $this->scheduledDeparture();
+            $data['actual_departure'] = $this->actualDeparture();
+        }
+
+        return $data;
     }
 }
 
@@ -113,11 +134,20 @@ class Record
 
     public function origin()
     {
-        $line = new Line($this->lines[10]);
+        $line = $this->lines()[0];
         return [
             'stop' => $line->stop(),
             'time' => $line->scheduledDeparture(),
         ];
+    }
+
+    public function lines()
+    {
+        return array_values(array_filter(array_map(function ($line) {
+            return new Line($line);
+        }, array_slice($this->lines, 10)), function ($line) {
+            return $line->stop() !== 'V';
+        }));
     }
 
     public function destination()
@@ -172,6 +202,9 @@ class Record
             'missing_data' => $this->missingData(),
             'delay' => $this->delay(),
             'actual_arrival' => $this->actualArrival(),
+            'lines' => array_map(function ($line) {
+                return $line->getData();
+            }, $this->lines()),
             'raw' => $this->raw,
         ];
     }
