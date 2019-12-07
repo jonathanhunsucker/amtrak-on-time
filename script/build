@@ -1,3 +1,14 @@
-#!/bin/sh
+#!/usr/local/bin/python3
 
-php src/toJson.php info/2018/2100 > data/train/2100.json
+import argparse
+import subprocess
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--train', required=True)
+args = parser.parse_args()
+
+completed_process = subprocess.run(['php', 'src/toJson.php', 'info/2018/%s' % args.train], capture_output=True)
+
+f = open('data/train/%s.json' % args.train, 'w')
+f.write(completed_process.stdout.decode('UTF-8'))
+
