@@ -1,0 +1,20 @@
+* Carl Sandburg
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  CHI  *  *     1  735A              CT
+* LAG  *  *     1  754A  *     754A  Departed:  On time.
+* NPV  *  *     1  810A  *     810A  Departed:  On time.
+  PLO  1  833A  1  833A  829A        Arrived:  3 minutes early
+  MDT  1  900A  1  900A  857A        Arrived:  2 minutes early
+* PCT  *  *     1  921A  *     921A  Departed:  On time.
+* KEE  *  *     1  944A  *     944A  Departed:  On time.
+* GBB  1  1016A 1  1018A 1013A 1018A Arrived:  3 minutes early.           |  Departed:  On time.
+* MAC  *  *     1  1054A *     1104A Departed:  10 minutes late.
+* QCY  1  1157A *  *     1149A *     Arrived:  8 minutes early.

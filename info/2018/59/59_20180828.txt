@@ -1,0 +1,30 @@
+* City of New Orleans
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  805P  *     805P  Departed:  On time.
+* HMW  *  *     1  854P  *     855P  Departed:  1 minute late.
+* KKI  *  *     1  923P  *     935P  Departed:  12 minutes late.
+* CHM  *  *     1  1034P *     1044P Departed:  10 minutes late.
+  MAT  *  *     1  1113P             CT
+  EFG  *  *     1  1137P             CT
+  CEN  *  *     2  1125P             CT
+  CDL  2  121A  2  126A              CT
+  FTN  *  *     2  314A              CT
+  NBN  *  *     2  356A              CT
+  MEM  2  627A  2  640A              CT
+* MKS  *  *     2  801A  *     805A  Departed:  4 minutes late.
+  GWD  2  855A  2  900A              CT
+  YAZ  *  *     2  951A              CT
+  JAN  2  1112A 2  1120A             CT
+  HAZ  *  *     2  1155A             CT
+  BRH  *  *     2  1216P             CT
+  MCB  *  *     2  1240P             CT
+  HMD  *  *     2  128P              CT
+* NOL  2  347P  *  *     256P  *     Arrived:  51 minutes early.

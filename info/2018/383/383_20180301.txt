@@ -1,0 +1,20 @@
+* Illinois Zephyr
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  555P  *     555P  Departed:  On time.
+* LAG  *  *     1  614P  *     616P  Departed:  2 minutes late.
+* NPV  *  *     1  630P  *     631P  Departed:  1 minute late.
+* PLO  *  *     1  653P  *     658P  Departed:  5 minutes late.
+* MDT  *  *     1  720P  *     725P  Departed:  5 minutes late.
+* PCT  *  *     1  741P  *     744P  Departed:  3 minutes late.
+* KEE  *  *     1  804P  *     809P  Departed:  5 minutes late.
+* GBB  1  836P  1  838P  834P  838P  Arrived:  2 minutes early.           |  Departed:  On time.
+* MAC  *  *     1  914P  *     914P  Departed:  On time.
+* QCY  1  1017P *  *     958P  *     Arrived:  19 minutes early.

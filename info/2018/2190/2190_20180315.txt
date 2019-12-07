@@ -1,0 +1,18 @@
+* Acela Express
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  615A  *     616A  Departed:  1 minute late.
+  STM  *  *     1  701A
+* NHV  1  759A  1  802A  755A  802A  Arrived:  4 minutes early.           |  Departed:  On time.
+  NLC  *  *     1  842A
+* PVD  1  918A  1  920A  931A  931A  Arrived:  4 minutes late.            |  Departed:  4 minutes late.
+* RTE  *  *     1  947A  *     954A  Departed:  5 minutes early.
+* BBY  *  *     1  956A  *     1004A Departed:  4 minutes early.
+* BOS  1  1015A *  *     1009A *     Arrived:  6 minutes early.

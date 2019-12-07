@@ -1,0 +1,20 @@
+* Carl Sandburg
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* QCY  *  *     1  530P  *     530P  Departed:  On time.
+* MAC  *  *     1  619P  *     619P  Departed:  On time.
+* GBB  1  653P  1  655P  654P  658P  Arrived:  1 minute late.             |  Departed:  3 minutes late.
+  KEE  *  *     1  724P              CT
+* PCT  *  *     1  748P  *     751P  Departed:  3 minutes late.
+* MDT  *  *     1  810P  *     850P  Departed:  40 minutes late.
+* PLO  *  *     1  839P  *     919P  Departed:  40 minutes late.
+* NPV  *  *     1  903P  *     942P  Departed:  39 minutes late.
+* LAG  *  *     1  919P  *     957P  Departed:  38 minutes late.
+* CHI  1  951P  *  *     914P  *     Arrived:  37 minutes early.

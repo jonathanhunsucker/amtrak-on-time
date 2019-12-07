@@ -1,0 +1,21 @@
+* Saluki
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CDL  *  *     1  730A  *     730A  Departed:  On time.
+* DQN  *  *     1  751A  *     807A  Departed:  16 minutes late.
+* CEN  *  *     1  823A  *     841A  Departed:  18 minutes late.
+* EFG  *  *     1  907A  *     934A  Departed:  27 minutes late.
+* MAT  *  *     1  931A  *     1003A Departed:  32 minutes late.
+* CHM  *  *     1  1014A *     1046A Departed:  32 minutes late.
+* RTL  *  *     1  1027A *     1100A Departed:  33 minutes late.
+* GLM  *  *     1  1053A *     1128A Departed:  35 minutes late.
+* KKI  *  *     1  1115A *     1156A Departed:  41 minutes late.
+* HMW  *  *     1  1144A *     1226P Departed:  42 minutes late.
+* CHI  1  100P  *  *     116P  *     Arrived:  16 minutes late.

@@ -1,0 +1,17 @@
+* Downeaster
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BRK  *  *     1  700A  *     701A  Departed:  1 minute late.
+* FRE  *  *     1  713A  *     713A  Departed:  On time.
+* POR  *  *     1  750A  *     750A  Departed:  On time.
++ ORB  *  *     1  803A
++ SAO  *  *     1  811A
+  WEM  *  *     1  828A
+  DOV  1  915A  *  *

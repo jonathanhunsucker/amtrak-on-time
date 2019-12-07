@@ -1,0 +1,15 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* LAX  *  *     1  700P  *     700P  Departed:  On time.
+  FUL  *  *     1  728P              PT
+  ANA  *  *     1  735P              PT
+  SNA  *  *     1  742P              PT
+  IRV  1  800P  *  *                 PT

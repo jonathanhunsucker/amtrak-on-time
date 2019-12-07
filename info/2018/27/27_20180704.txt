@@ -1,0 +1,16 @@
+* Empire Builder - Portland Section
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SPK  *  *     1  245A  *     245A  Departed:  On time.
+* PSC  1  525A  1  535A  549A  600A  Arrived:  24 minutes late.           |  Departed:  25 minutes late.
+* WIH  *  *     1  730A  *     900A  Departed:  1 hour, 30 minutes late.
+* BNG  *  *     1  804A  *     934A  Departed:  1 hour, 30 minutes late.
+* VAN  *  *     1  918A  *     1057A Departed:  1 hour, 39 minutes late.
+* PDX  1  1010A *  *     1118A *     Arrived:  1 hour, 8 minutes late.

@@ -1,0 +1,35 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  SAN  *  *     1  555A              PT
+  OLT  *  *     1  602A              PT
+  SOL  *  *     1  633A              PT
+  OSD  *  *     1  657A              PT
+  SNC  *  *     1  730A              PT
+* IRV  *  *     1  748A  *     748A  Departed:  On time.
+* SNA  *  *     1  759A  *     759A  Departed:  On time.
+* ANA  *  *     1  808A  *     808A  Departed:  On time.
+* FUL  *  *     1  816A  *     817A  Departed:  1 minute late.
+* LAX  1  851A  1  911A  847A  911A  Arrived:  4 minutes early.           |  Departed:  On time.
+* GDL  *  *     1  923A  *     926A  Departed:  3 minutes late.
+* BUR  *  *     1  933A  *     937A  Departed:  4 minutes late.
+* VNC  *  *     1  943A  *     945A  Departed:  2 minutes late.
+* CWT  *  *     1  955A  *     958A  Departed:  3 minutes late.
+* SIM  *  *     1  1007A *     1011A Departed:  4 minutes late.
+* CML  *  *     1  1031A *     1035A Departed:  4 minutes late.
+* OXN  1  1042A 1  1044A 1101A 1104A Arrived:  19 minutes late.           |  Departed:  20 minutes late.
+* VEC  *  *     1  1100A *     1118A Departed:  18 minutes late.
+* CPN  *  *     1  1122A *     1140A Departed:  18 minutes late.
+* SBA  1  1141A 1  1144A 1154A 1158A Arrived:  13 minutes late.           |  Departed:  14 minutes late.
+* GTA  *  *     1  1156A *     1214P Departed:  18 minutes late.
+* LPS  *  *     1  102P  *     129P  Departed:  27 minutes late.
+* GUA  *  *     1  138P  *     207P  Departed:  29 minutes late.
+* GVB  *  *     1  155P  *     223P  Departed:  28 minutes late.
+* SLO  1  230P  *  *     244P  *     Arrived:  14 minutes late.

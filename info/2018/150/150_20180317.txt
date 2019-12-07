@@ -1,0 +1,31 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  310A  *     310A  Departed:  On time.
+* BWI  *  *     1  335A  *     335A  Departed:  On time.
+* BAL  1  348A  1  350A  349A  350A  Arrived:  1 minute late.             |  Departed:  On time.
+* ABE  *  *     1  416A  *     418A  Departed:  2 minutes late.
+* WIL  1  446A  1  448A  454A  456A  Arrived:  8 minutes late.            |  Departed:  8 minutes late.
+* PHL  1  509A  1  514A  520A  525A  Arrived:  11 minutes late.           |  Departed:  11 minutes late.
+* TRE  1  543A  1  545A  551A  553A  Arrived:  9 minutes late.            |  Departed:  9 minutes late.
+* EWR  *  *     1  616A  *     623A  Departed:  7 minutes late.
+* NWK  1  620A  1  622A  627A  629A  Arrived:  7 minutes late.            |  Departed:  7 minutes late.
+* NYP  1  640A  1  700A  647A  700A  Arrived:  7 minutes late.            |  Departed:  On time.
+* STM  *  *     1  748A  *     748A  Departed:  On time.
+* NHV  1  838A  1  840A  833A  840A  Arrived:  5 minutes early.           |  Departed:  On time.
+* OSB  *  *     1  909A  *     911A  Departed:  2 minutes late.
+* NLC  *  *     1  929A  *     933A  Departed:  4 minutes late.
+* MYS  *  *     1  941A  *     945A  Departed:  4 minutes late.
+* WLY  *  *     1  951A  *     954A  Departed:  3 minutes late.
+* KIN  *  *     1  1006A *     1009A Departed:  3 minutes late.
+* PVD  1  1027A 1  1030A 1027A 1029A Arrived:  On time.                   |  Departed:  2 minutes late.
+* RTE  *  *     1  1100A *     1054A Departed:  6 minutes early.
+* BBY  *  *     1  1111A *     1104A Departed:  7 minutes early.
+* BOS  1  1120A *  *     1111A *     Arrived:  9 minutes early.

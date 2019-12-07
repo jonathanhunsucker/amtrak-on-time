@@ -1,0 +1,21 @@
+* Lincoln Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  925A  *     925A  Departed:  On time.
+* SMT  *  *     1  948A  *     950A  Departed:  2 minutes late.
+* JOL  *  *     1  1015A *     1018A Departed:  3 minutes late.
+* DWT  *  *     1  1049A *     1102A Departed:  13 minutes late.
+* PON  *  *     1  1106A *     1119A Departed:  13 minutes late.
+* BNL  *  *     1  1139A *     1151A Departed:  12 minutes late.
+* LCN  *  *     1  1210P *     1222P Departed:  12 minutes late.
+* SPI  *  *     1  1250P *     1254P Departed:  4 minutes late.
+* CRV  *  *     1  128P  *     142P  Departed:  14 minutes late.
+* ALN  *  *     1  157P  *     211P  Departed:  14 minutes late.
+* STL  1  300P  *  *     250P  *     Arrived:  10 minutes early.

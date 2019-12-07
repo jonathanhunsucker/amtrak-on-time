@@ -1,0 +1,27 @@
+* Keystone Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  HAR  *  *     1  500A              ET MoTuWeThFr
+  MID  *  *     1  510A
+  ELT  *  *     1  517A
+  MJY  *  *     1  523A
+  LNC  *  *     1  535A
+  PAR  *  *     1  553A
+  COT  *  *     1  559A
+  DOW  *  *     1  605A
+  EXT  *  *     1  610A
+  PAO  *  *     1  619A
+  ARD  *  *     1  631A
+  PHL  1  1150P 1  700A
+  PHN  *  *     1  708A
+  CWH  *  *     1  723A
+  TRE  1  735A  1  737A              
+  NWK  *  *     1  811A
+  NYP  1  830A  *  *

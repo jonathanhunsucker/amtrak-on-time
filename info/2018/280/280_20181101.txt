@@ -1,0 +1,25 @@
+* Empire Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NFL  *  *     1  352A  *     352A  Departed:  On time.
+* BFX  *  *     1  430A  *     430A  Departed:  On time.
+* BUF  *  *     1  446A  *     446A  Departed:  On time.
+* ROC  *  *     1  541A  *     544A  Departed:  3 minutes late.
+* SYR  *  *     1  701A  *     715A  Departed:  14 minutes late.
+  ROM  *  *     1  719A
+* UCA  *  *     1  756A  *     813A  Departed:  17 minutes late.
+* AMS  *  *     1  857A  *     910A  Departed:  13 minutes late.
+* SDY  *  *     1  920A  *     930A  Departed:  10 minutes late.
+* ALB  1  941A  1  1005A 953A  1005A Arrived:  12 minutes late.           |  Departed:  On time.
+* HUD  *  *     1  1028A *     1035A Departed:  7 minutes late.
+* RHI  *  *     1  1051A *     1057A Departed:  6 minutes late.
+* POU  *  *     1  1110A *     1113A Departed:  3 minutes late.
+* CRT  *  *     1  1150A *     1157A Departed:  7 minutes late.
+* NYP  1  1245P *  *     1241P *     Arrived:  4 minutes early.

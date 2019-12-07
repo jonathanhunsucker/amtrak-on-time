@@ -1,0 +1,23 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  255P  *     255P  Departed:  On time.
+* NCR  *  *     1  307P  *     308P  Departed:  1 minute late.
+* BWI  *  *     1  324P  *     325P  Departed:  1 minute late.
+* BAL  1  338P  1  340P  337P  340P  Arrived:  1 minute early.            |  Departed:  On time.
+* ABE  *  *     1  404P  *     405P  Departed:  1 minute late.
+* WIL  1  430P  1  432P  446P  449P  Arrived:  16 minutes late.           |  Departed:  17 minutes late.
+* PHL  1  452P  1  455P  508P  513P  Arrived:  16 minutes late.           |  Departed:  18 minutes late.
+* TRE  1  523P  1  525P  543P  546P  Arrived:  20 minutes late.           |  Departed:  21 minutes late.
++ NBK  *  *     1  552P
+* MET  *  *     1  549P  *     612P  Departed:  23 minutes late.
+* EWR  *  *     1  600P  *     623P  Departed:  23 minutes late.
+* NWK  1  608P  1  610P  627P  628P  Arrived:  19 minutes late.           |  Departed:  18 minutes late.
+* NYP  1  630P  *  *     651P  *     Arrived:  21 minutes late.

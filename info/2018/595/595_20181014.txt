@@ -1,0 +1,15 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* IRV  *  *     1  1041P *     1041P Departed:  On time.
+  SNA  *  *     1  1052P             PT
+  ANA  *  *     1  1101P             PT
+  FUL  *  *     1  1110P             PT
+  LAX  1  1150P *  *                 PT

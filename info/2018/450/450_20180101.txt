@@ -1,0 +1,18 @@
+* Springfield Shuttle
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NHV  *  *     1  900A  *     900A  Departed:  On time.
+* WFD  *  *     1  914A  *     914A  Departed:  On time.
+  MDN  *  *     1  921A
+  BER  *  *     1  930A
+* HFD  *  *     1  942A  *     943A  Departed:  1 minute late.
+  WND  *  *     1  951A
+  WNL  *  *     1  958A
+* SPG  1  1031A *  *     1017A *     Arrived:  14 minutes early.

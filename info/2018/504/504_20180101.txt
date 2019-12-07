@@ -1,0 +1,18 @@
+* Amtrak Cascades
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* PDX  *  *     1  1200P *     1200P Departed:  On time.
+  VAN  *  *     1  1218P             PT
+  KEL  *  *     1  1251P             PT
+* CTL  *  *     1  132P  *     143P  Departed:  11 minutes late.
+  OLW  *  *     1  153P              PT
+  TAC  *  *     1  231P              PT
+  TUK  *  *     1  300P              PT
+* SEA  1  320P  *  *     321P  *     Arrived:  1 minute late.

@@ -1,0 +1,21 @@
+* Illini
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CDL  *  *     1  415P  *     415P  Departed:  On time.
+* DQN  *  *     1  436P  *     438P  Departed:  2 minutes late.
+* CEN  *  *     1  508P  *     511P  Departed:  3 minutes late.
+  EFG  *  *     1  552P              CT
+* MAT  *  *     1  616P  *     648P  Departed:  32 minutes late.
+* CHM  *  *     1  659P  *     743P  Departed:  44 minutes late.
+  RTL  *  *     1  712P              CT
+  GLM  *  *     1  738P              CT
+  KKI  *  *     1  800P              CT
+  HMW  *  *     1  827P              CT
+* CHI  1  945P  *  *     1034P *     Arrived:  49 minutes late.

@@ -1,0 +1,22 @@
+* San Joaquin
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival   Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  SAC  *  *     1  530P              PT
+  LOD  *  *     1  608P              PT
+  SKT  *  *     1  626P              PT
+  MOD  *  *     1  659P              PT
+  TRK  *  *     1  712P              PT
+  MCD  *  *     1  736P              PT
+  MDR  *  *     1  807P              PT
+  FNO  1  836P  1  840P              PT
+  HNF  *  *     1  916P              PT
+  COC  *  *     1  932P              PT
+  WAC  *  *     1  1005P             PT
+* BFD  1  1045P *  *     1055P *     Arrived:  10 minutes late.

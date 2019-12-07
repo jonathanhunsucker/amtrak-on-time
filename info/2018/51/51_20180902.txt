@@ -1,0 +1,36 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  1100A *     1109A Departed:  9 minutes late.
+  ALX  *  *     1  1119A
+  MSS  *  *     1  1152A
+  CLP  *  *     1  1225P
+* CVS  1  143P  1  152P  144P  154P  Arrived:  1 minute late.            | Departed:  2 minutes late.
+* STA  *  *     1  254P  *     256P  Departed:  2 minutes late.
+* CLF  *  *     1  413P  *     413P  Departed:  On time.
+* WSS  *  *     1  505P  *     507P  Departed:  2 minutes late.
+* ALD  *  *     1  536P  *     539P  Departed:  3 minutes late.
+* HIN  *  *     1  606P  *     609P  Departed:  3 minutes late.
+* PRC  *  *     1  643P  *     643P  Departed:  On time.
+* THN  *  *     1  659P  *     659P  Departed:  On time.
+* MNG  *  *     1  750P  *     752P  Departed:  2 minutes late.
+* CHW  *  *     1  829P  *     829P  Departed:  On time.
+* HUN  1  944P  1  951P  933P  951P  Arrived:  11 minutes early.         | Departed:  On time.
+* AKY  *  *     1  1014P *     1014P Departed:  On time.
+* SPM  *  *     1  1057P *     1104P Departed:  7 minutes late.
+* MAY  *  *     1  1152P *     1157P Departed:  5 minutes late.
+* CIN  2  131A  2  141A  121A  141A  Arrived:  10 minutes early.         | Departed:  On time.
+* COI  *  *     2  336A  *     336A  Departed:  On time.
+* IND  2  515A  2  600A  450A  603A  Arrived:  25 minutes early.         | Departed:  3 minutes late.
+* CRF  *  *     2  658A  *     710A  Departed:  12 minutes late.
+* LAF  *  *     2  736A  *     744A  Departed:  8 minutes late.
+* REN  *  *     2  740A  *     747A  Departed:  7 minutes late.
+* DYE  *  *     2  829A  *     842A  Departed:  13 minutes late.
+  CHI  2  1000A *  *                 CT

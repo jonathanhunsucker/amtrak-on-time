@@ -1,0 +1,33 @@
+* Palmetto
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  602A  *     602A  Departed:  On time.
+* NWK  1  616A  1  619A  616A  620A  Arrived:  On time.                   |  Departed:  1 minute late.
+* MET  1  631A  1  633A  631A  635A  Arrived:  On time.                   |  Departed:  2 minutes late.
+* TRE  1  655A  1  657A  658A  700A  Arrived:  3 minutes late.            |  Departed:  3 minutes late.
+* PHL  1  727A  1  732A  725A  732A  Arrived:  2 minutes early.           |  Departed:  On time.
+* WIL  1  751A  1  754A  752A  755A  Arrived:  1 minute late.             |  Departed:  1 minute late.
+* BAL  1  839A  1  842A  837A  842A  Arrived:  2 minutes early.           |  Departed:  On time.
+* BWI  1  853A  1  855A  853A  858A  Arrived:  On time.                   |  Departed:  3 minutes late.
+* NCR  1  908A  1  910A  910A  914A  Arrived:  2 minutes late.            |  Departed:  4 minutes late.
+* WAS  1  930A  1  1000A 922A  1000A Arrived:  8 minutes early.           |  Departed:  On time.
+* ALX  *  *     1  1018A *     1018A Departed:  On time.
+* RVR  1  1211P 1  1219P 1151A 1219P Arrived:  20 minutes early.          |  Departed:  On time.
+* PTB  *  *     1  1254P *     1254P Departed:  On time.
+* RMT  *  *     1  229P  *     229P  Departed:  On time.
+* WLN  *  *     1  247P  *     254P  Departed:  7 minutes late.
+* SSM  *  *     1  314P  *     326P  Departed:  12 minutes late.
+* FAY  *  *     1  405P  *     412P  Departed:  7 minutes late.
+* DIL  *  *     1  456P  *     459P  Departed:  3 minutes late.
+* FLO  1  539P  1  544P  529P  544P  Arrived:  10 minutes early.          |  Departed:  On time.
+* KTR  *  *     1  620P  *     620P  Departed:  On time.
+* CHS  *  *     1  719P  *     720P  Departed:  1 minute late.
+* YEM  *  *     1  808P  *     808P  Departed:  On time.
+* SAV  1  904P  *  *     910P  *     Arrived:  6 minutes late.

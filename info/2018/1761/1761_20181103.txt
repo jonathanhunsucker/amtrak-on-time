@@ -1,0 +1,32 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAN  *  *     1  440A  *     440A  Departed:  On time.
+* OLT  *  *     1  447A  *     448A  Departed:  1 minute late.
+* SOL  *  *     1  517A  *     517A  Departed:  On time.
+* OSD  *  *     1  537A  *     537A  Departed:  On time.
+* SNC  *  *     1  609A  *     609A  Departed:  On time.
+* IRV  *  *     1  625A  *     625A  Departed:  On time.
+* SNA  *  *     1  636A  *     636A  Departed:  On time.
+* ANA  *  *     1  648A  *     648A  Departed:  On time.
+* FUL  *  *     1  700A  *     700A  Departed:  On time.
+* LAX  1  730A  1  750A  734A  750A  Arrived:  4 minutes late.            |  Departed:  On time.
+* GDL  *  *     1  802A  *     803A  Departed:  1 minute late.
+* BUR  *  *     1  812A  *     813A  Departed:  1 minute late.
+  VNC  *  *     1  821A              PT
+* CWT  1  832A  1  833A  829A  833A  Arrived:  3 minutes early.           |  Departed:  On time.
+* SIM  *  *     1  845A  *     845A  Departed:  On time.
+* MPK  *  *     1  857A  *     859A  Departed:  2 minutes late.
+* CML  *  *     1  910A  *     913A  Departed:  3 minutes late.
+* OXN  *  *     1  921A  *     925A  Departed:  4 minutes late.
+* VEC  *  *     1  935A  *     937A  Departed:  2 minutes late.
+* CPN  *  *     1  1006A *     1023A Departed:  17 minutes late.
+* SBA  *  *     1  1022A *     1040A Departed:  18 minutes late.
+* GTA  1  1043A *  *     1051A *     Arrived:  8 minutes late.

@@ -1,0 +1,50 @@
+* Empire Builder
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SEA  *  *     1  440P  *     440P  Departed:  On time.
+* EDM  *  *     1  512P  *     515P  Departed:  3 minutes late.
+* EVR  *  *     1  539P  *     544P  Departed:  5 minutes late.
+* LWA  *  *     1  800P  *     824P  Departed:  24 minutes late.
+* WEN  1  832P  1  842P  858P  909P  Arrived:  26 minutes late.           |  Departed:  27 minutes late.
+* EPH  *  *     1  942P  *     1016P Departed:  34 minutes late.
+* SPK  2  1240A 2  125A  1236A 550A  Arrived:  4 minutes early.           |  Departed:  4 hours, 25 minutes late.
+* SPT  *  *     2  230A  *     830A  Departed:  6 hours late.
+* LIB  *  *     2  521A  *     1132A Departed:  6 hours, 11 minutes late.
+* WFH  2  721A  2  741A  201P  218P  Arrived:  6 hours, 40 minutes late.  |  Departed:  6 hours, 37 minutes late.
+* WGL  *  *     2  811A  *     250P  Departed:  6 hours, 39 minutes late.
+* ESM  *  *     2  850A  *     329P  Departed:  6 hours, 39 minutes late.
+* GPK  *  *     2  949A  *     427P  Departed:  6 hours, 38 minutes late.
+* CUT  *  *     2  1040A *     536P  Departed:  6 hours, 56 minutes late.
+* SBY  2  1128A 2  1133A 618P  628P  Arrived:  6 hours, 50 minutes late.  |  Departed:  6 hours, 55 minutes late.
+* HAV  2  102P  2  122P  838P  852P  Arrived:  7 hours, 36 minutes late.  |  Departed:  7 hours, 30 minutes late.
+* MAL  *  *     2  242P  *     1020P Departed:  7 hours, 38 minutes late.
+* GGW  *  *     2  337P  *     1128P Departed:  7 hours, 51 minutes late.
+  WPT  2  423P  2  423P  1248A       Arrived:  8 hours, 25 minutes late
+* WTN  *  *     2  659P  *     352A  Departed:  8 hours, 53 minutes late.
+* STN  *  *     2  801P  *     506A  Departed:  9 hours, 5 minutes late.
+* MOT  2  927P  2  947P  601A  627A  Arrived:  8 hours, 34 minutes late.  |  Departed:  8 hours, 40 minutes late.
+* RUG  *  *     2  1043P *     754A  Departed:  9 hours, 11 minutes late.
+* DVL  *  *     2  1137P *     900A  Departed:  9 hours, 23 minutes late.
+* GFK  *  *     3  102A  *     1118A Departed:  10 hours, 16 minutes late.
+* FAR  *  *     3  218A  *     1237P Departed:  10 hours, 19 minutes late.
+* DLK  *  *     3  315A  *     137P  Departed:  10 hours, 22 minutes late.
+* SPL  *  *     3  414A  *     238P  Departed:  10 hours, 24 minutes late.
+* SCD  *  *     3  519A  *     350P  Departed:  10 hours, 31 minutes late.
+* MSP  3  743A  3  800A  539P  552P  Arrived:  9 hours, 56 minutes late.  |  Departed:  9 hours, 52 minutes late.
+* RDW  *  *     3  854A  *     700P  Departed:  10 hours, 6 minutes late.
+* WIN  3  1004A 3  1011A 800P  807P  Arrived:  9 hours, 56 minutes late.  |  Departed:  9 hours, 56 minutes late.
+* LSE  *  *     3  1147A *     841P  Departed:  8 hours, 54 minutes late.
+* TOH  *  *     3  1226P *     924P  Departed:  8 hours, 58 minutes late.
+* WDL  *  *     3  108P  *     1011P Departed:  9 hours, 3 minutes late.
+* POG  *  *     3  127P  *     1033P Departed:  9 hours, 6 minutes late.
+* CBS  *  *     3  157P  *     1104P Departed:  9 hours, 7 minutes late.
+* MKE  3  307P  3  315P  1211A 1217A Arrived:  9 hours, 4 minutes late.   |  Departed:  9 hours, 2 minutes late.
+* GLN  *  *     3  412P  *     124A  Departed:  9 hours, 12 minutes late.
+* CHI  3  455P  *  *     155A  *     Arrived:  9 hours late.

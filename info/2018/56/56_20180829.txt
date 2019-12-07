@@ -1,0 +1,39 @@
+* Vermonter
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  755A  *     755A  Departed:  On time.
+* NCR  *  *     1  805A  *     807A  Departed:  2 minutes late.
+* BWI  *  *     1  822A  *     826A  Departed:  4 minutes late.
+* BAL  1  837A  1  839A  846A  848A  Arrived:  9 minutes late.           | Departed:  9 minutes late.
+* WIL  1  926A  1  928A  933A  935A  Arrived:  7 minutes late.           | Departed:  7 minutes late.
+  PHL  1  950A  1  953A  954A        Arrived:  4 minutes late.
+  TRE  1  1021A 1  1023A 1029A       Arrived:  8 minutes late.
+  NWK  1  1101A 1  1103A 1102A       Arrived:  1 minute late.
+  NYP  1  1121A 1  1133A
+  STM  *  *     1  1218P
+  BRP  *  *     1  1246P
+  NHV  1  115P  1  130P
+  MDN  *  *     1  150P
+  HFD  *  *     1  211P
+  WNL  *  *     1  222P
+  SPG  1  255P  1  315P
+  HLK  *  *     1  341P
+  NHT  *  *     1  357P
+  GFD  *  *     1  422P
+  BRA  *  *     1  456P
+  BLF  *  *     1  526P
+  CLA  *  *     1  547P
+  WNM  *  *     1  556P
+  WRJ  1  615P  1  618P
+  RPH  *  *     1  656P
+  MPR  *  *     1  734P
+  WAB  *  *     1  750P
+* ESX  *  *     1  818P  *     857P  Departed:  39 minutes late.
+  SAB  1  850P  *  *

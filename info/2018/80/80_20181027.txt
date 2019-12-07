@@ -1,0 +1,35 @@
+* Carolinian
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V 
+* CLT  *  *     1  645A  *     645A  Departed:  On time.
+* KAN  *  *     1  710A  *     712A  Departed:  2 minutes late.
+* SAL  *  *     1  728A  *     729A  Departed:  1 minute late.
+  LEX  *  *     1  746A
+* HPT  *  *     1  802A  *     807A  Departed:  5 minutes late.
+* GRO  1  820A  1  824A  822A  828A  Arrived:  2 minutes late.            |  Departed:  4 minutes late.
+* BNC  *  *     1  846A  *     853A  Departed:  7 minutes late.
+* DNC  *  *     1  927A  *     938A  Departed:  11 minutes late.
+* CYN  *  *     1  947A  *     957A  Departed:  10 minutes late.
+* RGH  1  1005A 1  1013A 1010A 1027A Arrived:  5 minutes late.            |  Departed:  14 minutes late.
+* SSM  *  *     1  1048A *     1059A Departed:  11 minutes late.
+* WLN  *  *     1  1118A *     1135A Departed:  17 minutes late.
+* RMT  *  *     1  1140A *     1156A Departed:  16 minutes late.
+* PTB  *  *     1  111P  *     128P  Departed:  17 minutes late.
+* RVR  1  204P  1  211P  204P  211P  Arrived:  On time.                   |  Departed:  On time.
+* FBG  *  *     1  307P  *     313P  Departed:  6 minutes late.
+* QAN  *  *     1  329P  *     334P  Departed:  5 minutes late.
+* ALX  *  *     1  403P  *     411P  Departed:  8 minutes late.
+* WAS  1  429P  1  515P  434P  500P  Arrived:  5 minutes late.            |  Departed:  15 minutes early.
+* BAL  1  547P  1  547P  531P  533P  Arrived:  16 minutes early.          |  Departed:  14 minutes early.
+* WIL  1  636P  1  636P  613P  614P  Arrived:  23 minutes early.          |  Departed:  22 minutes early.
+* PHL  1  700P  1  700P  632P  636P  Arrived:  28 minutes early.          |  Departed:  24 minutes early.
+* TRE  1  732P  1  732P  704P  705P  Arrived:  28 minutes early.          |  Departed:  27 minutes early.
+* NWK  1  812P  1  812P  740P  742P  Arrived:  32 minutes early.          |  Departed:  30 minutes early.
+* NYP  1  838P  *  *     759P  *     Arrived:  39 minutes early.

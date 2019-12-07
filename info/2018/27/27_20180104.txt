@@ -1,0 +1,16 @@
+* Empire Builder
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SPK  *  *     1  245A  *     410A  Departed:  1 hour, 25 minutes late.
+* PSC  1  525A  1  535A  732A  744A  Arrived:  2 hours, 7 minutes late.   |  Departed:  2 hours, 9 minutes late.
+* WIH  *  *     1  730A  *     943A  Departed:  2 hours, 13 minutes late.
+* BNG  *  *     1  804A  *     1015A Departed:  2 hours, 11 minutes late.
+* VAN  *  *     1  918A  *     1127A Departed:  2 hours, 9 minutes late.
+* PDX  1  1010A *  *     1159A *     Arrived:  1 hour, 49 minutes late.

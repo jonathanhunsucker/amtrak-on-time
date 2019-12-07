@@ -1,0 +1,25 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAC  *  *     1  355P  *     355P  Departed:  On time.
+* DAV  *  *     1  410P  *     411P  Departed:  1 minute late.
+* FFV  *  *     1  430P  *     430P  Departed:  On time.
+* SUI  *  *     1  437P  *     437P  Departed:  On time.
+* MTZ  1  455P  1  456P  454P  456P  Arrived:  1 minute early.            |  Departed:  On time.
+  RIC  *  *     1  522P              PT
+  BKY  *  *     1  530P              PT
+  EMY  1  534P  1  535P  533P        Arrived:  1 minute early.
+* OKJ  1  543P  1  544P  542P  544P  Arrived:  1 minute early.            |  Departed:  On time.
+* OAC  *  *     1  553P  *     553P  Departed:  On time.
+* HAY  *  *     1  604P  *     604P  Departed:  On time.
+* FMT  *  *     1  620P  *     620P  Departed:  On time.
+  GAC  *  *     1  637P              PT
+* SCC  *  *     1  645P  *     645P  Departed:  On time.
+* SJC  1  708P  *  *     649P  *     Arrived:  19 minutes early.

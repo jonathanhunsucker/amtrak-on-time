@@ -1,0 +1,28 @@
+* Adirondack
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  815A  *     815A  Departed:  On time.
+* YNY  *  *     1  844A  *     844A  Departed:  On time.
+* CRT  *  *     1  903A  *     905A  Departed:  2 minutes late.
+* POU  *  *     1  945A  *     948A  Departed:  3 minutes late.
+* RHI  *  *     1  1001A *     1004A Departed:  3 minutes late.
+* HUD  *  *     1  1021A *     1026A Departed:  5 minutes late.
+* ALB  1  1047A 1  1110A 1057A 1121A Arrived:  10 minutes late.           |  Departed:  11 minutes late.
+* SDY  *  *     1  1133A *     1144A Departed:  11 minutes late.
+* SAR  *  *     1  1202P *     1212P Departed:  10 minutes late.
+  FED  *  *     1  1223P
+  WHL  *  *     1  1247P
+  FTC  *  *     1  120P
+  POH  *  *     1  142P
+  WSP  *  *     1  202P
+  PLB  1  320P  1  320P              
+  RSP  *  *     1  405P
+  SLQ  *  *     1  623P
+* MTR  1  711P  *  *     733P  *     Arrived:  22 minutes late.

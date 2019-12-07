@@ -1,0 +1,41 @@
+* Vermonter
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  755A  *     755A  Departed:  On time.
+* NCR  *  *     1  805A  *     809A  Departed:  4 minutes late.
+* BWI  *  *     1  822A  *     825A  Departed:  3 minutes late.
+* BAL  1  837A  1  839A  838A  840A  Arrived:  1 minute late.             |  Departed:  1 minute late.
+* WIL  1  926A  1  928A  927A  931A  Arrived:  1 minute late.             |  Departed:  3 minutes late.
+* PHL  1  950A  1  953A  949A  953A  Arrived:  1 minute early.            |  Departed:  On time.
+* TRE  1  1021A 1  1023A 1021A 1024A Arrived:  On time.                   |  Departed:  1 minute late.
+* NWK  1  1101A 1  1103A 1057A 1103A Arrived:  4 minutes early.           |  Departed:  On time.
+* NYP  1  1121A 1  1133A 1116A 1133A Arrived:  5 minutes early.           |  Departed:  On time.
+* STM  *  *     1  1218P *     1227P Departed:  9 minutes late.
+* BRP  *  *     1  1246P *     104P  Departed:  18 minutes late.
+* NHV  1  115P  1  125P  125P  144P  Arrived:  10 minutes late.           |  Departed:  14 minutes late.
+  WFD  *  *     1  140P
+* MDN  *  *     1  149P  *     208P  Departed:  18 minutes late.
+  BER  *  *     1  159P
+* HFD  *  *     1  213P  *     229P  Departed:  18 minutes late.
+* WNL  *  *     1  229P  *     242P  Departed:  20 minutes late.
+* SPG  1  300P  1  315P  305P  315P  Arrived:  10 minutes late.           |  Departed:  On time.
+* HLK  *  *     1  341P  *     346P  Departed:  5 minutes late.
+* NHT  *  *     1  357P  *     402P  Departed:  5 minutes late.
+* GFD  *  *     1  422P  *     428P  Departed:  6 minutes late.
+* BRA  *  *     1  456P  *     501P  Departed:  5 minutes late.
+* BLF  *  *     1  526P  *     529P  Departed:  3 minutes late.
+* CLA  *  *     1  547P  *     548P  Departed:  1 minute late.
+* WNM  *  *     1  556P  *     558P  Departed:  2 minutes late.
+* WRJ  1  615P  1  618P  617P  619P  Arrived:  2 minutes late.            |  Departed:  1 minute late.
+* RPH  *  *     1  656P  *     659P  Departed:  3 minutes late.
+* MPR  *  *     1  734P  *     736P  Departed:  2 minutes late.
+* WAB  *  *     1  750P  *     752P  Departed:  2 minutes late.
+* ESX  *  *     1  818P  *     818P  Departed:  On time.
+* SAB  1  850P  *  *     846P  *     Arrived:  4 minutes early.

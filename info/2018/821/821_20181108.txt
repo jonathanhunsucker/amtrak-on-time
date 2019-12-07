@@ -1,0 +1,17 @@
+* Heartland Flyer
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* OKC  *  *     1  825A  *     825A  Departed:  On time.
+* NOR  *  *     1  851A  *     852A  Departed:  1 minute late.
+* PUR  *  *     1  908A  *     912A  Departed:  4 minutes late.
+* PVL  *  *     1  932A  *     935A  Departed:  3 minutes late.
+* ADM  *  *     1  1024A *     1033A Departed:  9 minutes late.
+* GLE  *  *     1  1110A *     1114A Departed:  4 minutes late.
+* FTW  1  1227P *  *     1229P *     Arrived:  2 minutes late.

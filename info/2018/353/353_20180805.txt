@@ -1,0 +1,24 @@
+* THIS TRAIN EXPERIENCED A SERVICE DISRUPTION.
+* Wolverine
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* PNT  *  *     1  1000A *     1000A Departed:  On time.
+* TRM  *  *     1  1014A *     1015A Departed:  1 minute late.
+* ROY  *  *     1  1022A *     1023A Departed:  1 minute late.
+* DET  1  1042A 1  1045A 1043A 1047A Arrived:  1 minute late.             |  Departed:  2 minutes late.
+* DER  *  *     1  1103A *     1107A Departed:  4 minutes late.
+* ARB  *  *     1  1132A *     1137A Departed:  5 minutes late.
+* JXN  *  *     1  1213P *     1241P Departed:  28 minutes late.
+  BTL  1  103P  1  107P              
+  KAL  *  *     1  131P
+  NLS  *  *     1  204P
+  NBU  *  *     1  224P
+  HMI  *  *     1  220P              CT
+  CHI  1  305P  *  *                 CT

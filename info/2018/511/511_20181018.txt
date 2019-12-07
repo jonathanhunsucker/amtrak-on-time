@@ -1,0 +1,15 @@
+* Amtrak Cascades
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* PDX  *  *     1  945A  *     945A  Departed:  On time.
+  ORC  *  *     1  1008A             PT
+* SLM  *  *     1  1051A *     1052A Departed:  1 minute late.
+* ALY  *  *     1  1120A *     1123A Departed:  3 minutes late.
+* EUG  1  1220P *  *     1207P *     Arrived:  13 minutes early.

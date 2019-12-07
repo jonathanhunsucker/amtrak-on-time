@@ -1,0 +1,17 @@
+* Wolverine Extra
+* +---------------- Station code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  900A  *     900A  Departed:  On time.
+* NBU  *  *     1  1111A *     1111A Departed:  On time.
+* NLS  *  *     1  1137A *     1137A Departed:  On time.
+* KAL  *  *     1  1215P *     1223P Departed:  8 minutes late.
+* BTL  *  *     1  1241P *     1247P Departed:  6 minutes late.
+* JXN  *  *     1  139P  *     144P  Departed:  5 minutes late.
+* ARB  1  225P  *  *     222P  *     Arrived:  3 minutes early.

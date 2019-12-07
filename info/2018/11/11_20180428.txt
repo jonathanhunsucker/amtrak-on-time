@@ -1,0 +1,40 @@
+* Coast Starlight
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SEA  *  *     1  945A  *     945A  Departed:  On time.
+* TAC  *  *     1  1037A *     1037A Departed:  On time.
+* OLW  *  *     1  1127A *     1127A Departed:  On time.
+* CTL  *  *     1  1151A *     1151A Departed:  On time.
+* KEL  *  *     1  1235P *     1237P Departed:  2 minutes late.
+* VAN  *  *     1  118P  *     119P  Departed:  1 minute late.
+* PDX  1  200P  1  225P  139P  225P  Arrived:  21 minutes early.          |  Departed:  On time.
+* SLM  *  *     1  337P  *     337P  Departed:  On time.
+* ALY  *  *     1  410P  *     411P  Departed:  1 minute late.
+* EUG  1  503P  1  510P  516P  522P  Arrived:  13 minutes late.           |  Departed:  12 minutes late.
+* CMO  *  *     1  808P  *     821P  Departed:  13 minutes late.
+* KFS  1  950P  1  1000P 934P  1000P Arrived:  16 minutes early.          |  Departed:  On time.
+* DUN  *  *     2  1235A *     1243A Departed:  8 minutes late.
+* RDD  *  *     2  221A  *     243A  Departed:  22 minutes late.
+* CIC  *  *     2  350A  *     422A  Departed:  32 minutes late.
+* SAC  2  615A  2  635A  603A  635A  Arrived:  12 minutes early.          |  Departed:  On time.
+* DAV  *  *     2  650A  *     652A  Departed:  2 minutes late.
+* MTZ  2  734A  2  734A  731A  734A  Arrived:  3 minutes early.           |  Departed:  On time.
+* EMY  2  810A  2  820A  813A  820A  Arrived:  3 minutes late.            |  Departed:  On time.
+* OKJ  2  835A  2  850A  830A  850A  Arrived:  5 minutes early.           |  Departed:  On time.
+  SJC  2  955A  2  1007A             PT
+  SNS  *  *     2  1148A             PT
+  PRB  *  *     2  138P              PT
+  SLO  2  307P  2  320P              PT
+  SBA  2  555P  2  602P              PT
+  OXN  *  *     2  705P              PT
+  SIM  *  *     2  748P              PT
+  VNC  *  *     2  822P              PT
+  BUR  *  *     2  831P              PT
+* LAX  2  900P  *  *     755P  *     Arrived:  1 hour, 5 minutes early.

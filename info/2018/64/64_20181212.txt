@@ -1,0 +1,28 @@
+* Maple Leaf
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* TWO  *  *     1  820A  *     820A  Departed:  On time.
+* NFS  1  1016A 1  1018A 1010A 1020A Arrived:  6 minutes early.           |  Departed:  2 minutes late.
+* NFL  1  1034A 1  1217P 1024A 1217P Arrived:  10 minutes early.          |  Departed:  On time.
+* BFX  *  *     1  1255P *     1259P Departed:  4 minutes late.
+* BUF  *  *     1  109P  *     123P  Departed:  14 minutes late.
+* ROC  *  *     1  203P  *     225P  Departed:  22 minutes late.
+* SYR  *  *     1  318P  *     411P  Departed:  53 minutes late.
+  ROM  *  *     1  357P
+* UCA  *  *     1  419P  *     518P  Departed:  59 minutes late.
+* AMS  *  *     1  520P  *     619P  Departed:  59 minutes late.
+* SDY  *  *     1  617P  *     642P  Departed:  25 minutes late.
+* ALB  1  639P  1  715P  702P  715P  Arrived:  23 minutes late.           |  Departed:  On time.
+* HUD  *  *     1  737P  *     738P  Departed:  1 minute late.
+* RHI  *  *     1  759P  *     759P  Departed:  On time.
+* POU  *  *     1  815P  *     816P  Departed:  1 minute late.
+* CRT  *  *     1  856P  *     904P  Departed:  8 minutes late.
+* YNY  *  *     1  916P  *     923P  Departed:  7 minutes late.
+* NYP  1  955P  *  *     947P  *     Arrived:  8 minutes early.

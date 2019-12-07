@@ -1,0 +1,39 @@
+* Texas Eagle
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  145P  *     145P  Departed:  On time.
+* JOL  *  *     1  240P  *     240P  Departed:  On time.
+* PON  *  *     1  327P  *     329P  Departed:  2 minutes late.
+* BNL  *  *     1  404P  *     404P  Departed:  On time.
+  LCN  *  *     1  437P              CT
+* SPI  *  *     1  514P  *     519P  Departed:  5 minutes late.
+* CRV  *  *     1  549P  *     600P  Departed:  11 minutes late.
+* ALN  *  *     1  620P  *     637P  Departed:  17 minutes late.
+* STL  1  721P  1  755P  719P  757P  Arrived:  2 minutes early.          | Departed:  2 minutes late.
+* ACD  *  *     1  1002P *     1002P Departed:  On time.
+  PBF  *  *     2  1142P             CT
+* WNR  *  *     2  1237A *     1237A Departed:  On time.
+  LRK  2  302A  2  310A              CT
+  MVN  *  *     2  355A              CT
+  ARK  *  *     2  420A              CT
+  HOP  *  *     2  509A              CT
+  TXA  *  *     2  558A              CT
+  MHL  2  740A  2  750A              CT
+  LVW  *  *     2  828A              CT
+* MIN  *  *     2  925A  *     1142A Departed:  2 hours, 17 minutes late.
+* DAL  2  1130A 2  1150A 136P  145P  Arrived:  2 hours, 6 minutes late.   |  Departed:  1 hour, 55 minutes late.
+  FTW  2  125P  2  210P  227P        Arrived:  1 hour, 2 minutes late.
+  CBR  *  *     2  252P              CT
+* MCG  *  *     2  400P  *     523P  Departed:  1 hour, 23 minutes late.
+* TPL  *  *     2  443P  *     620P  Departed:  1 hour, 37 minutes late.
+* TAY  *  *     2  536P  *     727P  Departed:  1 hour, 51 minutes late.
+* AUS  2  622P  2  630P  804P  814P  Arrived:  1 hour, 42 minutes late.   |  Departed:  1 hour, 44 minutes late.
+* SMC  *  *     2  712P  *     948P  Departed:  2 hours, 36 minutes late.
+* SAS  2  955P  *  *     1119P *     Arrived:  1 hour, 24 minutes late.

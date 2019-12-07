@@ -1,0 +1,29 @@
+* Adirondack
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* MTR  *  *     1  1020A *     1020A Departed:  On time.
+* SLQ  *  *     1  1035A *     1035A Departed:  On time.
+  RSP  1  1155A 1  1255P
+* PLB  1  125P  1  125P  227P  230P  Arrived:  1 hour, 2 minutes late.    |  Departed:  1 hour, 5 minutes late.
+* PRK  *  *     1  145P  *     246P  Departed:  1 hour, 1 minute late.
+* WSP  *  *     1  229P  *     337P  Departed:  1 hour, 8 minutes late.
+* POH  *  *     1  254P  *     356P  Departed:  1 hour, 2 minutes late.
+* FTC  *  *     1  318P  *     416P  Departed:  58 minutes late.
+* WHL  *  *     1  350P  *     448P  Departed:  58 minutes late.
+* FED  *  *     1  416P  *     513P  Departed:  57 minutes late.
+* SAR  *  *     1  445P  *     537P  Departed:  52 minutes late.
+* SDY  *  *     1  518P  *     605P  Departed:  47 minutes late.
+* ALB  1  540P  1  615P  626P  648P  Arrived:  46 minutes late.           |  Departed:  33 minutes late.
+* HUD  *  *     1  638P  *     715P  Departed:  37 minutes late.
+* RHI  *  *     1  700P  *     740P  Departed:  40 minutes late.
+* POU  *  *     1  715P  *     800P  Departed:  45 minutes late.
+* CRT  *  *     1  756P  *     902P  Departed:  1 hour, 6 minutes late.
+* YNY  *  *     1  817P  *     923P  Departed:  1 hour, 6 minutes late.
+* NYP  1  850P  *  *     946P  *     Arrived:  56 minutes late.

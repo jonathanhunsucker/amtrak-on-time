@@ -1,0 +1,36 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  1100A *     1100A Departed:  On time.
+* ALX  *  *     1  1119A *     1119A Departed:  On time.
+* MSS  *  *     1  1152A *     1202P Departed:  10 minutes late.
+* CLP  *  *     1  1225P *     1246P Departed:  21 minutes late.
+* CVS  1  143P  1  152P  150P  200P  Arrived:  7 minutes late.            |  Departed:  8 minutes late.
+* STA  *  *     1  254P  *     301P  Departed:  7 minutes late.
+* CLF  *  *     1  413P  *     428P  Departed:  15 minutes late.
+* WSS  *  *     1  505P  *     527P  Departed:  22 minutes late.
+* ALD  *  *     1  536P  *     607P  Departed:  31 minutes late.
+* HIN  *  *     1  606P  *     638P  Departed:  32 minutes late.
+* PRC  *  *     1  643P  *     710P  Departed:  27 minutes late.
+* THN  *  *     1  659P  *     726P  Departed:  27 minutes late.
+* MNG  *  *     1  750P  *     816P  Departed:  26 minutes late.
+* CHW  *  *     1  829P  *     849P  Departed:  20 minutes late.
+* HUN  1  944P  1  951P  941P  951P  Arrived:  3 minutes early.           |  Departed:  On time.
+* AKY  *  *     1  1014P *     1014P Departed:  On time.
+* SPM  *  *     1  1057P *     1057P Departed:  On time.
+* MAY  *  *     1  1152P *     1152P Departed:  On time.
+* CIN  2  131A  2  141A  120A  141A  Arrived:  11 minutes early.          |  Departed:  On time.
+* COI  *  *     2  336A  *     336A  Departed:  On time.
+* IND  2  515A  2  600A  450A  600A  Arrived:  25 minutes early.          |  Departed:  On time.
+* CRF  *  *     2  658A  *     715A  Departed:  17 minutes late.
+* LAF  *  *     2  736A  *     749A  Departed:  13 minutes late.
+* REN  *  *     2  740A  *     748A  Departed:  8 minutes late.
+* DYE  *  *     2  829A  *     844A  Departed:  15 minutes late.
+* CHI  2  1000A *  *     955A  *     Arrived:  5 minutes early.

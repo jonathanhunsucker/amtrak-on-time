@@ -1,0 +1,25 @@
+* Wolverine
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* PNT  *  *     1  535P  *     535P  Departed:  On time.
+* TRM  *  *     1  548P  *     550P  Departed:  2 minutes late.
+* ROY  *  *     1  555P  *     557P  Departed:  2 minutes late.
+* DET  1  615P  1  618P  616P  619P  Arrived:  1 minute late.             |  Departed:  1 minute late.
+* DER  *  *     1  636P  *     637P  Departed:  1 minute late.
+* ARB  *  *     1  706P  *     715P  Departed:  9 minutes late.
+* JXN  *  *     1  742P  *     755P  Departed:  13 minutes late.
+* BTL  1  836P  1  836P  846P  848P  Arrived:  10 minutes late.           |  Departed:  12 minutes late.
+* KAL  *  *     1  900P  *     919P  Departed:  19 minutes late.
+* DOA  *  *     1  929P  *     947P  Departed:  18 minutes late.
+* NLS  *  *     1  942P  *     1000P Departed:  18 minutes late.
+* NBU  *  *     1  1002P *     1023P Departed:  21 minutes late.
+* MCI  *  *     1  912P  *     943P  Departed:  31 minutes late.
+* HMI  *  *     1  954P  *     1025P Departed:  31 minutes late.
+* CHI  1  1040P *  *     1049P *     Arrived:  9 minutes late.

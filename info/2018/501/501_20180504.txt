@@ -1,0 +1,18 @@
+* Amtrak Cascades
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SEA  *  *     1  725A  *     725A  Departed:  On time.
+* TUK  *  *     1  739A  *     739A  Departed:  On time.
+* TAC  *  *     1  808A  *     809A  Departed:  1 minute late.
+* OLW  *  *     1  845A  *     852A  Departed:  7 minutes late.
+* CTL  *  *     1  906A  *     911A  Departed:  5 minutes late.
+* KEL  *  *     1  947A  *     951A  Departed:  4 minutes late.
+* VAN  *  *     1  1025A *     1029A Departed:  4 minutes late.
+* PDX  1  1055A *  *     1110A *     Arrived:  15 minutes late.
