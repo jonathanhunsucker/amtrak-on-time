@@ -1,0 +1,23 @@
+* Acela Express
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BOS  *  *     1  1210P *     1212P Departed:  2 minutes late.
+* BBY  *  *     1  1215P *     1222P Departed:  7 minutes late.
+* RTE  *  *     1  1224P *     1231P Departed:  7 minutes late.
+* PVD  1  1244P 1  1246P 1250P 1252P Arrived:  6 minutes late.            |  Departed:  6 minutes late.
+* NHV  1  211P  1  213P  215P  219P  Arrived:  4 minutes late.            |  Departed:  6 minutes late.
+  STM  *  *     1  258P
+* NYP  1  345P  1  400P  349P  403P  Arrived:  4 minutes late.            |  Departed:  3 minutes late.
+* NWK  1  413P  1  415P  416P  420P  Arrived:  3 minutes late.            |  Departed:  5 minutes late.
+* PHL  1  507P  1  510P  512P  516P  Arrived:  5 minutes late.            |  Departed:  6 minutes late.
+* WIL  1  527P  1  529P  540P  543P  Arrived:  13 minutes late.           |  Departed:  14 minutes late.
+* BAL  1  611P  1  613P  633P  634P  Arrived:  22 minutes late.           |  Departed:  21 minutes late.
+* BWI  *  *     1  626P  *     648P  Departed:  22 minutes late.
+* WAS  1  653P  *  *     713P  *     Arrived:  20 minutes late.

@@ -1,0 +1,19 @@
+* Springfield Shuttle
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SPG  *  *     1  1210P *     1210P Departed:  On time.
+  WNL  *  *     1  1229P
+  WND  *  *     1  1234P
+  HFD  *  *     1  1244P
+  BER  *  *     1  1255P
+  MDN  *  *     1  104P
+* WFD  *  *     1  112P  *     114P  Departed:  2 minutes late.
++ STS  *  *     1  125P
+* NHV  1  133P  *  *     130P  *     Arrived:  3 minutes early.

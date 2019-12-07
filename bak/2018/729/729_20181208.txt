@@ -1,0 +1,28 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* ARN  *  *     1  815A  *     817A  Departed:  2 minutes late.
+* RLN  *  *     1  838A  *     838A  Departed:  On time.
+* RSV  *  *     1  847A  *     847A  Departed:  On time.
+* SAC  1  912A  1  913A  909A  913A  Arrived:  3 minutes early.           |  Departed:  On time.
+* DAV  *  *     1  928A  *     929A  Departed:  1 minute late.
+* FFV  *  *     1  948A  *     948A  Departed:  On time.
+* SUI  *  *     1  955A  *     955A  Departed:  On time.
+* MTZ  1  1013A 1  1014A 1012A 1015A Arrived:  1 minute early.            |  Departed:  1 minute late.
+* RIC  *  *     1  1040A *     1042A Departed:  2 minutes late.
+* BKY  *  *     1  1048A *     1049A Departed:  1 minute late.
+* EMY  1  1052A 1  1053A 1053A 1055A Arrived:  1 minute late.             |  Departed:  2 minutes late.
+* OKJ  1  1101A 1  1102A 1103A 1108A Arrived:  2 minutes late.            |  Departed:  6 minutes late.
+* OAC  *  *     1  1111A *     1117A Departed:  6 minutes late.
+* HAY  *  *     1  1122A *     1129A Departed:  7 minutes late.
+* FMT  *  *     1  1138A *     1144A Departed:  6 minutes late.
+* GAC  *  *     1  1155A *     1203P Departed:  8 minutes late.
+* SCC  *  *     1  1203P *     1215P Departed:  12 minutes late.
+* SJC  1  1225P *  *     1222P *     Arrived:  3 minutes early.

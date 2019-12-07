@@ -1,0 +1,16 @@
+* Hoosier State
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* IND  *  *     1  600A  *     615A  Departed:  15 minutes late.
+* CRF  *  *     1  658A  *     726A  Departed:  28 minutes late.
+* LAF  *  *     1  736A  *     758A  Departed:  22 minutes late.
+* REN  *  *     1  740A  *     757A  Departed:  17 minutes late.
+* DYE  *  *     1  829A  *     844A  Departed:  15 minutes late.
+* CHI  1  1000A *  *     950A  *     Arrived:  10 minutes early.

@@ -1,0 +1,31 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  310A  *     310A  Departed:  On time.
+* BWI  *  *     1  335A  *     339A  Departed:  4 minutes late.
+* BAL  1  348A  1  350A  351A  353A  Arrived:  3 minutes late.           | Departed:  3 minutes late.
+* ABE  *  *     1  416A  *     419A  Departed:  3 minutes late.
+* WIL  1  446A  1  448A  442A  448A  Arrived:  4 minutes early.          | Departed:  On time.
+* PHL  1  509A  1  514A  507A  515A  Arrived:  2 minutes early.          | Departed:  1 minute late.
+* TRE  1  542A  1  544A  545A  547A  Arrived:  3 minutes late.            |  Departed:  3 minutes late.
+* EWR  *  *     1  616A  *     619A  Departed:  3 minutes late.
+* NWK  1  620A  1  622A  623A  625A  Arrived:  3 minutes late.            |  Departed:  3 minutes late.
+* NYP  1  640A  1  700A  642A  700A  Arrived:  2 minutes late.            |  Departed:  On time.
+* STM  *  *     1  748A  *     832A  Departed:  44 minutes late.
+* NHV  1  838A  1  840A  923A  925A  Arrived:  45 minutes late.           |  Departed:  45 minutes late.
+* OSB  *  *     1  909A  *     954A  Departed:  45 minutes late.
+* NLC  *  *     1  929A  *     1014A Departed:  45 minutes late.
+* MYS  *  *     1  941A  *     1026A Departed:  45 minutes late.
+* WLY  *  *     1  951A  *     1037A Departed:  46 minutes late.
+* KIN  *  *     1  1006A *     1052A Departed:  46 minutes late.
+* PVD  1  1027A 1  1027A 1111A 1113A Arrived:  44 minutes late.           |  Departed:  46 minutes late.
+* RTE  *  *     1  1100A *     1136A Departed:  36 minutes late.
+* BBY  *  *     1  1111A *     1147A Departed:  36 minutes late.
+* BOS  1  1120A *  *     1153A *     Arrived:  33 minutes late.

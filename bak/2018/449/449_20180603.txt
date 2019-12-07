@@ -1,0 +1,32 @@
+* Lake Shore Limited - Boston Section
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BOS  *  *     1  120P  *     120P  Departed:  On time.
+* BBY  *  *     1  127P  *     128P  Departed:  1 minute late.
+* FRA  *  *     1  155P  *     215P  Departed:  20 minutes late.
+* WOR  *  *     1  233P  *     243P  Departed:  10 minutes late.
+  SPG  1  348P  1  353P
+* PIT  *  *     1  509P  *     512P  Departed:  3 minutes late.
+* ALB  1  630P  1  705P  617P  705P  Arrived:  13 minutes early.          |  Departed:  On time.
+* SDY  *  *     1  732P  *     735P  Departed:  3 minutes late.
+* UCA  *  *     1  848P  *     848P  Departed:  On time.
+* SYR  *  *     1  949P  *     951P  Departed:  2 minutes late.
+* ROC  *  *     1  1109P *     213A  Departed:  3 hours, 4 minutes late.
+  BUF  2  1209A 2  1214A
+* ERI  *  *     2  148A  *     447A  Departed:  2 hours, 59 minutes late.
+* CLE  2  327A  2  345A  611A  621A  Arrived:  2 hours, 44 minutes late.  |  Departed:  2 hours, 36 minutes late.
+* ELY  *  *     2  418A  *     650A  Departed:  2 hours, 32 minutes late.
+* SKY  *  *     2  455A  *     730A  Departed:  2 hours, 35 minutes late.
+* TOL  2  555A  2  615A  846A  900A  Arrived:  2 hours, 51 minutes late.  |  Departed:  2 hours, 45 minutes late.
+* BYN  *  *     2  705A  *     1037A Departed:  3 hours, 32 minutes late.
+* WTI  *  *     2  733A  *     1104A Departed:  3 hours, 31 minutes late.
+* EKH  *  *     2  825A  *     1203P Departed:  3 hours, 38 minutes late.
+* SOB  *  *     2  849A  *     1231P Departed:  3 hours, 42 minutes late.
+* CHI  2  945A  *  *     129P  *     Arrived:  3 hours, 44 minutes late.

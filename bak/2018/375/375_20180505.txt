@@ -1,0 +1,15 @@
+* Pere Marquette
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* HOM  *  *     1  550P  *     550P  Departed:  On time.
+* BAM  *  *     1  633P  *     633P  Departed:  On time.
+* SJM  *  *     1  711P  *     711P  Departed:  On time.
+* HMI  *  *     1  752P  *     827P  Departed:  35 minutes late.
+* CHI  1  824P  *  *     900P  *     Arrived:  36 minutes late.

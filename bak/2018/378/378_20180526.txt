@@ -1,0 +1,14 @@
+* Pere Marquette
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  705A  *     705A  Departed:  On time.
+* HMI  *  *     1  730A  *     747A  Departed:  17 minutes late.
+* SJM  *  *     1  1012A *     1014A Departed:  2 minutes late.
+* BHG  1  1019A *  *     1021A *     Arrived:  2 minutes early.

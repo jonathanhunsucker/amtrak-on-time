@@ -1,0 +1,16 @@
+* Hoosier State
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  545P  *     552P  Departed:  7 minutes late.
+* DYE  *  *     1  644P  *     646P  Departed:  2 minutes late.
+* REN  *  *     1  735P  *     736P  Departed:  1 minute late.
+* LAF  *  *     1  946P  *     947P  Departed:  1 minute late.
+* CRF  *  *     1  1020P *     1020P Departed:  On time.
+* IND  1  1139P *  *     1119P *     Arrived:  20 minutes early.

@@ -1,0 +1,45 @@
+* California Zephyr
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  200P  *     200P  Departed:  On time.
+* NPV  *  *     1  234P  *     240P  Departed:  6 minutes late.
+* PCT  *  *     1  344P  *     402P  Departed:  18 minutes late.
+* GBB  1  438P  1  438P  454P  500P  Arrived:  16 minutes late.          | Departed:  22 minutes late.
+* BRL  *  *     1  525P  *     555P  Departed:  30 minutes late.
+* MTP  *  *     1  559P  *     624P  Departed:  25 minutes late.
+* OTM  1  653P  1  653P  731P  751P  Arrived:  38 minutes late.          | Departed:  58 minutes late.
+* OSC  *  *     1  809P  *     147A  Departed:  5 hours, 38 minutes late.
+  CRN  *  *     1  841P              CT
+  OMA  1  1055P 1  1105P             CT
+  LNK  2  1208A 2  1214A             CT
+  HAS  *  *     2  147A              CT
+  HLD  *  *     2  234A              CT
+  MCK  *  *     2  343A              CT
+  FMG  *  *     2  505A              MT
+  DEN  2  715A  2  805A              MT
+  WIP  *  *     2  1007A             MT
+* GRA  *  *     2  1037A *     722P  Departed:  8 hours, 45 minutes late.
+* GSC  *  *     2  153P  *     1028P Departed:  8 hours, 35 minutes late.
+* GJT  2  357P  2  410P  1211A 1224A Arrived:  8 hours, 14 minutes late. | Departed:  8 hours, 14 minutes late.
+* GRI  *  *     2  558P  *     212A  Departed:  8 hours, 14 minutes late.
+* HER  *  *     2  720P  *     332A  Departed:  8 hours, 12 minutes late.
+* PRO  *  *     2  926P  *     538A  Departed:  8 hours, 12 minutes late.
+* SLC  2  1105P 2  1130P 628A  658A  Arrived:  7 hours, 23 minutes late. | Departed:  7 hours, 28 minutes late.
+* ELK  3  301A  3  303A  1010A 1013A Arrived:  7 hours, 9 minutes late.  | Departed:  7 hours, 10 minutes late.
+* WNN  *  *     3  540A  *     1244P Departed:  7 hours, 4 minutes late.
+* RNO  3  825A  3  836A  417P  429P  Arrived:  7 hours, 52 minutes late. | Departed:  7 hours, 53 minutes late.
+* TRU  *  *     3  937A  *     526P  Departed:  7 hours, 49 minutes late.
+* COX  *  *     3  1148A *     745P  Departed:  7 hours, 57 minutes late.
+* RSV  3  1255P 3  1257P 854P  859P  Arrived:  7 hours, 59 minutes late. | Departed:  8 hours, 2 minutes late.
+* SAC  3  213P  3  225P  924P  938P  Arrived:  7 hours, 11 minutes late. | Departed:  7 hours, 13 minutes late.
+  DAV  3  244P  3  246P              PT
+* MTZ  3  326P  3  332P  1044P 1048P Arrived:  7 hours, 18 minutes late. | Departed:  7 hours, 16 minutes late.
+* RIC  *  *     3  359P  *     1118P Departed:  7 hours, 19 minutes late.
+  EMY  3  410P  *  *                 PT

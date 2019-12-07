@@ -1,0 +1,31 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BOS  *  *     1  640P  *     640P  Departed:  On time.
+* BBY  *  *     1  645P  *     650P  Departed:  5 minutes late.
+* RTE  *  *     1  655P  *     700P  Departed:  5 minutes late.
+* PVD  1  718P  1  720P  724P  727P  Arrived:  6 minutes late.            |  Departed:  7 minutes late.
+* KIN  *  *     1  741P  *     749P  Departed:  8 minutes late.
+* MYS  *  *     1  802P  *     811P  Departed:  9 minutes late.
+* NLC  *  *     1  816P  *     825P  Departed:  9 minutes late.
+* OSB  *  *     1  835P  *     845P  Departed:  10 minutes late.
+* NHV  1  907P  1  909P  913P  916P  Arrived:  6 minutes late.            |  Departed:  7 minutes late.
+* BRP  *  *     1  931P  *     937P  Departed:  6 minutes late.
+* STM  *  *     1  958P  *     1006P Departed:  8 minutes late.
+* NRO  *  *     1  1019P *     1027P Departed:  8 minutes late.
+* NYP  1  1050P 1  1105P 1055P 1105P Arrived:  5 minutes late.            |  Departed:  On time.
+* NWK  1  1122P 1  1122P 1124P 1126P Arrived:  2 minutes late.            |  Departed:  4 minutes late.
+* MET  *  *     1  1138P *     1140P Departed:  2 minutes late.
+  TRE  1  1158P 1  1158P             
+* PHL  2  1228A 2  1230A 1230A 1238A Arrived:  2 minutes late.            |  Departed:  8 minutes late.
+* WIL  2  1151P 2  1151P 1258A 101A  Arrived:  7 minutes late.            |  Departed:  10 minutes late.
+* BAL  2  138A  2  140A  148A  147A  Arrived:  10 minutes late.           |  Departed:  7 minutes late.
+* BWI  *  *     2  153A  *     203A  Departed:  10 minutes late.
+* WAS  2  230A  *  *     225A  *     Arrived:  5 minutes early.

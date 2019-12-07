@@ -1,0 +1,19 @@
+* Holiday Extra
+* +---------------- Station code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  230P  *     230P  Departed:  On time.
+* NCR  *  *     1  244P  *     245P  Departed:  1 minute late.
+  BWI  *  *     1  304P
+* BAL  *  *     1  321P  *     321P  Departed:  5 minutes late.
+* WIL  *  *     1  411P  *     412P  Departed:  6 minutes late.
+* PHL  1  433P  1  439P  433P  439P  Arrived:  5 minutes late.            |  Departed:  On time.
+  TRE  *  *     1  512P
+  NWK  *  *     1  545P
+* NYP  1  605P  *  *     601P  *     Arrived:  4 minutes early.

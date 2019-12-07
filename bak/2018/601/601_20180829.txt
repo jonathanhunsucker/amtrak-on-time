@@ -1,0 +1,22 @@
+* Keystone Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  PHL  *  *     1  520A              ET MoTuWeThFr
+  ARD  *  *     1  532A
+  PAO  *  *     1  546A
+  EXT  *  *     1  553A
+  DOW  *  *     1  558A
+  COT  *  *     1  604A
+  PAR  *  *     1  610A
+  LNC  *  *     1  630A
+  MJY  *  *     1  640A
+  ELT  *  *     1  647A
+  MID  *  *     1  655A
+* HAR  1  710A  *  *     704A  *     Arrived:  6 minutes early.

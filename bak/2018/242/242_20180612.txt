@@ -1,0 +1,17 @@
+* Empire Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* ALB  *  *     1  240P  *     240P  Departed:  On time.
+* HUD  *  *     1  305P  *     305P  Departed:  On time.
+* RHI  *  *     1  327P  *     327P  Departed:  On time.
+* POU  *  *     1  340P  *     351P  Departed:  11 minutes late.
+* CRT  *  *     1  419P  *     433P  Departed:  14 minutes late.
+* YNY  *  *     1  441P  *     503P  Departed:  22 minutes late.
+  NYG  1  519P  *  *

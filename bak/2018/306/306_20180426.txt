@@ -1,0 +1,21 @@
+* Lincoln Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* STL  *  *     1  530P  *     530P  Departed:  On time.
+* ALN  *  *     1  617P  *     617P  Departed:  On time.
+* CRV  *  *     1  645P  *     646P  Departed:  1 minute late.
+* SPI  *  *     1  732P  *     838P  Departed:  1 hour, 6 minutes late.
+* LCN  *  *     1  800P  *     909P  Departed:  1 hour, 9 minutes late.
+* BNL  *  *     1  836P  *     940P  Departed:  1 hour, 4 minutes late.
+* PON  *  *     1  904P  *     1007P Departed:  1 hour, 3 minutes late.
+* DWT  *  *     1  922P  *     1024P Departed:  1 hour, 2 minutes late.
+* JOL  *  *     1  1002P *     1058P Departed:  56 minutes late.
+* SMT  *  *     1  1027P *     1122P Departed:  55 minutes late.
+* CHI  1  1110P *  *     1146P *     Arrived:  36 minutes late.

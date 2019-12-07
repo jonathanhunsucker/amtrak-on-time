@@ -1,0 +1,36 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  1100A *     1100A Departed:  On time.
+* ALX  *  *     1  1119A *     1119A Departed:  On time.
+  MSS  *  *     1  1152A
+  CLP  *  *     1  1225P
+* CVS  1  143P  1  152P  145P  208P  Arrived:  2 minutes late.            |  Departed:  16 minutes late.
+  STA  *  *     1  254P
+  CLF  *  *     1  413P
+  WSS  *  *     1  505P
+  ALD  *  *     1  536P
+  HIN  *  *     1  606P
+  PRC  *  *     1  643P
+  THN  *  *     1  659P
+  MNG  *  *     1  750P
+  CHW  *  *     1  829P
+  HUN  1  944P  1  951P
+  AKY  *  *     1  1014P
+  SPM  *  *     1  1057P
+  MAY  *  *     1  1152P
+  CIN  2  131A  2  141A
+  COI  *  *     2  336A
+  IND  2  515A  2  600A
+  CRF  *  *     2  658A
+  LAF  *  *     2  736A
+  REN  *  *     2  740A              CT
+  DYE  *  *     2  829A              CT
+  CHI  2  1000A *  *                 CT

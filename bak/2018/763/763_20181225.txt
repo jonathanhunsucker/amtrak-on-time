@@ -1,0 +1,35 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAN  *  *     1  555A  *     555A  Departed:  On time.
+* OLT  *  *     1  602A  *     602A  Departed:  On time.
+* SOL  *  *     1  633A  *     633A  Departed:  On time.
+* OSD  *  *     1  657A  *     657A  Departed:  On time.
+* SNC  *  *     1  730A  *     730A  Departed:  On time.
+* IRV  *  *     1  748A  *     749A  Departed:  1 minute late.
+* SNA  *  *     1  759A  *     759A  Departed:  On time.
+* ANA  *  *     1  808A  *     808A  Departed:  On time.
+* FUL  *  *     1  816A  *     816A  Departed:  On time.
+* LAX  1  851A  1  911A  845A  1004A Arrived:  6 minutes early.           |  Departed:  53 minutes late.
+  GDL  *  *     1  923A              PT
+  BUR  *  *     1  933A              PT
+  VNC  *  *     1  943A              PT
+  CWT  1  954A  1  955A              PT
+  SIM  *  *     1  1007A             PT
+  CML  *  *     1  1031A             PT
+  OXN  1  1042A 1  1044A             PT
+  VEC  *  *     1  1100A             PT
+  CPN  *  *     1  1122A             PT
+  SBA  1  1141A 1  1144A             PT
+  GTA  *  *     1  1156A             PT
+  LPS  *  *     1  108P              PT
+  GUA  *  *     1  144P              PT
+* GVB  *  *     1  201P  *     254P  Departed:  53 minutes late.
+* SLO  1  230P  *  *     317P  *     Arrived:  47 minutes late.

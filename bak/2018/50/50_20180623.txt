@@ -1,0 +1,36 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  545P  *     545P  Departed:  On time.
+* DYE  *  *     1  644P  *     701P  Departed:  17 minutes late.
+* REN  *  *     1  735P  *     750P  Departed:  15 minutes late.
+* LAF  *  *     1  946P  *     952P  Departed:  6 minutes late.
+* CRF  *  *     1  1020P *     1025P Departed:  5 minutes late.
+* IND  1  1139P 1  1159P 1123P 1159P Arrived:  16 minutes early.          |  Departed:  On time.
+* COI  *  *     2  121A  *     121A  Departed:  On time.
+* CIN  2  317A  2  327A  309A  327A  Arrived:  8 minutes early.          | Departed:  On time.
+* MAY  *  *     2  452A  *     453A  Departed:  1 minute late.
+  SPM  2  544A  2  544A  544A        Arrived:  1 minute early
+* AKY  *  *     2  635A  *     635A  Departed:  On time.
+* HUN  2  709A  2  716A  656A  716A  Arrived:  13 minutes early.          |  Departed:  On time.
+* CHW  *  *     2  821A  *     822A  Departed:  1 minute late.
+* MNG  *  *     2  850A  *     852A  Departed:  2 minutes late.
+* THN  *  *     2  941A  *     951A  Departed:  10 minutes late.
+* PRC  *  *     2  1002A *     1010A Departed:  8 minutes late.
+* HIN  *  *     2  1034A *     1039A Departed:  5 minutes late.
+* ALD  *  *     2  1102A *     1108A Departed:  6 minutes late.
+* WSS  *  *     2  1139A *     1206P Departed:  27 minutes late.
+* CLF  *  *     2  1244P *     123P  Departed:  39 minutes late.
+* STA  *  *     2  203P  *     239P  Departed:  36 minutes late.
+* CVS  2  310P  2  319P  348P  359P  Arrived:  38 minutes late.           |  Departed:  40 minutes late.
+* CLP  *  *     2  435P  *     529P  Departed:  54 minutes late.
+* MSS  *  *     2  510P  *     608P  Departed:  58 minutes late.
+* ALX  *  *     2  559P  *     642P  Departed:  43 minutes late.
+* WAS  2  619P  *  *     659P  *     Arrived:  40 minutes late.

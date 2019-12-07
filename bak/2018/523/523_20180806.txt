@@ -1,0 +1,25 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAC  *  *     1  530A  *     530A  Departed:  On time.
+* DAV  *  *     1  545A  *     546A  Departed:  1 minute late.
+* FFV  *  *     1  605A  *     605A  Departed:  On time.
+* SUI  *  *     1  612A  *     612A  Departed:  On time.
+* MTZ  1  630A  1  631A  630A  631A  Arrived:  On time.                   |  Departed:  On time.
+* RIC  *  *     1  657A  *     657A  Departed:  On time.
+* BKY  *  *     1  705A  *     705A  Departed:  On time.
+* EMY  1  709A  1  710A  708A  710A  Arrived:  1 minute early.            |  Departed:  On time.
+* OKJ  1  718A  1  719A  718A  720A  Arrived:  On time.                   |  Departed:  1 minute late.
+* OAC  *  *     1  728A  *     730A  Departed:  2 minutes late.
+* HAY  *  *     1  739A  *     744A  Departed:  5 minutes late.
+* FMT  *  *     1  755A  *     800A  Departed:  5 minutes late.
+* GAC  *  *     1  812A  *     818A  Departed:  6 minutes late.
+* SCC  *  *     1  820A  *     826A  Departed:  6 minutes late.
+* SJC  1  838A  *  *     839A  *     Arrived:  1 minute late.

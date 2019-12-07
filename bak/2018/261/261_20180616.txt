@@ -1,0 +1,16 @@
+* Empire Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYG  *  *     1  1134P *     1134P Departed:  On time.
+* CRT  *  *     2  1220A *     103A  Departed:  43 minutes late.
+* POU  *  *     2  1158P *     144A  Departed:  44 minutes late.
+* RHI  *  *     2  115A  *     159A  Departed:  44 minutes late.
+* HUD  *  *     2  135A  *     221A  Departed:  46 minutes late.
+* ALB  2  200A  *  *     242A  *     Arrived:  42 minutes late.

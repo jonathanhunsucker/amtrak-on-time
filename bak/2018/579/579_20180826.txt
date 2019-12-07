@@ -1,0 +1,20 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAN  *  *     1  130P  *     130P  Departed:  On time.
+* OLT  *  *     1  137P  *     138P  Departed:  1 minute late.
+* SOL  *  *     1  211P  *     211P  Departed:  On time.
+* OSD  *  *     1  229P  *     237P  Departed:  8 minutes late.
+* SNC  *  *     1  301P  *     316P  Departed:  15 minutes late.
+* IRV  *  *     1  316P  *     332P  Departed:  16 minutes late.
+* SNA  *  *     1  327P  *     343P  Departed:  16 minutes late.
+* ANA  *  *     1  336P  *     354P  Departed:  18 minutes late.
+* FUL  *  *     1  345P  *     405P  Departed:  20 minutes late.
+* LAX  1  429P  *  *     436P  *     Arrived:  7 minutes late.

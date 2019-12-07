@@ -1,0 +1,17 @@
+* Wolverine Extra
+* +---------------- Station code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* ARB  *  *     1  428P  *     429P  Departed:  1 minute late.
+* JXN  *  *     1  504P  *     506P  Departed:  2 minutes late.
+* BTL  *  *     1  600P  *     605P  Departed:  5 minutes late.
+* KAL  *  *     1  625P  *     633P  Departed:  8 minutes late.
+* NLS  *  *     1  704P  *     708P  Departed:  4 minutes late.
+* NBU  *  *     1  724P  *     728P  Departed:  4 minutes late.
+* CHI  1  804P  *  *     743P  *     Arrived:  21 minutes early.

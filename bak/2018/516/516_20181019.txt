@@ -1,0 +1,17 @@
+* Amtrak Cascades
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SEA  *  *     1  745A  *     745A  Departed:  On time.
+* EDM  *  *     1  811A  *     814A  Departed:  3 minutes late.
+* EVR  *  *     1  836A  *     909A  Departed:  33 minutes late.
+* STW  *  *     1  906A  *     943A  Departed:  37 minutes late.
+* MVW  *  *     1  922A  *     1023A Departed:  1 hour, 1 minute late.
+* BEL  *  *     1  952A  *     1055A Departed:  1 hour, 3 minutes late.
+  VAC  1  1145A *  *                 PT

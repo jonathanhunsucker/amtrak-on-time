@@ -1,0 +1,32 @@
+* Sunset Limited
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  NOL  *  *     1  900A              CT MoWeSa
+  SCH  *  *     1  1030A             CT
+  NIB  *  *     1  1156A             CT
+  LFT  1  1224P 1  1224P             CT
+  LCH  *  *     1  155P              CT
+  BMT  1  334P  1  348P              CT
+  HOS  1  618P  1  655P              CT
+* SAS  2  1205A 2  245A  1217A 1110A Arrived:  12 minutes late.           |  Departed:  8 hours, 25 minutes late.
+* DRT  *  *     2  549A  *     307P  Departed:  9 hours, 18 minutes late.
+* SND  *  *     2  824A  *     539P  Departed:  9 hours, 15 minutes late.
+* ALP  2  1028A 2  1038A 732P  746P  Arrived:  9 hours, 4 minutes late.   |  Departed:  9 hours, 8 minutes late.
+* ELP  2  122P  2  147P  1031P 1051P Arrived:  9 hours, 9 minutes late.   |  Departed:  9 hours, 4 minutes late.
+  DEM  *  *     2  318P              MT
+* LDB  *  *     2  413P  *     119A  Departed:  9 hours, 6 minutes late.
+* BEN  *  *     2  518P  *     214A  Departed:  8 hours, 56 minutes late.
+* TUS  2  645P  2  735P  323A  405A  Arrived:  8 hours, 38 minutes late.  |  Departed:  8 hours, 30 minutes late.
+* MRC  2  852P  2  902P  523A  547A  Arrived:  8 hours, 31 minutes late.  |  Departed:  8 hours, 45 minutes late.
+* YUM  *  *     2  1149P *     901A  Departed:  9 hours, 12 minutes late.
+* PSN  *  *     3  202A  *     1113A Departed:  9 hours, 11 minutes late.
+* ONA  *  *     3  354A  *     102P  Departed:  9 hours, 8 minutes late.
+* POS  *  *     3  404A  *     113P  Departed:  9 hours, 9 minutes late.
+* LAX  3  535A  *  *     157P  *     Arrived:  8 hours, 22 minutes late.

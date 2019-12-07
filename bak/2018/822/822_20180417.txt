@@ -1,0 +1,17 @@
+* Heartland Flyer
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* FTW  *  *     1  525P  *     525P  Departed:  On time.
+* GLE  *  *     1  630P  *     700P  Departed:  30 minutes late.
+* ADM  *  *     1  711P  *     811P  Departed:  1 hour late.
+* PVL  *  *     1  801P  *     900P  Departed:  59 minutes late.
+* PUR  *  *     1  826P  *     926P  Departed:  1 hour late.
+* NOR  *  *     1  847P  *     945P  Departed:  58 minutes late.
+* OKC  1  927P  *  *     1009P *     Arrived:  42 minutes late.
