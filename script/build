@@ -4,11 +4,18 @@ import argparse
 import subprocess
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--train', required=True)
+parser.add_argument('--train')
 args = parser.parse_args()
 
-completed_process = subprocess.run(['php', 'src/toJson.php', 'info/2018/%s' % args.train], capture_output=True)
+def load(train):
+  completed_process = subprocess.run(['php', 'src/toJson.php', 'info/2018/%s' % train], capture_output=True)
 
-f = open('data/train/%s.json' % args.train, 'w')
-f.write(completed_process.stdout.decode('UTF-8'))
+  f = open('data/train/%s.json' % train, 'w')
+  f.write(completed_process.stdout.decode('UTF-8'))
+
+if (args.train):
+  load(args.train)
+else:
+  trains = [2100, 761]
+  list(map(lambda train: load(train), trains))
 

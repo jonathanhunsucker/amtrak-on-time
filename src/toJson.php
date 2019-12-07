@@ -39,6 +39,23 @@ function median($list)
     return $median;
 }
 
+function percentile($list, $percentile)
+{
+    asort($list);
+    $list = array_values($list);
+
+    $index = count($list) * $percentile;
+    if ($index === round($index)) {
+        $p = $list[$index];
+    } else {
+        // interpolate
+        $p = $list[floor($index)];
+        // TODO linear interpolation
+    }
+
+    return $p;
+}
+
 function average($list)
 {
     return array_sum($list) / count($list);
@@ -249,6 +266,7 @@ class RecordSet
 
         if ($delays) {
             $stats['median'] = median($delays);
+            $stats['p90'] = percentile($delays, .90);
         }
 
         return $stats;
