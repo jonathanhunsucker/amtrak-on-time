@@ -39,7 +39,7 @@
       </tr>
       <tr>
           <td>Itinerary</td>
-          <td>Departs from {{ partial "stop/link" $data.origin.stop }} at {{ $data.origin.time }}, bound for {{ partial "stop/link" $data.destination.stop }} at {{ $data.destination.time }}</td>
+          <td>{{ partial "train/itinerary" .Params.number }}</td>
       </tr>
       <tr>
           <td>Data</td>
