@@ -1,0 +1,9 @@
+{{ define "content" }}
+  <p><a href="../">← all routes</a></p>
+  <h2>{{ .Params.route }}</h2>
+  <ul>
+  {{ range .Params.trains }}
+    <li>{{ partial "train" . }}</li>
+  {{ end }}
+  <ul>
+{{ end }}

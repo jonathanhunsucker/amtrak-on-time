@@ -1,0 +1,9 @@
+{{ define "content" }}
+  <p><a href="../">← home</a></p>
+  <h2>Routes</h2>
+  <ul>
+    {{ range .Pages }}
+      <li>{{ partial "route" .Params.route }}</li>
+    {{ end }}
+  </ul>
+{{ end}}

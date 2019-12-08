@@ -43,7 +43,7 @@
       </tr>
       <tr>
           <td>Data</td>
-          <td>{{ $data.stats.valid_records }} valid records found ({{ $data.stats.missing_data }} records excluded due to missing data)</td>
+          <td>{{ $data.stats.valid_records }} valid records found</td>
       </tr>
       <tr>
           <td>Delay</td>
@@ -68,7 +68,7 @@
           fill: false,
           showLabel: false,
           label: 'Arrival delay',
-          data: Object.values(raw.records).map((record) => record.cancelled || record.missing_data ? null : record.delay),
+          data: Object.values(raw.records).map((record) => record.cancelled || record.delay === null ? null : record.delay),
           backgroundColor: Defaults.blue,
           borderColor: Defaults.blue,
           showLine: false,
@@ -117,7 +117,7 @@
       container.appendChild(canvasElement);
 
       // array of dates
-      var candidates = Object.values(raw.records).filter((record) => !(record.cancelled || record.missing_data));
+      var candidates = Object.values(raw.records).filter((record) => !(record.cancelled || record.actual_arrival === null));
       var arrivalTimes = candidates.map((entry) => {
         return entry.actual_arrival;
       }).filter((item, index, list) => index === list.indexOf(item));
@@ -187,21 +187,18 @@
       }
 
       const datasets = [dataset(Object.values(raw.records)[0].lines.map((line, index) => {
-        let time = line.scheduled_departure;
-        if (time === '*' || !time) {
-          time = line.scheduled_arrival;
-        }
+        const time = line.scheduled_departure || line.scheduled_arrival;
         return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
       }), Defaults.red, 0)].concat(Object.entries(raw.records).map(([key, record]) => {
         const data = record.lines.map((line, index) => {
-          if (line.missing_data) {
-            return null;
-          }
-
           var time = line.actual_departure || line.actual_arrival;
           
           if (index === record.lines.length - 1) {
             time = line.actual_arrival;
+          }
+
+          if (!time) {
+              return null;
           }
 
           return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};

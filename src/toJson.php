@@ -4,8 +4,8 @@ $source_directory = $argv[1];
 
 function toMinutes($hours_minutes)
 {
-    $hour = intval(substr($hours_minutes, 0, 1), 10);
-    $minutes = intval(substr($hours_minutes, 1, 3), 10);
+    $hour = intval(substr($hours_minutes, 0, -3), 10);
+    $minutes = intval(substr($hours_minutes, strlen($hours_minutes) - 3, strlen($hours_minutes) - 1), 10);
 
     $arrival_time = $hour * 60 + $minutes;
     return $arrival_time;
@@ -91,51 +91,61 @@ class Line
 
     public function stop()
     {
-        return trim(substr($this->raw, 2, 3));
+        return $this->read(2, 3);
     }
 
     public function scheduledDeparture()
     {
-        return trim(substr($this->raw, 19, 5));
+        return $this->read(19, 5);
     }
 
     public function scheduledArrival()
     {
-        return trim(substr($this->raw, 10, 5));
+        return $this->read(10, 5);
     }
 
     public function actualDeparture()
     {
-        return trim(substr($this->raw, 31, 5));
+        return $this->read(31, 5);
     }
 
     public function actualArrival()
     {
-        return trim(substr($this->raw, 25, 5));
+        return $this->read(25, 5);
     }
 
     public function comments()
     {
-        return trim(substr($this->raw, 37));
+        return $this->read(37, 0);
+    }
+
+    public function read($start, $length)
+    {
+        $value = trim(substr($this->raw, $start, $length));
+        if ($value === '' || $value === '*') {
+            return null;
+        }
+        return $value;
     }
 
     public function missingData()
     {
-        return $this->actualArrival() === '';
+        return $this->actualArrival() === null || $this->actualDeparture() === null;
     }
 
     public function getData()
     {
         $data = [
             'stop' => $this->stop(),
+            'raw' => $this->raw,
         ];
 
-        if (!($data['missing_data'] = $this->missingData())) {
-            $data['scheduled_arrival'] = $this->scheduledArrival();
-            $data['actual_arrival'] = $this->actualArrival();
-            $data['scheduled_departure'] = $this->scheduledDeparture();
-            $data['actual_departure'] = $this->actualDeparture();
-        }
+        $data['missing_data'] = $this->missingData();
+
+        $data['scheduled_arrival'] = $this->scheduledArrival();
+        $data['actual_arrival'] = $this->actualArrival();
+        $data['scheduled_departure'] = $this->scheduledDeparture();
+        $data['actual_departure'] = $this->actualDeparture();
 
         return $data;
     }
@@ -187,11 +197,24 @@ class Record
 
     public function delay()
     {
+        $origin_scheduled_departure = $this->lines()[0]->scheduledDeparture();
+
+        $origin_departure = toMinutes($origin_scheduled_departure);
         // time in minutes
-        $scheduled = toMinutes($this->lastLine()->scheduledArrival());
-        $actual = toMinutes($this->actualArrival());
+        $destination_scheduled_arrival = $this->lastLine()->scheduledArrival();
+        $destination_actual_arrival = $this->lastLine()->actualArrival();
+        $scheduled = toMinutes($destination_scheduled_arrival);
+        $actual = toMinutes($destination_actual_arrival);
+
+        if ($actual < $origin_departure) {
+            $actual += 60 * 12;
+        }
 
         $delay = $actual - $scheduled;
+
+        if ($origin_scheduled_departure === null || $destination_scheduled_arrival === null || $destination_actual_arrival === null) {
+            return null;
+        }
 
         return $delay;
     }
@@ -248,9 +271,7 @@ class RecordSet
 
     public function stats()
     {
-        $valid_records = array_filter($this->records, function ($record) {
-            return !($record->wasCancelled() || $record->missingData());
-        });
+        $valid_records = $this->records;
 
         $delays = array_values(array_map(function ($record) {
             return $record->delay();
@@ -260,10 +281,6 @@ class RecordSet
 
         $stats['cancellations'] = count(array_filter($this->records, function ($record) {
             return $record->wasCancelled();
-        }));
-
-        $stats['missing_data'] = count(array_filter($this->records, function ($record) {
-            return $record->missingData();
         }));
 
         $stats['valid_records'] = count($valid_records);

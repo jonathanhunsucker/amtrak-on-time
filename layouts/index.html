@@ -1,5 +1,7 @@
 {{ define "content" }}
+  <ul>
   {{ range .Pages }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
+  </ul>
 {{ end}}
