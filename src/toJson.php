@@ -5,7 +5,15 @@ $source_directory = $argv[1];
 function toMinutes($hours_minutes)
 {
     $hour = intval(substr($hours_minutes, 0, -3), 10);
+    $hour %= 12;
+    $hour -= 1;
+
     $minutes = intval(substr($hours_minutes, strlen($hours_minutes) - 3, strlen($hours_minutes) - 1), 10);
+
+    $meridiem = strtolower($hours_minutes[strlen($hours_minutes) - 1]);
+    if ($meridiem === 'p') {
+        $hour += 12;
+    }
 
     $arrival_time = $hour * 60 + $minutes;
     return $arrival_time;
@@ -130,12 +138,23 @@ class Line
     {
         $day = $this->scheduledDepartureDay();
 
-        if ($day !== null && toMinutes($this->actualDeparture()) - toMinutes($this->scheduledDepartureTime()) > 18 * 60) {
+        if ($day !== null && $this->rolledOverDay($this->scheduledDepartureTime(), $this->actualDeparture())) {
             // day rolled over
             $day += 1;
         }
 
         return $day;
+    }
+
+    private function rolledOverDay($scheduled, $actual)
+    {
+        if ($scheduled === null || $actual === null) {
+            return false;
+        }
+
+        $rolled_over_day = toMinutes($scheduled) >= toMinutes('700P') && toMinutes($actual) <= toMinutes('700A');
+
+        return $rolled_over_day;
     }
 
     public function actualDeparture()
@@ -147,7 +166,7 @@ class Line
     {
         $day = $this->scheduledArrivalDay();
 
-        if ($day !== null && toMinutes($this->actualArrival()) - toMinutes($this->scheduledArrivalTime()) > 18 * 60) {
+        if ($day !== null && $this->rolledOverday($this->scheduledArrivalTime(), $this->actualArrival())) {
             // day rolled over
             $day += 1;
         }
@@ -191,6 +210,7 @@ class Line
         $data['scheduled_arrival'] = $this->scheduledArrivalTime();
         $data['scheduled_arrival_day'] = $this->scheduledArrivalDay();
         $data['actual_arrival'] = $this->actualArrival();
+        $data['scheduled_departure_minutes'] = toMinutes($this->actualArrival());
         $data['actual_arrival_day'] = $this->actualArrivalDay();
         $data['scheduled_departure'] = $this->scheduledDepartureTime();
         $data['scheduled_departure_day'] = $this->scheduledDepartureDay();
@@ -210,7 +230,7 @@ class Record
     public function __construct($record)
     {
         $this->raw = $record;
-        $this->lines = explode("\n", trim($this->raw));
+        $this->lines = explode("\r\n", trim($this->raw));
     }
 
     public function origin()
@@ -278,6 +298,11 @@ class Record
     public function wasCancelled()
     {
         return $this->lastLine()->comments() === "Station Stop Canceled";
+    }
+
+    public function experienceServiveDisruption()
+    {
+        return $this->lines[0] === '* THIS TRAIN EXPERIENCED A SERVICE DISRUPTION.';
     }
 
     public function missingData()
