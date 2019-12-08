@@ -35,11 +35,11 @@
     <tbody>
       <tr>
           <td>Route</td>
-          <td>{{ partial "route" $data.route }}</td>
+          <td>{{ partial "route/link" $data.route }}</td>
       </tr>
       <tr>
           <td>Itinerary</td>
-          <td>Departs from {{ partial "stop" $data.origin.stop }} at {{ $data.origin.time }}, bound for {{ partial "stop" $data.destination.stop }} at {{ $data.destination.time }}</td>
+          <td>Departs from {{ partial "stop/link" $data.origin.stop }} at {{ $data.origin.time }}, bound for {{ partial "stop/link" $data.destination.stop }} at {{ $data.destination.time }}</td>
       </tr>
       <tr>
           <td>Data</td>

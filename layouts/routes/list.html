@@ -3,7 +3,7 @@
   <h2>Routes</h2>
   <ul>
     {{ range .Pages }}
-      <li>{{ partial "route" .Params.route }}</li>
+      <li>{{ partial "route/link" .Params.route }}</li>
     {{ end }}
   </ul>
 {{ end}}
