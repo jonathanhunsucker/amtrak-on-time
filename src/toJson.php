@@ -94,19 +94,65 @@ class Line
         return $this->read(2, 3);
     }
 
-    public function scheduledDeparture()
+    public function scheduledDepartureDay()
+    {
+        $day = $this->read(16, 3);
+
+        if ($day !== null) {
+            $day = intval($day, 10);
+        }
+
+        return $day;
+    }
+
+    public function scheduledDepartureTime()
     {
         return $this->read(19, 5);
     }
 
-    public function scheduledArrival()
+    public function scheduledArrivalDay()
+    {
+        $day = $this->read(7, 3);
+
+        if ($day !== null) {
+            $day = intval($day, 10);
+        }
+
+        return $day;
+    }
+
+    public function scheduledArrivalTime()
     {
         return $this->read(10, 5);
+    }
+
+    public function actualDepartureDay()
+    {
+        $day = $this->scheduledDepartureDay();
+
+        if ($day !== null && toMinutes($this->actualDeparture()) - toMinutes($this->scheduledDepartureTime()) > 18 * 60) {
+            // day rolled over
+            $day += 1;
+        }
+
+        return $day;
     }
 
     public function actualDeparture()
     {
         return $this->read(31, 5);
+    }
+
+    public function actualArrivalDay()
+    {
+        $day = $this->scheduledArrivalDay();
+
+        if ($day !== null && toMinutes($this->actualArrival()) - toMinutes($this->scheduledArrivalTime()) > 18 * 60) {
+            // day rolled over
+            $day += 1;
+        }
+
+        return $day;
     }
 
     public function actualArrival()
@@ -142,10 +188,14 @@ class Line
 
         $data['missing_data'] = $this->missingData();
 
-        $data['scheduled_arrival'] = $this->scheduledArrival();
+        $data['scheduled_arrival'] = $this->scheduledArrivalTime();
+        $data['scheduled_arrival_day'] = $this->scheduledArrivalDay();
         $data['actual_arrival'] = $this->actualArrival();
-        $data['scheduled_departure'] = $this->scheduledDeparture();
+        $data['actual_arrival_day'] = $this->actualArrivalDay();
+        $data['scheduled_departure'] = $this->scheduledDepartureTime();
+        $data['scheduled_departure_day'] = $this->scheduledDepartureDay();
         $data['actual_departure'] = $this->actualDeparture();
+        $data['actual_departure_day'] = $this->actualDepartureDay();
 
         return $data;
     }
@@ -168,7 +218,7 @@ class Record
         $line = $this->lines()[0];
         return [
             'stop' => $line->stop(),
-            'time' => $line->scheduledDeparture(),
+            'time' => $line->scheduledDepartureTime(),
         ];
     }
 
@@ -186,7 +236,7 @@ class Record
         $line = $this->lastLine();
         return [
             'stop' => $line->stop(),
-            'time' => $line->scheduledArrival(),
+            'time' => $line->scheduledArrivalTime(),
         ];
     }
 
@@ -197,24 +247,20 @@ class Record
 
     public function delay()
     {
-        $origin_scheduled_departure = $this->lines()[0]->scheduledDeparture();
+        $line = $this->lastLine();
 
-        $origin_departure = toMinutes($origin_scheduled_departure);
-        // time in minutes
-        $destination_scheduled_arrival = $this->lastLine()->scheduledArrival();
-        $destination_actual_arrival = $this->lastLine()->actualArrival();
-        $scheduled = toMinutes($destination_scheduled_arrival);
-        $actual = toMinutes($destination_actual_arrival);
+        $destination_scheduled_arrival = $line->scheduledArrivalTime();
+        $destination_actual_arrival = $line->actualArrival();
 
-        if ($actual < $origin_departure) {
-            $actual += 60 * 12;
-        }
-
-        $delay = $actual - $scheduled;
-
-        if ($origin_scheduled_departure === null || $destination_scheduled_arrival === null || $destination_actual_arrival === null) {
+        if ($destination_scheduled_arrival === null || $destination_actual_arrival === null) {
             return null;
         }
+
+        // time in minutes
+        $scheduled = toMinutes($destination_scheduled_arrival) + 24 * 60 * $line->scheduledArrivalDay();
+        $actual = toMinutes($destination_actual_arrival) + 24 * 60 * $line->actualArrivalDay();
+
+        $delay = $actual - $scheduled;
 
         return $delay;
     }
