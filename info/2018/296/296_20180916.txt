@@ -1,0 +1,22 @@
+* Ethan Allen Express
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* RUD  *  *     1  505P  *     505P  Departed:  On time.
+* CNV  *  *     1  524P  *     524P  Departed:  On time.
+* FED  *  *     1  625P  *     626P  Departed:  1 minute late.
+* SAR  *  *     1  647P  *     648P  Departed:  1 minute late.
+* SDY  *  *     1  723P  *     730P  Departed:  7 minutes late.
+* ALB  1  745P  1  815P  751P  815P  Arrived:  6 minutes late.            |  Departed:  On time.
+* HUD  *  *     1  837P  *     840P  Departed:  3 minutes late.
+* RHI  *  *     1  859P  *     902P  Departed:  3 minutes late.
+* POU  *  *     1  915P  *     916P  Departed:  1 minute late.
+* CRT  *  *     1  955P  *     1002P Departed:  7 minutes late.
+* YNY  *  *     1  1016P *     1020P Departed:  4 minutes late.
+* NYP  1  1050P *  *     1043P *     Arrived:  7 minutes early.

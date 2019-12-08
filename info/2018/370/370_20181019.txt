@@ -1,0 +1,15 @@
+* Pere Marquette
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  630P  *     630P  Departed:  On time.
+* SJM  *  *     1  914P  *     956P  Departed:  42 minutes late.
+* BAM  *  *     1  950P  *     1035P Departed:  45 minutes late.
+* HOM  *  *     1  1033P *     1120P Departed:  47 minutes late.
+* GRR  1  1134P *  *     1210A *     Arrived:  36 minutes late.

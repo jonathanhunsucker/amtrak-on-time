@@ -1,0 +1,36 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  1100A *     1100A Departed:  On time.
+* ALX  *  *     1  1119A *     1119A Departed:  On time.
+  MSS  *  *     1  1152A
+  CLP  *  *     1  1225P
+* CVS  1  143P  1  152P  147P  157P  Arrived:  4 minutes late.            |  Departed:  5 minutes late.
+  STA  *  *     1  254P
+  CLF  *  *     1  413P
+* WSS  *  *     1  505P  *     510P  Departed:  5 minutes late.
+* ALD  *  *     1  536P  *     543P  Departed:  7 minutes late.
+* HIN  *  *     1  606P  *     615P  Departed:  9 minutes late.
+* PRC  *  *     1  643P  *     645P  Departed:  2 minutes late.
+* THN  *  *     1  659P  *     701P  Departed:  2 minutes late.
+* MNG  *  *     1  750P  *     812P  Departed:  22 minutes late.
+* CHW  *  *     1  829P  *     855P  Departed:  26 minutes late.
+* HUN  1  944P  1  951P  951P  958P  Arrived:  7 minutes late.            |  Departed:  7 minutes late.
+* AKY  *  *     1  1014P *     1021P Departed:  7 minutes late.
+* SPM  *  *     1  1057P *     1106P Departed:  9 minutes late.
+* MAY  *  *     1  1152P *     1200A Departed:  8 minutes late.
+* CIN  2  131A  2  141A  127A  141A  Arrived:  4 minutes early.           |  Departed:  On time.
+* COI  *  *     2  336A  *     345A  Departed:  9 minutes late.
+* IND  2  515A  2  600A  500A  600A  Arrived:  15 minutes early.          |  Departed:  On time.
+* CRF  *  *     2  658A  *     705A  Departed:  7 minutes late.
+* LAF  *  *     2  736A  *     740A  Departed:  4 minutes late.
+* REN  *  *     2  740A  *     740A  Departed:  On time.
+* DYE  *  *     2  829A  *     835A  Departed:  6 minutes late.
+* CHI  2  1000A *  *     1031A *     Arrived:  31 minutes late.

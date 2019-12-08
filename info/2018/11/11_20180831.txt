@@ -1,0 +1,40 @@
+* Coast Starlight
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SEA  *  *     1  945A  *     945A  Departed:  On time.
+* TAC  *  *     1  1037A *     1037A Departed:  On time.
+* OLW  *  *     1  1127A *     1127A Departed:  On time.
+* CTL  *  *     1  1151A *     1151A Departed:  On time.
+* KEL  *  *     1  1235P *     1236P Departed:  1 minute late.
+* VAN  *  *     1  118P  *     122P  Departed:  4 minutes late.
+* PDX  1  200P  1  225P  140P  232P  Arrived:  20 minutes early.         | Departed:  7 minutes late.
+* SLM  *  *     1  337P  *     356P  Departed:  19 minutes late.
+* ALY  *  *     1  410P  *     437P  Departed:  27 minutes late.
+* EUG  1  503P  1  510P  533P  540P  Arrived:  30 minutes late.          | Departed:  30 minutes late.
+* CMO  *  *     1  808P  *     855P  Departed:  47 minutes late.
+* KFS  1  950P  1  1000P 1014P 1028P Arrived:  24 minutes late.          | Departed:  28 minutes late.
+* DUN  *  *     2  1235A *     100A  Departed:  25 minutes late.
+* RDD  *  *     2  221A  *     245A  Departed:  24 minutes late.
+* CIC  *  *     2  350A  *     421A  Departed:  31 minutes late.
+* SAC  2  615A  2  635A  549A  637A  Arrived:  26 minutes early.         | Departed:  2 minutes late.
+* DAV  *  *     2  650A  *     656A  Departed:  6 minutes late.
+* MTZ  2  734A  2  734A  735A  742A  Arrived:  1 minute late.            | Departed:  8 minutes late.
+* EMY  2  810A  2  820A  813A  820A  Arrived:  3 minutes late.           | Departed:  On time.
+* OKJ  2  835A  2  850A  830A  850A  Arrived:  5 minutes early.          | Departed:  On time.
+* SJC  2  955A  2  1007A 944A  1007A Arrived:  11 minutes early.         | Departed:  On time.
+* SNS  *  *     2  1148A *     1148A Departed:  On time.
+* PRB  *  *     2  138P  *     138P  Departed:  On time.
+* SLO  2  307P  2  320P  236P  320P  Arrived:  31 minutes early.         | Departed:  On time.
+* SBA  2  555P  2  602P  545P  602P  Arrived:  10 minutes early.         | Departed:  On time.
+* OXN  *  *     2  705P  *     702P  Departed:  3 minutes early.
+* SIM  *  *     2  748P  *     734P  Departed:  14 minutes early.
+* VNC  *  *     2  822P  *     756P  Departed:  26 minutes early.
+* BUR  *  *     2  831P  *     804P  Departed:  27 minutes early.
+  LAX  2  900P  *  *                 PT

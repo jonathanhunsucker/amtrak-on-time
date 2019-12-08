@@ -1,0 +1,20 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  SAC  *  *     1  655P              PT  MoTuWeThFr
+  DAV  *  *     1  710P              PT
+  FFV  *  *     1  730P              PT
+  SUI  *  *     1  737P              PT
+  MTZ  1  755P  1  756P              PT
+  RIC  *  *     1  822P              PT
+  BKY  *  *     1  830P              PT
+  EMY  1  834P  1  835P              PT
+  OKJ  *  *     1  843P              PT
+  OAC  1  900P  *  *                 PT

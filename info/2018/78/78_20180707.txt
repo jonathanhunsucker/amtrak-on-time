@@ -1,0 +1,19 @@
+* Piedmont
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CLT  *  *     1  700P  *     700P  Departed:  On time.
+* KAN  *  *     1  725P  *     726P  Departed:  1 minute late.
+* SAL  *  *     1  741P  *     742P  Departed:  1 minute late.
+* HPT  *  *     1  814P  *     814P  Departed:  On time.
+* GRO  1  831P  1  833P  830P  833P  Arrived:  1 minute early.            |  Departed:  On time.
+* BNC  *  *     1  854P  *     856P  Departed:  2 minutes late.
+* DNC  *  *     1  933P  *     934P  Departed:  1 minute late.
+* CYN  *  *     1  953P  *     953P  Departed:  On time.
+* RGH  1  1011P *  *     1002P *     Arrived:  9 minutes early.

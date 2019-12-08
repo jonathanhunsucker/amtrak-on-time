@@ -1,0 +1,31 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  310A  *     310A  Departed:  On time.
+* BWI  *  *     1  335A  *     336A  Departed:  1 minute late.
+* BAL  1  348A  1  350A  348A  350A  Arrived:  On time.                   |  Departed:  On time.
+* ABE  *  *     1  416A  *     416A  Departed:  On time.
+* WIL  1  446A  1  448A  438A  448A  Arrived:  8 minutes early.           |  Departed:  On time.
+* PHL  1  509A  1  514A  506A  514A  Arrived:  3 minutes early.           |  Departed:  On time.
+  TRE  1  542A  1  544A
+  EWR  1  616A  1  616A  612A        Arrived:  2 minutes early
+  NWK  1  620A  1  622A
+* NYP  1  640A  1  700A  633A  701A  Arrived:  7 minutes early.           |  Departed:  1 minute late.
+* STM  *  *     1  748A  *     752A  Departed:  4 minutes late.
+* NHV  1  838A  1  840A  838A  841A  Arrived:  On time.                   |  Departed:  1 minute late.
+* OSB  *  *     1  909A  *     910A  Departed:  1 minute late.
+* NLC  *  *     1  929A  *     930A  Departed:  1 minute late.
+* MYS  *  *     1  941A  *     946A  Departed:  5 minutes late.
+* WLY  *  *     1  951A  *     956A  Departed:  5 minutes late.
+* KIN  *  *     1  1006A *     1011A Departed:  5 minutes late.
+* PVD  1  1027A 1  1027A 1031A 1033A Arrived:  4 minutes late.            |  Departed:  6 minutes late.
+* RTE  *  *     1  1100A *     1055A Departed:  5 minutes early.
+* BBY  *  *     1  1111A *     1105A Departed:  6 minutes early.
+* BOS  1  1120A *  *     1111A *     Arrived:  9 minutes early.

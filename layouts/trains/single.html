@@ -26,6 +26,7 @@
   {{ $data := getJSON (printf "%s%d%s" "data/train/" .Params.number ".json") }}
   <script type="text/javascript">
     const raw = JSON.parse({{ $data | jsonify }});
+    console.log(raw);
   </script>
 
   <p><a href="../">← all trains</a></p>
@@ -198,7 +199,7 @@
           }
 
           var time = line.actual_departure || line.actual_arrival;
-
+          
           if (index === record.lines.length - 1) {
             time = line.actual_arrival;
           }
@@ -210,13 +211,6 @@
       }));
 
       const data = {
-        // Labels should be Date objects
-        labels: [
-          moment('2019-01-02 600a', 'YYYY-MM-DD hmma').toDate(),
-          moment('2019-01-02 610a', 'YYYY-MM-DD hmma').toDate(),
-          moment('2019-01-02 640a', 'YYYY-MM-DD hmma').toDate(),
-          moment('2019-01-02 830a', 'YYYY-MM-DD hmma').toDate(),
-        ],
         datasets: datasets
       };
       const options = {

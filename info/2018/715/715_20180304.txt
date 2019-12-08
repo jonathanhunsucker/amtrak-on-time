@@ -1,0 +1,25 @@
+* San Joaquin
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival   Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BFD  *  *     1  1025A *     1025A Departed:  On time.
+* WAC  *  *     1  1051A *     1055A Departed:  4 minutes late.
+* COC  *  *     1  1127A *     1132A Departed:  5 minutes late.
+* HNF  *  *     1  1147A *     1150A Departed:  3 minutes late.
+* FNO  1  1233P 1  1237P 1224P 1237P Arrived:  9 minutes early.           |  Departed:  On time.
+* MDR  *  *     1  102P  *     102P  Departed:  On time.
+* MCD  *  *     1  141P  *     141P  Departed:  On time.
+* TRK  *  *     1  203P  *     203P  Departed:  On time.
+* MOD  *  *     1  216P  *     217P  Departed:  1 minute late.
+  SKN  1  253P  1  257P  253P        Arrived:  On time.
+* ACA  *  *     1  326P  *     328P  Departed:  2 minutes late.
+* MTZ  1  356P  1  359P  352P  359P  Arrived:  4 minutes early.           |  Departed:  On time.
+* RIC  *  *     1  424P  *     433P  Departed:  9 minutes late.
+  EMY  1  445P  1  445P  441P        Arrived:  4 minutes early.
+* OKJ  1  500P  *  *     450P  *     Arrived:  10 minutes early.

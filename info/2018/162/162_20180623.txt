@@ -1,0 +1,33 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  600A  *     600A  Departed:  On time.
+* NCR  *  *     1  613A  *     614A  Departed:  1 minute late.
+* BWI  *  *     1  632A  *     634A  Departed:  2 minutes late.
+* BAL  1  646A  1  648A  646A  649A  Arrived:  On time.                   |  Departed:  1 minute late.
+* ABE  *  *     1  713A  *     714A  Departed:  1 minute late.
+* WIL  1  743A  1  745A  738A  745A  Arrived:  5 minutes early.           |  Departed:  On time.
+* PHL  1  808A  1  810A  804A  810A  Arrived:  4 minutes early.           |  Departed:  On time.
+  TRE  1  840A  1  841A
+* MET  *  *     1  908A  *     910A  Departed:  2 minutes late.
+  NWK  1  924A  1  925A
+* NYP  1  946A  1  1007A 941A  1007A Arrived:  5 minutes early.           |  Departed:  On time.
+* NRO  *  *     1  1038A *     1044A Departed:  6 minutes late.
+* STM  *  *     1  1102A *     1117A Departed:  15 minutes late.
+* BRP  *  *     1  1132A *     1154A Departed:  22 minutes late.
+* NHV  1  1159A 1  1202P 1218P 1220P Arrived:  19 minutes late.           |  Departed:  18 minutes late.
+* OSB  *  *     1  1234P *     1249P Departed:  15 minutes late.
+* NLC  *  *     1  1258P *     110P  Departed:  12 minutes late.
+* MYS  *  *     1  113P  *     123P  Departed:  10 minutes late.
+* KIN  *  *     1  139P  *     145P  Departed:  6 minutes late.
+* PVD  1  203P  1  203P  205P  208P  Arrived:  2 minutes late.            |  Departed:  5 minutes late.
+* RTE  *  *     1  238P  *     231P  Departed:  7 minutes early.
+* BBY  *  *     1  253P  *     241P  Departed:  12 minutes early.
+* BOS  1  302P  *  *     246P  *     Arrived:  16 minutes early.

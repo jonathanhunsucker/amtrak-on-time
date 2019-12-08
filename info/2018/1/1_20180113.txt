@@ -1,0 +1,22 @@
+* Sunset Limited
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NOL  *  *     1  900A  *     900A  Departed:  On time.
+* SCH  *  *     1  1030A *     1034A Departed:  4 minutes late.
+* NIB  *  *     1  1156A *     1156A Departed:  On time.
+* LFT  1  1224P 1  1224P 1218P 1224P Arrived:  6 minutes early.           |  Departed:  On time.
+* LCH  *  *     1  155P  *     155P  Departed:  On time.
+* BMT  1  334P  1  348P  404P  411P  Arrived:  30 minutes late.           |  Departed:  23 minutes late.
+  HOS  1  618P  1  655P              CT
+* SAS  2  1205A 2  245A  1123P 713A  Arrived:  42 minutes early.          |  Departed:  4 hours, 28 minutes late.
+  DRT  *  *     2  549A              CT
+  SND  *  *     2  824A              CT
+  ALP  2  1028A 2  1038A             CT
+* ELP  2  122P  *  *     532P  *     Arrived:  4 hours, 10 minutes late.

@@ -1,0 +1,42 @@
+* Southwest Chief
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  300P  *     300P  Departed:  On time.
+  NPV  1  335P  1  335P  329P        Arrived:  6 minutes early
+* MDT  *  *     1  424P  *     424P  Departed:  On time.
+  PCT  1  446P  1  446P  442P        Arrived:  4 minutes early
+* GBB  1  535P  1  538P  545P  550P  Arrived:  10 minutes late.           |  Departed:  12 minutes late.
+* FMD  *  *     1  642P  *     652P  Departed:  10 minutes late.
+* LAP  *  *     1  751P  *     803P  Departed:  12 minutes late.
+* KCY  1  1011P 1  1045P 1002P 1045P Arrived:  9 minutes early.           |  Departed:  On time.
+* LRC  *  *     1  1152P *     1156P Departed:  4 minutes late.
+* TOP  *  *     2  1229A *     119A  Departed:  50 minutes late.
+* NEW  *  *     2  245A  *     339A  Departed:  54 minutes late.
+* HUT  *  *     2  320A  *     412A  Departed:  52 minutes late.
+* DDG  2  519A  2  525A  559A  603A  Arrived:  40 minutes late.           |  Departed:  38 minutes late.
+* GCK  *  *     2  621A  *     655A  Departed:  34 minutes late.
+* LMR  *  *     2  659A  *     723A  Departed:  24 minutes late.
+* LAJ  2  815A  2  830A  816A  830A  Arrived:  1 minute late.             |  Departed:  On time.
+* TRI  *  *     2  950A  *     950A  Departed:  On time.
+* RAT  *  *     2  1056A *     1057A Departed:  1 minute late.
+* LSV  *  *     2  1238P *     103P  Departed:  25 minutes late.
+* LMY  2  220P  2  224P  259P  302P  Arrived:  39 minutes late.           |  Departed:  38 minutes late.
+* ABQ  2  355P  2  445P  404P  445P  Arrived:  9 minutes late.            |  Departed:  On time.
+* GLP  *  *     2  708P  *     719P  Departed:  11 minutes late.
+* WLO  *  *     2  750P  *     755P  Departed:  5 minutes late.
+* FLG  2  851P  2  857P  856P  902P  Arrived:  5 minutes late.            |  Departed:  5 minutes late.
+* KNG  2  1139P 2  1146P 1149P 1154P Arrived:  10 minutes late.           |  Departed:  8 minutes late.
+* NDL  *  *     3  1249A *     1256A Departed:  7 minutes late.
+* BAR  *  *     3  344A  *     344A  Departed:  On time.
+* VRV  *  *     3  423A  *     423A  Departed:  On time.
+* SNB  *  *     3  542A  *     542A  Departed:  On time.
+* RIV  *  *     3  603A  *     603A  Departed:  On time.
+* FUL  *  *     3  644A  *     648A  Departed:  4 minutes late.
+* LAX  3  815A  *  *     724A  *     Arrived:  51 minutes early.

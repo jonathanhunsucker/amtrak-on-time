@@ -1,0 +1,35 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAN  *  *     1  555A  *     555A  Departed:  On time.
+* OLT  *  *     1  602A  *     603A  Departed:  1 minute late.
+* SOL  *  *     1  633A  *     634A  Departed:  1 minute late.
+* OSD  *  *     1  657A  *     657A  Departed:  On time.
+* SNC  *  *     1  730A  *     733A  Departed:  3 minutes late.
+* IRV  *  *     1  748A  *     748A  Departed:  On time.
+* SNA  *  *     1  759A  *     759A  Departed:  On time.
+* ANA  *  *     1  808A  *     808A  Departed:  On time.
+* FUL  *  *     1  816A  *     818A  Departed:  2 minutes late.
+* LAX  1  851A  1  911A  851A  911A  Arrived:  On time.                   |  Departed:  On time.
+* GDL  *  *     1  923A  *     925A  Departed:  2 minutes late.
+* BUR  *  *     1  933A  *     937A  Departed:  4 minutes late.
+* VNC  *  *     1  943A  *     946A  Departed:  3 minutes late.
+* CWT  1  954A  1  955A  957A  959A  Arrived:  3 minutes late.            |  Departed:  4 minutes late.
+* SIM  *  *     1  1007A *     1013A Departed:  6 minutes late.
+* CML  *  *     1  1031A *     1036A Departed:  5 minutes late.
+* OXN  1  1042A 1  1044A 1046A 1050A Arrived:  4 minutes late.            |  Departed:  6 minutes late.
+* VEC  *  *     1  1100A *     1103A Departed:  3 minutes late.
+* CPN  *  *     1  1122A *     1129A Departed:  7 minutes late.
+* SBA  1  1141A 1  1144A 1144A 1149A Arrived:  3 minutes late.            |  Departed:  5 minutes late.
+* GTA  *  *     1  1156A *     1203P Departed:  7 minutes late.
+* LPS  *  *     1  102P  *     111P  Departed:  9 minutes late.
+* GUA  *  *     1  138P  *     147P  Departed:  9 minutes late.
+* GVB  *  *     1  155P  *     203P  Departed:  8 minutes late.
+* SLO  1  230P  *  *     222P  *     Arrived:  8 minutes early.

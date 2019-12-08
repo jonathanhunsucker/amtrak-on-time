@@ -1,0 +1,43 @@
+* Silver Meteor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  315P  *     315P  Departed:  On time.
+* NWK  1  335P  1  338P  334P  338P  Arrived:  1 minute early.           | Departed:  On time.
+  TRE  1  415P  1  418P  415P        Arrived:  On time.
+* PHL  1  448P  1  454P  449P  456P  Arrived:  1 minute late.            | Departed:  2 minutes late.
+* WIL  1  515P  1  518P  517P  523P  Arrived:  2 minutes late.           | Departed:  5 minutes late.
+* BAL  1  612P  1  615P  611P  615P  Arrived:  1 minute early.           | Departed:  On time.
+* WAS  1  650P  1  725P  650P  725P  Arrived:  On time.                  | Departed:  On time.
+* ALX  *  *     1  744P  *     746P  Departed:  2 minutes late.
+* FBG  *  *     1  833P  *     928P  Departed:  55 minutes late.
+* RVR  1  934P  1  944P  1023P 1030P Arrived:  49 minutes late.          | Departed:  46 minutes late.
+* PTB  *  *     1  1018P *     1106P Departed:  48 minutes late.
+* RMT  *  *     1  1150P *     1233A Departed:  43 minutes late.
+* FAY  *  *     2  122A  *     203A  Departed:  41 minutes late.
+* FLO  2  305A  2  313A  317A  325A  Arrived:  12 minutes late.          | Departed:  12 minutes late.
+* KTR  *  *     2  351A  *     400A  Departed:  9 minutes late.
+* CHS  *  *     2  451A  *     501A  Departed:  10 minutes late.
+* YEM  *  *     2  543A  *     547A  Departed:  4 minutes late.
+* SAV  2  634A  2  640A  633A  644A  Arrived:  1 minute early.           | Departed:  4 minutes late.
+* JSP  *  *     2  735A  *     739A  Departed:  4 minutes late.
+* JAX  2  909A  2  934A  854A  934A  Arrived:  15 minutes early.         | Departed:  On time.
+* PAK  *  *     2  1040A *     1042A Departed:  2 minutes late.
+* DLD  *  *     2  1138A *     1138A Departed:  On time.
+* WPK  *  *     2  1226P *     1226P Departed:  On time.
+* ORL  2  1249P 2  104P  1240P 104P  Arrived:  9 minutes early.          | Departed:  On time.
+* KIS  *  *     2  126P  *     127P  Departed:  1 minute late.
+* WTH  *  *     2  213P  *     220P  Departed:  7 minutes late.
+* SBG  *  *     2  254P  *     257P  Departed:  3 minutes late.
+* WPB  *  *     2  447P  *     453P  Departed:  6 minutes late.
+* DLB  *  *     2  511P  *     512P  Departed:  1 minute late.
+* DFB  *  *     2  525P  *     529P  Departed:  4 minutes late.
+* FTL  *  *     2  543P  *     557P  Departed:  14 minutes late.
+* HOL  *  *     2  559P  *     612P  Departed:  13 minutes late.
+* MIA  2  639P  *  *     635P  *     Arrived:  4 minutes early.

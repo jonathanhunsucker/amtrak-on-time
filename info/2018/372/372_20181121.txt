@@ -1,0 +1,14 @@
+* Pere Marquette Extra
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  1000A *     1000A Departed:  On time.
+  SJM  *  *     1  1245P
+* BAM  *  *     1  121P  *     121P  Departed:  On time.
+* HOM  1  211P  *  *     210P  *     Arrived:  1 minute early.

@@ -1,0 +1,19 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* OKJ  *  *     1  1215P *     1215P Departed:  On time.
+  EMY  1  1223P 1  1224P             PT
+  BKY  *  *     1  1228P             PT
+* RIC  *  *     1  1235P *     1247P Departed:  12 minutes late.
+* MTZ  1  100P  1  101P  113P  115P  Arrived:  13 minutes late.           |  Departed:  14 minutes late.
+* SUI  *  *     1  120P  *     134P  Departed:  14 minutes late.
+* FFV  *  *     1  127P  *     140P  Departed:  13 minutes late.
+* DAV  *  *     1  147P  *     159P  Departed:  12 minutes late.
+* SAC  1  215P  *  *     215P  *     Arrived:  On time.

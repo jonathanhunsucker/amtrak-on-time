@@ -1,0 +1,16 @@
+* Downeaster
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BRK  *  *     1  500P  *     500P  Departed:  On time.
+* FRE  *  *     1  513P  *     513P  Departed:  On time.
+* POR  *  *     1  550P  *     550P  Departed:  On time.
++ SAO  *  *     1  611P
+  WEM  *  *     1  628P
+  DOV  1  710P  *  *

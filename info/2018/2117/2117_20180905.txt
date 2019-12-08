@@ -1,0 +1,17 @@
+* Acela Express
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  1200P *     1201P Departed:  1 minute late.
+* NWK  1  1213P 1  1215P 1215P 1216P Arrived:  2 minutes late.           | Departed:  1 minute late.
+* MET  1  1226P 1  1228P 1229P 1231P Arrived:  3 minutes late.           | Departed:  3 minutes late.
+* PHL  1  112P  1  115P  118P  121P  Arrived:  6 minutes late.           | Departed:  6 minutes late.
+* WIL  1  132P  1  134P  138P  141P  Arrived:  6 minutes late.           | Departed:  7 minutes late.
+* BAL  1  217P  1  219P  221P  223P  Arrived:  4 minutes late.           | Departed:  4 minutes late.
+  WAS  1  257P  *  *

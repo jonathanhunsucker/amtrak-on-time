@@ -1,0 +1,20 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* LAX  *  *     1  702A  *     702A  Departed:  On time.
+* FUL  *  *     1  733A  *     734A  Departed:  1 minute late.
+* ANA  *  *     1  741A  *     743A  Departed:  2 minutes late.
+* SNA  *  *     1  749A  *     752A  Departed:  3 minutes late.
+* IRV  1  801A  1  802A  804A  806A  Arrived:  3 minutes late.            |  Departed:  4 minutes late.
+* SNC  *  *     1  822A  *     826A  Departed:  4 minutes late.
+* OSD  1  854A  1  855A  858A  900A  Arrived:  4 minutes late.            |  Departed:  5 minutes late.
+* SOL  *  *     1  914A  *     917A  Departed:  3 minutes late.
+* OLT  *  *     1  946A  *     950A  Departed:  4 minutes late.
+* SAN  1  1001A *  *     957A  *     Arrived:  4 minutes early.

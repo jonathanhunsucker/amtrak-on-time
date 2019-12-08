@@ -1,0 +1,26 @@
+* Pennsylvanian
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  1052A *     1052A Departed:  On time.
+* NWK  1  1107A 1  1109A 1105A 1110A Arrived:  2 minutes early.           |  Departed:  1 minute late.
+* TRE  1  1142A 1  1144A 1143A 1145A Arrived:  1 minute late.             |  Departed:  1 minute late.
+* PHL  1  1215P 1  1242P 1216P 1249P Arrived:  1 minute late.             |  Departed:  7 minutes late.
+  PAO  *  *     1  112P
+* LNC  *  *     1  152P  *     201P  Departed:  9 minutes late.
+* ELT  *  *     1  206P  *     220P  Departed:  14 minutes late.
+  HAR  1  226P  1  236P
+  LEW  *  *     1  346P
+* HGD  *  *     1  423P  *     444P  Departed:  21 minutes late.
+  TYR  *  *     1  449P
+* ALT  *  *     1  513P  *     522P  Departed:  9 minutes late.
+  JST  *  *     1  610P
+  LAB  *  *     1  651P
+  GNB  *  *     1  702P
+  PGH  1  759P  *  *

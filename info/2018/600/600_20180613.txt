@@ -1,0 +1,24 @@
+* Keystone Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* HAR  *  *     1  645A  *     645A  Departed:  On time.
+* MID  *  *     1  655A  *     655A  Departed:  On time.
+* ELT  *  *     1  702A  *     702A  Departed:  On time.
+* MJY  *  *     1  708A  *     711A  Departed:  3 minutes late.
+* LNC  *  *     1  721A  *     724A  Departed:  3 minutes late.
+* PAR  *  *     1  740A  *     740A  Departed:  On time.
+* COT  *  *     1  746A  *     751A  Departed:  5 minutes late.
+* DOW  *  *     1  752A  *     759A  Departed:  7 minutes late.
+* EXT  *  *     1  759A  *     807A  Departed:  8 minutes late.
+* PAO  *  *     1  809A  *     817A  Departed:  8 minutes late.
+* PHL  1  835A  1  850A  843A  852A  Arrived:  8 minutes late.            |  Departed:  2 minutes late.
+* TRE  1  918A  1  919A  919A  927A  Arrived:  1 minute late.             |  Departed:  8 minutes late.
+* NWK  1  950A  1  950A  959A  1001A Arrived:  9 minutes late.            |  Departed:  11 minutes late.
+* NYP  1  1011A *  *     1016A *     Arrived:  5 minutes late.

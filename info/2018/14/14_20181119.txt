@@ -1,0 +1,40 @@
+* Coast Starlight
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* LAX  *  *     1  1010A *     1010A Departed:  On time.
+* BUR  *  *     1  1029A *     1032A Departed:  3 minutes late.
+  VNC  *  *     1  1040A             PT
+* SIM  *  *     1  1111A *     1111A Departed:  On time.
+* OXN  *  *     1  1144A *     1147A Departed:  3 minutes late.
+* SBA  1  1233P 1  1240P 102P  109P  Arrived:  29 minutes late.           |  Departed:  29 minutes late.
+* SLO  1  322P  1  335P  422P  435P  Arrived:  1 hour late.               |  Departed:  1 hour late.
+* PRB  *  *     1  437P  *     545P  Departed:  1 hour, 8 minutes late.
+* SNS  *  *     1  628P  *     738P  Departed:  1 hour, 10 minutes late.
+* SJC  1  811P  1  823P  858P  911P  Arrived:  47 minutes late.           |  Departed:  48 minutes late.
+* OKJ  1  924P  1  939P  1013P 1024P Arrived:  49 minutes late.           |  Departed:  45 minutes late.
+* EMY  1  954P  1  1004P 1036P 1049P Arrived:  42 minutes late.           |  Departed:  45 minutes late.
+* MTZ  1  1046P 1  1046P 1127P 1140P Arrived:  41 minutes late.           |  Departed:  54 minutes late.
+* DAV  *  *     1  1125P *     1247A Departed:  1 hour, 22 minutes late.
+* SAC  1  1159P 1  1159P 104A  142A  Arrived:  1 hour, 5 minutes late.    |  Departed:  1 hour, 43 minutes late.
+* CIC  *  *     2  147A  *     319A  Departed:  1 hour, 32 minutes late.
+* RDD  *  *     2  306A  *     443A  Departed:  1 hour, 37 minutes late.
+* DUN  *  *     2  456A  *     642A  Departed:  1 hour, 46 minutes late.
+* KFS  2  807A  2  817A  911A  927A  Arrived:  1 hour, 4 minutes late.    |  Departed:  1 hour, 10 minutes late.
+* CMO  *  *     2  932A  *     1049A Departed:  1 hour, 17 minutes late.
+* EUG  2  1229P 2  1236P 203P  216P  Arrived:  1 hour, 34 minutes late.   |  Departed:  1 hour, 40 minutes late.
+* ALY  *  *     2  122P  *     310P  Departed:  1 hour, 48 minutes late.
+* SLM  *  *     2  155P  *     420P  Departed:  2 hours, 25 minutes late.
+* PDX  2  332P  2  356P  527P  633P  Arrived:  1 hour, 55 minutes late.   |  Departed:  2 hours, 37 minutes late.
+* VAN  *  *     2  416P  *     659P  Departed:  2 hours, 43 minutes late.
+* KEL  *  *     2  451P  *     742P  Departed:  2 hours, 51 minutes late.
+* CTL  *  *     2  536P  *     827P  Departed:  2 hours, 51 minutes late.
+* OLW  *  *     2  601P  *     852P  Departed:  2 hours, 51 minutes late.
+* TAC  *  *     2  650P  *     942P  Departed:  2 hours, 52 minutes late.
+* SEA  2  756P  *  *     1027P *     Arrived:  2 hours, 31 minutes late.

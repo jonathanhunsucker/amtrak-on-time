@@ -1,0 +1,19 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* OXN  *  *     1  509P  *     510P  Departed:  1 minute late.
+* VEC  *  *     1  525P  *     525P  Departed:  On time.
+* CPN  *  *     1  547P  *     547P  Departed:  On time.
+* SBA  1  606P  1  609P  600P  609P  Arrived:  6 minutes early.           |  Departed:  On time.
+* GTA  *  *     1  621P  *     621P  Departed:  On time.
+  LPS  *  *     1  702P              PT
+  GUA  *  *     1  738P              PT
+  GVB  *  *     1  755P              PT
+* SLO  1  900P  *  *     845P  *     Arrived:  15 minutes early.

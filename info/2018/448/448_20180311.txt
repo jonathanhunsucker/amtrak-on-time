@@ -1,0 +1,17 @@
+* Lake Shore Limited
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* ALB  *  *     1  305P  *     405P  Departed:  On time.
+* PIT  *  *     1  409P  *     510P  Departed:  1 minute late.
+* SPG  1  528P  1  533P  626P  633P  Arrived:  2 minutes early.           |  Departed:  On time.
+* WOR  *  *     1  646P  *     739P  Departed:  7 minutes early.
+* FRA  *  *     1  714P  *     808P  Departed:  6 minutes early.
+* BBY  *  *     1  755P  *     838P  Departed:  17 minutes early.
+* BOS  1  801P  *  *     845P  *     Arrived:  16 minutes early.

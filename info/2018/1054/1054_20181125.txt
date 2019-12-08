@@ -1,0 +1,17 @@
+* Holiday Extra
+* +---------------- Station code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  955A  *     955A  Departed:  On time.
+* NCR  *  *     1  1009A *     1009A Departed:  On time.
+* BAL  *  *     1  1043A *     1043A Departed:  On time.
+* WIL  *  *     1  1137A *     1137A Departed:  On time.
+* PHL  1  1158A 1  1201P 1157A 1201P Arrived:  1 minute early.            |  Departed:  On time.
+  NWK  *  *     1  108P
+* NYP  1  130P  *  *     122P  *     Arrived:  8 minutes early.

@@ -1,0 +1,15 @@
+* Hiawatha
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* MKE  *  *     1  805A  *     805A  Departed:  On time.
+* MKA  *  *     1  815A  *     827A  Departed:  12 minutes late.
+* SVT  *  *     1  828A  *     842A  Departed:  14 minutes late.
+* GLN  *  *     1  906A  *     920A  Departed:  14 minutes late.
+* CHI  1  934A  *  *     940A  *     Arrived:  6 minutes late.

@@ -1,0 +1,33 @@
+* Palmetto
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAV  *  *     1  820A  *     820A  Departed:  On time.
+* YEM  *  *     1  908A  *     918A  Departed:  10 minutes late.
+* CHS  *  *     1  1000A *     1006A Departed:  6 minutes late.
+* KTR  *  *     1  1055A *     1102A Departed:  7 minutes late.
+* FLO  1  1134A 1  1139A 1135A 1141A Arrived:  1 minute late.             |  Departed:  2 minutes late.
+* DIL  *  *     1  1214P *     1215P Departed:  1 minute late.
+* FAY  *  *     1  105P  *     108P  Departed:  3 minutes late.
+* SSM  *  *     1  152P  *     154P  Departed:  2 minutes late.
+* WLN  *  *     1  224P  *     224P  Departed:  On time.
+* RMT  *  *     1  252P  *     252P  Departed:  On time.
+* PTB  *  *     1  420P  *     452P  Departed:  32 minutes late.
+* RVR  1  504P  1  514P  626P  634P  Arrived:  1 hour, 22 minutes late.   |  Departed:  1 hour, 20 minutes late.
+* ALX  *  *     1  707P  *     813P  Departed:  1 hour, 6 minutes late.
+* WAS  1  742P  1  830P  829P  905P  Arrived:  47 minutes late.           |  Departed:  35 minutes late.
+* NCR  1  840P  1  841P  915P  918P  Arrived:  35 minutes late.           |  Departed:  37 minutes late.
+* BWI  1  855P  1  857P  932P  942P  Arrived:  37 minutes late.           |  Departed:  45 minutes late.
+* BAL  1  911P  1  915P  955P  959P  Arrived:  44 minutes late.           |  Departed:  44 minutes late.
+* WIL  1  1002P 1  1005P 1041P 1045P Arrived:  39 minutes late.           |  Departed:  40 minutes late.
+* PHL  1  1024P 1  1028P 1105P 1114P Arrived:  41 minutes late.           |  Departed:  46 minutes late.
+* TRE  1  1056P 1  1059P 1145P 1148P Arrived:  49 minutes late.           |  Departed:  49 minutes late.
+* MET  1  1121P 1  1121P 1209A 1211A Arrived:  48 minutes late.           |  Departed:  50 minutes late.
+  NWK  1  1136P 1  1136P
+* NYP  1  1158P *  *     1248A *     Arrived:  50 minutes late.

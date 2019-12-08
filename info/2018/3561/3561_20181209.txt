@@ -1,0 +1,15 @@
+* Pacific Surfliner
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* OXN  *  *     1  955A  *     957A  Departed:  2 minutes late.
+* VEC  *  *     1  1009A *     1011A Departed:  2 minutes late.
+  CPN  *  *     1  1040A             PT
+* SBA  *  *     1  1053A *     1053A Departed:  On time.
+* GTA  1  1117A *  *     1102A *     Arrived:  15 minutes early.

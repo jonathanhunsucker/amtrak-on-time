@@ -1,0 +1,32 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  700A  *     700A  Departed:  On time.
+* NCR  *  *     1  714A  *     715A  Departed:  1 minute late.
+* BWI  *  *     1  732A  *     735A  Departed:  3 minutes late.
+* BAL  1  748A  1  750A  752A  753A  Arrived:  4 minutes late.           | Departed:  3 minutes late.
+* WIL  1  843A  1  845A  838A  845A  Arrived:  5 minutes early.          | Departed:  On time.
+* PHL  1  908A  1  910A  903A  910A  Arrived:  5 minutes early.          | Departed:  On time.
+* TRE  1  940A  1  941A  944A  945A  Arrived:  4 minutes late.           | Departed:  4 minutes late.
+* MET  *  *     1  1007A *     1008A Departed:  1 minute late.
+* EWR  *  *     1  1020A *     1020A Departed:  On time.
+  NWK  1  1027A 1  1028A 1023A       Arrived:  4 minutes early.
+* NYP  1  1046A 1  1106A 1044A 1106A Arrived:  2 minutes early.           |  Departed:  On time.
+* NRO  *  *     1  1138A *     1139A Departed:  1 minute late.
+* STM  *  *     1  1200P *     1209P Departed:  9 minutes late.
+* BRP  *  *     1  1230P *     1241P Departed:  11 minutes late.
+* NHV  1  1255P 1  1257P 100P  104P  Arrived:  5 minutes late.           | Departed:  7 minutes late.
+* OSB  *  *     1  129P  *     151P  Departed:  22 minutes late.
+* NLC  *  *     1  150P  *     215P  Departed:  25 minutes late.
+* KIN  *  *     1  230P  *     249P  Departed:  19 minutes late.
+* PVD  1  253P  1  253P  309P  311P  Arrived:  16 minutes late.          | Departed:  18 minutes late.
+* RTE  *  *     1  330P  *     336P  Departed:  6 minutes late.
+* BBY  *  *     1  345P  *     347P  Departed:  2 minutes late.
+* BOS  1  354P  *  *     353P  *     Arrived:  1 minute early.

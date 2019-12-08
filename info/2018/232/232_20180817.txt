@@ -1,0 +1,15 @@
+* Empire Service
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* ALB  *  *     1  550A  *     552A  Departed:  2 minutes late.
+* HUD  *  *     1  615A  *     616A  Departed:  1 minute late.
+* RHI  *  *     1  637A  *     638A  Departed:  1 minute late.
+* CRT  *  *     1  732A  *     742A  Departed:  10 minutes late.
+* NYG  1  819A  *  *     826A  *     Arrived:  7 minutes late.

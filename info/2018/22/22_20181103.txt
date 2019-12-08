@@ -1,0 +1,39 @@
+* Texas Eagle
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAS  *  *     1  700A  *     700A  Departed:  On time.
+* SMC  *  *     1  832A  *     903A  Departed:  31 minutes late.
+* AUS  1  923A  1  931A  943A  950A  Arrived:  20 minutes late.           |  Departed:  19 minutes late.
+* TAY  *  *     1  1022A *     1031A Departed:  9 minutes late.
+* TPL  *  *     1  1125A *     1125A Departed:  On time.
+* MCG  *  *     1  1151A *     1157A Departed:  6 minutes late.
+* CBR  *  *     1  100P  *     109P  Departed:  9 minutes late.
+* FTW  1  158P  1  220P  142P  224P  Arrived:  16 minutes early.          |  Departed:  4 minutes late.
+* DAL  1  320P  1  340P  319P  340P  Arrived:  1 minute early.            |  Departed:  On time.
+  MIN  *  *     1  515P              CT
+  LVW  *  *     1  615P              CT
+* MHL  1  701P  1  731P  700P  731P  Arrived:  1 minute early.            |  Departed:  On time.
+  TXA  *  *     1  843P              CT
+  HOP  *  *     1  918P              CT
+  ARK  *  *     1  1002P             CT
+  MVN  *  *     1  1026P             CT
+* LRK  1  1131P 1  1139P 1126P 1139P Arrived:  5 minutes early.           |  Departed:  On time.
+  WNR  *  *     2  141A              CT
+  PBF  *  *     2  244A              CT
+  ACD  *  *     2  419A              CT
+  STL  2  724A  2  755A              CT
+  ALN  *  *     2  845A              CT
+  CRV  *  *     2  915A              CT
+  SPI  *  *     2  955A              CT
+  LCN  *  *     2  1025A             CT
+  BNL  *  *     2  1108A             CT
+  PON  *  *     2  1139A             CT
+  JOL  *  *     2  1256P             CT
+  CHI  2  152P  *  *                 CT

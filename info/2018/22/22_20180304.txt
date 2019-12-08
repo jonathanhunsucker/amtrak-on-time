@@ -1,0 +1,39 @@
+* Texas Eagle
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* SAS  *  *     1  700A  *     700A  Departed:  On time.
+* SMC  *  *     1  832A  *     832A  Departed:  On time.
+* AUS  1  923A  1  931A  912A  931A  Arrived:  11 minutes early.          |  Departed:  On time.
+* TAY  *  *     1  1022A *     1022A Departed:  On time.
++ TPL  *  *     1  1125A             CT
++ MCG  *  *     1  1151A             CT
++ CBR  *  *     1  100P              CT
++ FTW  1  158P  1  220P              CT
++ DAL  1  320P  1  340P              CT
++ MIN  *  *     1  515P              CT
+* LVW  *  *     1  615P  *     635P  Departed:  20 minutes late.
+* MHL  1  701P  1  731P  706P  739P  Arrived:  5 minutes late.            |  Departed:  8 minutes late.
+* TXA  *  *     1  843P  *     935P  Departed:  52 minutes late.
+  HOP  1  918P  1  918P  1009P       Arrived:  51 minutes late
+* ARK  *  *     1  1002P *     1055P Departed:  53 minutes late.
+* MVN  *  *     1  1026P *     1119P Departed:  53 minutes late.
+* LRK  1  1131P 1  1139P 1234A 1243A Arrived:  1 hour, 3 minutes late.    |  Departed:  1 hour, 4 minutes late.
+* WNR  *  *     2  141A  *     252A  Departed:  1 hour, 11 minutes late.
+* PBF  *  *     2  244A  *     346A  Departed:  1 hour, 2 minutes late.
+  ACD  *  *     2  419A              CT
+* STL  2  724A  2  755A  717A  816A  Arrived:  7 minutes early.           |  Departed:  21 minutes late.
+* ALN  *  *     2  845A  *     902A  Departed:  17 minutes late.
+* CRV  *  *     2  915A  *     934A  Departed:  19 minutes late.
+* SPI  *  *     2  955A  *     1020A Departed:  25 minutes late.
+* LCN  *  *     2  1025A *     1054A Departed:  29 minutes late.
+* BNL  *  *     2  1108A *     1133A Departed:  25 minutes late.
+* PON  *  *     2  1139A *     1204P Departed:  25 minutes late.
+* JOL  *  *     2  1256P *     105P  Departed:  9 minutes late.
+* CHI  2  152P  *  *     202P  *     Arrived:  10 minutes late.

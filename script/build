@@ -1,6 +1,7 @@
 #!/usr/local/bin/python3
 
 import argparse
+import os
 import subprocess
 
 parser = argparse.ArgumentParser()
@@ -8,14 +9,26 @@ parser.add_argument('--train')
 args = parser.parse_args()
 
 def load(train):
-  completed_process = subprocess.run(['php', 'src/toJson.php', 'info/2018/%s' % train], capture_output=True)
+  info_path = 'info/2018/%s' % train
+  print('Converting %s to json...' % info_path, end='')
+  completed_process = subprocess.run(['php', 'src/toJson.php', info_path], capture_output=True)
+  print('DONE')
 
-  f = open('data/train/%s.json' % train, 'w')
-  f.write(completed_process.stdout.decode('UTF-8'))
+  data_path = 'data/train/%s.json' % train
+  print('Writing to %s...' % data_path, end='')
+  data = open(data_path, 'w')
+  data.write(completed_process.stdout.decode('UTF-8'))
+  print('DONE')
+
+  content_path = 'content/trains/%s.md' % train
+  print('Writing to %s...' % content_path, end='')
+  content = open(content_path, 'w')
+  content.write("---\nnumber: %s\n---\n" % train)
+  print('DONE')
 
 if (args.train):
   load(args.train)
 else:
-  trains = [2100, 761]
+  trains = filter(lambda path: os.path.isdir(os.path.join('info/2018', path)), [path for path in os.listdir('info/2018')])
   list(map(lambda train: load(train), trains))
 

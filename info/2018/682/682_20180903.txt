@@ -1,0 +1,22 @@
+* Downeaster
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  BRK  *  *     1  730A              ET MoTuWeThFr
+  FRE  *  *     1  743A
+  POR  1  815A  1  820A
+  ORB  *  *     1  833A
+  SAO  *  *     1  841A
+  WEM  *  *     1  858A
+  DOV  *  *     1  916A
+  DHM  *  *     1  924A
+  EXR  *  *     1  938A
+  HHL  *  *     1  959A
+  WOB  *  *     1  1028A
+  BON  1  1050A *  *

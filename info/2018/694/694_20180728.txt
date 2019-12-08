@@ -1,0 +1,22 @@
+* Downeaster
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* BRK  *  *     1  1120A *     1120A Departed:  On time.
+* FRE  *  *     1  1133A *     1135A Departed:  2 minutes late.
+* POR  1  1205P 1  1210P 1207P 1214P Arrived:  2 minutes late.            |  Departed:  4 minutes late.
+* ORB  *  *     1  1230P *     1235P Departed:  5 minutes late.
+* SAO  *  *     1  1237P *     1245P Departed:  8 minutes late.
+* WEM  *  *     1  1254P *     102P  Departed:  8 minutes late.
+* DOV  *  *     1  112P  *     121P  Departed:  9 minutes late.
+* DHM  *  *     1  120P  *     130P  Departed:  10 minutes late.
+* EXR  *  *     1  134P  *     144P  Departed:  10 minutes late.
+* HHL  *  *     1  155P  *     205P  Departed:  10 minutes late.
+* WOB  *  *     1  224P  *     233P  Departed:  9 minutes late.
+* BON  1  245P  *  *     252P  *     Arrived:  7 minutes late.

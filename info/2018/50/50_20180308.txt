@@ -1,0 +1,42 @@
+* Cardinal
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* CHI  *  *     1  545P  *     545P  Departed:  On time.
+* DYE  *  *     1  644P  *     649P  Departed:  5 minutes late.
+* REN  *  *     1  735P  *     803P  Departed:  28 minutes late.
+* LAF  *  *     1  946P  *     1006P Departed:  20 minutes late.
+* CRF  *  *     1  1020P *     1039P Departed:  19 minutes late.
+* IND  1  1139P 1  1159P 1141P 1159P Arrived:  2 minutes late.            |  Departed:  On time.
+* COI  *  *     2  121A  *     121A  Departed:  On time.
+* CIN  2  317A  2  327A  313A  327A  Arrived:  4 minutes early.           |  Departed:  On time.
+* MAY  *  *     2  452A  *     452A  Departed:  On time.
+* SPM  *  *     2  545A  *     550A  Departed:  5 minutes late.
+* AKY  *  *     2  635A  *     635A  Departed:  On time.
+* HUN  2  709A  2  716A  655A  716A  Arrived:  14 minutes early.          |  Departed:  On time.
+* CHW  *  *     2  821A  *     827A  Departed:  6 minutes late.
+* MNG  *  *     2  850A  *     857A  Departed:  7 minutes late.
+* THN  *  *     2  941A  *     949A  Departed:  8 minutes late.
+* PRC  *  *     2  1002A *     1007A Departed:  5 minutes late.
+* HIN  *  *     2  1034A *     1038A Departed:  4 minutes late.
+* ALD  *  *     2  1102A *     1106A Departed:  4 minutes late.
+* WSS  *  *     2  1139A *     1140A Departed:  1 minute late.
+* CLF  *  *     2  1244P *     1244P Departed:  On time.
+* STA  *  *     2  203P  *     203P  Departed:  On time.
+* CVS  2  310P  2  319P  330P  340P  Arrived:  20 minutes late.           |  Departed:  21 minutes late.
+* CLP  *  *     2  435P  *     448P  Departed:  13 minutes late.
+* MSS  *  *     2  510P  *     521P  Departed:  11 minutes late.
+* ALX  *  *     2  559P  *     554P  Departed:  5 minutes early.
+* WAS  2  619P  2  644P  611P  644P  Arrived:  8 minutes early.           |  Departed:  On time.
+* BAL  2  716P  2  716P  719P  721P  Arrived:  3 minutes late.            |  Departed:  5 minutes late.
+* WIL  2  805P  2  805P  805P  806P  Arrived:  On time.                   |  Departed:  1 minute late.
+* PHL  2  826P  2  831P  827P  837P  Arrived:  1 minute late.             |  Departed:  6 minutes late.
+* TRE  2  902P  2  902P  912P  913P  Arrived:  10 minutes late.           |  Departed:  11 minutes late.
+* NWK  2  938P  2  938P  946P  950P  Arrived:  8 minutes late.            |  Departed:  12 minutes late.
+* NYP  2  958P  *  *     1004P *     Arrived:  6 minutes late.

@@ -1,0 +1,15 @@
+* Hiawatha
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* MKE  *  *     1  735P  *     735P  Departed:  On time.
+* MKA  *  *     1  745P  *     749P  Departed:  4 minutes late.
+* SVT  *  *     1  758P  *     804P  Departed:  6 minutes late.
+* GLN  *  *     1  836P  *     852P  Departed:  16 minutes late.
+* CHI  1  904P  *  *     914P  *     Arrived:  10 minutes late.

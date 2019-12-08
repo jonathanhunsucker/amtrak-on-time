@@ -1,0 +1,32 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  700A  *     700A  Departed:  On time.
+* NCR  *  *     1  714A  *     715A  Departed:  1 minute late.
+* BWI  *  *     1  732A  *     732A  Departed:  On time.
+* BAL  1  748A  1  750A  745A  750A  Arrived:  3 minutes early.           |  Departed:  On time.
+* WIL  1  843A  1  845A  834A  845A  Arrived:  9 minutes early.           |  Departed:  On time.
+* PHL  1  908A  1  910A  904A  910A  Arrived:  4 minutes early.           |  Departed:  On time.
+* TRE  1  940A  1  941A  940A  942A  Arrived:  On time.                   |  Departed:  1 minute late.
+* MET  *  *     1  1007A *     1008A Departed:  1 minute late.
+* EWR  *  *     1  1020A *     1020A Departed:  On time.
+  NWK  1  1027A 1  1028A 1023A       Arrived:  4 minutes early.
+* NYP  1  1046A 1  1106A 1044A 1106A Arrived:  2 minutes early.           |  Departed:  On time.
+* NRO  *  *     1  1138A *     1143A Departed:  5 minutes late.
+* STM  *  *     1  1200P *     1206P Departed:  6 minutes late.
+* BRP  *  *     1  1230P *     1239P Departed:  9 minutes late.
+* NHV  1  1255P 1  1257P 101P  103P  Arrived:  6 minutes late.            |  Departed:  6 minutes late.
+* OSB  *  *     1  129P  *     133P  Departed:  4 minutes late.
+* NLC  *  *     1  150P  *     158P  Departed:  8 minutes late.
+* KIN  *  *     1  230P  *     231P  Departed:  1 minute late.
+* PVD  1  253P  1  253P  251P  258P  Arrived:  2 minutes early.           |  Departed:  5 minutes late.
+* RTE  *  *     1  330P  *     330P  Departed:  On time.
+* BBY  *  *     1  345P  *     345P  Departed:  On time.
+* BOS  1  354P  *  *     350P  *     Arrived:  4 minutes early.

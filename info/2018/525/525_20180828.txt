@@ -1,0 +1,25 @@
+* Capitol Corridor
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+  SAC  *  *     1  620A              PT MoTuWeThFr
+  DAV  *  *     1  635A              PT
+  FFV  *  *     1  655A              PT
+  SUI  *  *     1  702A              PT
+  MTZ  1  720A  1  721A              PT
+  RIC  *  *     1  747A              PT
+  BKY  *  *     1  755A              PT
+  EMY  1  759A  1  800A              PT
+  OKJ  1  810A  1  811A              PT
+  OAC  *  *     1  820A              PT
+  HAY  *  *     1  833A              PT
+  FMT  *  *     1  849A              PT
+  GAC  *  *     1  906A              PT
+  SCC  *  *     1  914A              PT
+* SJC  1  928A  *  *     926A  *     Arrived:  2 minutes early.

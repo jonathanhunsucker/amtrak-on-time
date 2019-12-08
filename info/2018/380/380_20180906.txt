@@ -1,0 +1,20 @@
+* Illinois Zephyr
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* QCY  *  *     1  612A  *     612A  Departed:  On time.
+* MAC  *  *     1  701A  *     725A  Departed:  24 minutes late.
+  GBB  1  735A  1  737A  858A        Arrived:  1 hour, 23 minutes late.
+* KEE  *  *     1  806A  *     936A  Departed:  1 hour, 30 minutes late.
+* PCT  *  *     1  830A  *     1000A Departed:  1 hour, 30 minutes late.
+* MDT  *  *     1  852A  *     1019A Departed:  1 hour, 27 minutes late.
+* PLO  *  *     1  921A  *     1044A Departed:  1 hour, 23 minutes late.
+* NPV  *  *     1  946A  *     1109A Departed:  1 hour, 23 minutes late.
+* LAG  *  *     1  1002A *     1126A Departed:  1 hour, 24 minutes late.
+* CHI  1  1033A *  *     1144A *     Arrived:  1 hour, 11 minutes late.

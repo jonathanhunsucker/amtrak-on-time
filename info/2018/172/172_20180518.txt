@@ -1,0 +1,32 @@
+* Northeast Regional
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* WAS  *  *     1  700A  *     700A  Departed:  On time.
+* NCR  *  *     1  714A  *     714A  Departed:  On time.
+* BWI  *  *     1  732A  *     732A  Departed:  On time.
+* BAL  1  748A  1  750A  745A  750A  Arrived:  3 minutes early.           |  Departed:  On time.
+* WIL  1  843A  1  845A  834A  845A  Arrived:  9 minutes early.           |  Departed:  On time.
+* PHL  1  908A  1  910A  904A  911A  Arrived:  4 minutes early.           |  Departed:  1 minute late.
+* TRE  1  940A  1  941A  943A  945A  Arrived:  3 minutes late.            |  Departed:  4 minutes late.
+* MET  *  *     1  1007A *     1009A Departed:  2 minutes late.
+* EWR  *  *     1  1020A *     1020A Departed:  On time.
+  NWK  1  1027A 1  1028A 1025A       Arrived:  2 minutes early.
+* NYP  1  1046A 1  1106A 1128A 1137A Arrived:  42 minutes late.           |  Departed:  31 minutes late.
+* NRO  *  *     1  1138A *     1207P Departed:  29 minutes late.
+* STM  *  *     1  1200P *     1231P Departed:  31 minutes late.
+* BRP  *  *     1  1230P *     100P  Departed:  30 minutes late.
+* NHV  1  1255P 1  1257P 120P  123P  Arrived:  25 minutes late.           |  Departed:  26 minutes late.
+* OSB  *  *     1  129P  *     158P  Departed:  29 minutes late.
+* NLC  *  *     1  150P  *     223P  Departed:  33 minutes late.
+* KIN  *  *     1  230P  *     302P  Departed:  32 minutes late.
+* PVD  1  253P  1  253P  335P  339P  Arrived:  42 minutes late.           |  Departed:  46 minutes late.
+* RTE  *  *     1  330P  *     413P  Departed:  43 minutes late.
+* BBY  *  *     1  345P  *     435P  Departed:  50 minutes late.
+* BOS  1  354P  *  *     440P  *     Arrived:  46 minutes late.

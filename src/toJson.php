@@ -30,10 +30,14 @@ function median($list)
     $list = array_values($list);
     $middle = count($list) / 2;
 
-    if ($middle === round($middle)) {
-        $median = $list[$middle];
+    if (count($list) % 2 === 1) {
+        // odd, can take middle
+        $median = $list[(count($list) - 1) / 2];
     } else {
-        $median = average([$list[floor($middle)], $list[ceil($middle)]]);
+        // even, average the left and right
+        $left = $list[count($list) / 2 - 1];
+        $right = $list[count($list) / 2];
+        $median = average([$left, $right]);
     }
 
     return $median;
@@ -92,22 +96,22 @@ class Line
 
     public function scheduledDeparture()
     {
-        return trim(substr($this->raw, 19, 4));
+        return trim(substr($this->raw, 19, 5));
     }
 
     public function scheduledArrival()
     {
-        return trim(substr($this->raw, 10, 4));
+        return trim(substr($this->raw, 10, 5));
     }
 
     public function actualDeparture()
     {
-        return trim(substr($this->raw, 30, 5));
+        return trim(substr($this->raw, 31, 5));
     }
 
     public function actualArrival()
     {
-        return trim(substr($this->raw, 24, 5));
+        return trim(substr($this->raw, 25, 5));
     }
 
     public function comments()

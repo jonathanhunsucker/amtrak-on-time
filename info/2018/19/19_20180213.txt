@@ -1,0 +1,43 @@
+* Crescent
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* NYP  *  *     1  215P  *     215P  Departed:  On time.
+* NWK  1  232P  1  237P  231P  238P  Arrived:  1 minute early.            |  Departed:  1 minute late.
+* TRE  1  314P  1  318P  314P  318P  Arrived:  On time.                   |  Departed:  On time.
+* PHL  1  348P  1  355P  346P  355P  Arrived:  2 minutes early.           |  Departed:  On time.
+* WIL  1  416P  1  419P  415P  420P  Arrived:  1 minute early.            |  Departed:  1 minute late.
+* BAL  1  505P  1  512P  505P  512P  Arrived:  On time.                   |  Departed:  On time.
+* WAS  1  600P  1  630P  546P  630P  Arrived:  14 minutes early.          |  Departed:  On time.
+* ALX  *  *     1  649P  *     649P  Departed:  On time.
+* MSS  *  *     1  722P  *     729P  Departed:  7 minutes late.
+* CLP  *  *     1  755P  *     801P  Departed:  6 minutes late.
+* CVS  1  847P  1  852P  851P  906P  Arrived:  4 minutes late.            |  Departed:  14 minutes late.
+* LYH  1  1000P 1  1006P 1105P 1109P Arrived:  1 hour, 5 minutes late.    |  Departed:  1 hour, 3 minutes late.
+* DAN  *  *     1  1114P *     1217A Departed:  1 hour, 3 minutes late.
+* GRO  2  1215A 2  1222A 111A  115A  Arrived:  56 minutes late.           |  Departed:  53 minutes late.
+* HPT  *  *     2  1239A *     132A  Departed:  53 minutes late.
+* SAL  *  *     2  117A  *     217A  Departed:  1 hour late.
+* CLT  2  220A  2  245A  254A  311A  Arrived:  34 minutes late.           |  Departed:  26 minutes late.
+* GAS  *  *     2  312A  *     341A  Departed:  29 minutes late.
+* SPB  *  *     2  414A  *     444A  Departed:  30 minutes late.
+* GRV  2  454A  2  501A  602A  605A  Arrived:  1 hour, 8 minutes late.    |  Departed:  1 hour, 4 minutes late.
++ CSN  *  *     2  539A
+* TCA  *  *     2  615A  *     740A  Departed:  1 hour, 25 minutes late.
+* GNS  *  *     2  658A  *     837A  Departed:  1 hour, 39 minutes late.
+* ATL  2  813A  2  838A  939A  1006A Arrived:  1 hour, 26 minutes late.   |  Departed:  1 hour, 28 minutes late.
+* ATN  *  *     2  1000A *     1207P Departed:  2 hours, 7 minutes late.
+* BHM  2  1150A 2  1208P 204P  214P  Arrived:  2 hours, 14 minutes late.  |  Departed:  2 hours, 6 minutes late.
+* TCL  *  *     2  107P  *     328P  Departed:  2 hours, 21 minutes late.
+* MEI  2  258P  2  304P  528P  531P  Arrived:  2 hours, 30 minutes late.  |  Departed:  2 hours, 27 minutes late.
+* LAU  *  *     2  401P  *     636P  Departed:  2 hours, 35 minutes late.
+* HBG  *  *     2  438P  *     709P  Departed:  2 hours, 31 minutes late.
+* PIC  *  *     2  542P  *     817P  Departed:  2 hours, 35 minutes late.
+* SDL  *  *     2  607P  *     905P  Departed:  2 hours, 58 minutes late.
+* NOL  2  732P  *  *     953P  *     Arrived:  2 hours, 21 minutes late.

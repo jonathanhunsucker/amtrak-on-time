@@ -1,0 +1,19 @@
+* Piedmont
+* +---------------- Station Code
+* |    +----------- Schedule Arrival Day  
+* |    |  +-------- Schedule Arrival Time
+* |    |  |     +----- Schedule Departure Day
+* |    |  |     |  +-- Schedule Departure Time 
+* |    |  |     |  |     +------------- Actual Arrival Time
+* |    |  |     |  |     |     +------- Actual Departure Time
+* |    |  |     |  |     |     |     +- Comments
+* V    V  V     V  V     V     V     V
+* RGH  *  *     1  1000A *     1007A Departed:  7 minutes late.
+* CYN  1  1010A 1  1012A 1023A 1026A Arrived:  13 minutes late.           |  Departed:  14 minutes late.
+* DNC  *  *     1  1032A *     1048A Departed:  16 minutes late.
+* BNC  *  *     1  1108A *     1125A Departed:  17 minutes late.
+* GRO  1  1131A 1  1133A 1145A 1150A Arrived:  14 minutes late.           |  Departed:  17 minutes late.
+* HPT  *  *     1  1149A *     1209P Departed:  20 minutes late.
+* SAL  *  *     1  1223P *     1248P Departed:  25 minutes late.
+* KAN  *  *     1  1239P *     103P  Departed:  24 minutes late.
+* CLT  1  110P  *  *     128P  *     Arrived:  18 minutes late.
