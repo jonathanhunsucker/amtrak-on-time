@@ -210,7 +210,6 @@ class Line
         $data['scheduled_arrival'] = $this->scheduledArrivalTime();
         $data['scheduled_arrival_day'] = $this->scheduledArrivalDay();
         $data['actual_arrival'] = $this->actualArrival();
-        $data['scheduled_departure_minutes'] = toMinutes($this->actualArrival());
         $data['actual_arrival_day'] = $this->actualArrivalDay();
         $data['scheduled_departure'] = $this->scheduledDepartureTime();
         $data['scheduled_departure_day'] = $this->scheduledDepartureDay();
@@ -300,7 +299,7 @@ class Record
         return $this->lastLine()->comments() === "Station Stop Canceled";
     }
 
-    public function experienceServiveDisruption()
+    public function experiencedServiceDisruption()
     {
         return $this->lines[0] === '* THIS TRAIN EXPERIENCED A SERVICE DISRUPTION.';
     }
@@ -314,6 +313,7 @@ class Record
     {
         return [
             'cancelled' => $this->wasCancelled(),
+            'experienced_service_disruption' => $this->experiencedServiceDisruption(),
             'missing_data' => $this->missingData(),
             'delay' => $this->delay(),
             'actual_arrival' => $this->actualArrival(),
@@ -352,6 +352,10 @@ class RecordSet
 
         $stats['cancellations'] = count(array_filter($this->records, function ($record) {
             return $record->wasCancelled();
+        }));
+
+        $stats['service_disruptions'] = count(array_filter($this->records, function ($record) {
+            return $record->experiencedServiceDisruption();
         }));
 
         $stats['valid_records'] = count($valid_records);

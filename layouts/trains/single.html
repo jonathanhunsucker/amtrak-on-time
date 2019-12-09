@@ -46,8 +46,12 @@
           <td>{{ $data.stats.valid_records }} valid records found</td>
       </tr>
       <tr>
-          <td>Delay</td>
-          <td>{{ $data.stats.median }} minutes typically, 90th percentile is {{ $data.stats.p90 }} minutes ({{ $data.stats.cancellations }} cancellations)</td>
+          <td>Timeliness</td>
+          <td>Typically {{ $data.stats.median }} minutes late, but occasionally {{ $data.stats.p90 }} minutes late or worse</td>
+      </tr>
+      <tr>
+        <td>Disruptions</td>
+        <td>{{ $data.stats.service_disruptions }} extreme delays and {{ $data.stats.cancellations }} cancellations</td>
       </tr>
     </tbody>
   </table>
