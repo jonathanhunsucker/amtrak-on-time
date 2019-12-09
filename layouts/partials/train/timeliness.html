@@ -1,3 +1,3 @@
 {{ $train := int . }}
 {{ $data := getJSON (printf "%s%d%s" "data/train/" $train ".json") }}
-Typically {{ $data.stats.median }} minutes late, but occasionally {{ $data.stats.p90 }} minutes late or worse
+Typically {{ partial "time/relative" $data.stats.median }}, but occasionally {{ $data.stats.p90 }} minutes late or worse

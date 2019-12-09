@@ -1,0 +1,6 @@
+{{ $minutes := int . }}
+{{ $positive := ge $minutes 0 }}
+{{ $zero := eq $minutes 0 }}
+{{ $abs := cond $positive ($minutes) (mul $minutes -1) }}
+{{ $label := cond $positive ( cond $zero ( printf "on time" ) ( printf "%d minutes late" $abs ) ) ( printf "%d minutes early" $abs ) }}
+{{ $label }}
