@@ -2,7 +2,7 @@
 
 $source_directory = $argv[1];
 
-function toMinutes($hours_minutes)
+function toMinutes($hours_minutes, $days)
 {
     $hour = intval(substr($hours_minutes, 0, -3), 10);
     $hour %= 12;
@@ -16,7 +16,13 @@ function toMinutes($hours_minutes)
     }
 
     $arrival_time = $hour * 60 + $minutes;
+    $arrival_time = $arrival_time + 24 * 60 * $days;
     return $arrival_time;
+}
+
+function prefix($prefix, $haystack)
+{
+    return substr($haystack, 0, strlen($prefix)) === $prefix;
 }
 
 function keyFromPath($path)
@@ -102,6 +108,24 @@ class Line
         return $this->read(2, 3);
     }
 
+    public function delay()
+    {
+        $destination_scheduled_arrival = $this->scheduledArrivalTime();
+        $destination_actual_arrival = $this->actualArrival();
+
+        if ($destination_scheduled_arrival === null || $destination_actual_arrival === null) {
+            return null;
+        }
+
+        // time in minutes
+        $scheduled = toMinutes($destination_scheduled_arrival, $this->scheduledArrivalDay());
+        $actual = toMinutes($destination_actual_arrival, $this->actualArrivalDay());
+
+        $delay = $actual - $scheduled;
+
+        return $delay;
+    }
+
     public function scheduledDepartureDay()
     {
         $day = $this->read(16, 3);
@@ -146,17 +170,6 @@ class Line
         return $day;
     }
 
-    private function rolledOverDay($scheduled, $actual)
-    {
-        if ($scheduled === null || $actual === null) {
-            return false;
-        }
-
-        $rolled_over_day = toMinutes($scheduled) >= toMinutes('700P') && toMinutes($actual) <= toMinutes('700A');
-
-        return $rolled_over_day;
-    }
-
     public function actualDeparture()
     {
         return $this->read(31, 5);
@@ -166,12 +179,23 @@ class Line
     {
         $day = $this->scheduledArrivalDay();
 
-        if ($day !== null && $this->rolledOverday($this->scheduledArrivalTime(), $this->actualArrival())) {
+        if ($day !== null && $this->rolledOverDay($this->scheduledArrivalTime(), $this->actualArrival())) {
             // day rolled over
             $day += 1;
         }
 
         return $day;
+    }
+
+    private function rolledOverDay($scheduled, $actual)
+    {
+        if ($scheduled === null || $actual === null) {
+            return false;
+        }
+
+        $difference = toMinutes($scheduled, 1) - toMinutes($actual, 1);
+
+        return $difference > 450;
     }
 
     public function actualArrival()
@@ -243,11 +267,23 @@ class Record
 
     public function lines()
     {
-        return array_values(array_filter(array_map(function ($line) {
+        $data_begin = null;
+        foreach ($this->lines as $index => $line) {
+            if (prefix('* V    ', $line)) {
+                $data_begin = $index;
+                break;
+            }
+        }
+
+        $data_lines = array_slice($this->lines, $data_begin + 1);
+
+        $objects = array_map(function ($line) {
             return new Line($line);
-        }, array_slice($this->lines, 10)), function ($line) {
-            return $line->stop() !== 'V';
-        }));
+        }, $data_lines);
+
+        $contiguously_keyed = array_values($objects);
+
+        return $contiguously_keyed;
     }
 
     public function destination()
@@ -266,22 +302,7 @@ class Record
 
     public function delay()
     {
-        $line = $this->lastLine();
-
-        $destination_scheduled_arrival = $line->scheduledArrivalTime();
-        $destination_actual_arrival = $line->actualArrival();
-
-        if ($destination_scheduled_arrival === null || $destination_actual_arrival === null) {
-            return null;
-        }
-
-        // time in minutes
-        $scheduled = toMinutes($destination_scheduled_arrival) + 24 * 60 * $line->scheduledArrivalDay();
-        $actual = toMinutes($destination_actual_arrival) + 24 * 60 * $line->actualArrivalDay();
-
-        $delay = $actual - $scheduled;
-
-        return $delay;
+        return $this->lastLine()->delay();
     }
 
     private function actualArrival()

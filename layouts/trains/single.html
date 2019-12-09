@@ -29,14 +29,10 @@
     console.log(raw);
   </script>
 
-  <p><a href="../">← all trains</a></p>
+  <p>← {{ partial "route/link" $data.route }}</p>
   <h2>{{ $data.name }}</h2>
   <table>
     <tbody>
-      <tr>
-          <td>Route</td>
-          <td>{{ partial "route/link" $data.route }}</td>
-      </tr>
       <tr>
           <td>Itinerary</td>
           <td>{{ partial "train/itinerary" .Params.number }}</td>
@@ -182,7 +178,6 @@
           lineTension: 0,
           borderWidth: 1,
           pointRadius: pointRadius !== undefined ? pointRadius : 2,
-          showLabel: false,
           label: 'Arrival delay',
           data: data,
           backgroundColor: color,
@@ -190,22 +185,29 @@
         };
       }
 
+      function toDate(hmma, days) {
+        return moment('2019-01-02 ' + hmma, 'YYYY-MM-DD hmma').add(days, 'days').toDate();
+      }
+
       const datasets = [dataset(Object.values(raw.records)[0].lines.map((line, index) => {
         const time = line.scheduled_departure || line.scheduled_arrival;
-        return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
+        const days = line.scheduled_departure_day || line.scheduled_arrival_day;;
+        return {x: toDate(time, days), y: line.stop};
       }), Defaults.red, 0)].concat(Object.entries(raw.records).map(([key, record]) => {
         const data = record.lines.map((line, index) => {
-          var time = line.actual_departure || line.actual_arrival;
-          
-          if (index === record.lines.length - 1) {
+          if (line.actual_departure === null || index === record.lines.length - 1) {
             time = line.actual_arrival;
+            days = line.actual_arrival_day;
+          } else {
+            time = line.actual_departure;
+            days = line.actual_departure_day;
           }
 
           if (!time) {
               return null;
           }
 
-          return {x: moment('2019-01-02 ' + time, 'YYYY-MM-DD hmma').toDate(), y: line.stop};
+          return {x: toDate(time, days), y: line.stop};
         }).filter((point) => point !== null);
 
         return dataset(data, Defaults.translucentBlue);
@@ -219,7 +221,7 @@
         data: data,
         options: {
           tooltips: {
-            enabled: false,
+          //  enabled: false,
           },
           animation: {
             duration: 0,
