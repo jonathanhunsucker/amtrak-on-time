@@ -1,0 +1,58 @@
+{{ $train := int . }}
+{{ $data := getJSON (printf "%s%d%s" "data/train/" $train ".json") }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="/js/core.js"></script>
+<script type="text/javascript">
+  (function () {
+    const raw = JSON.parse({{ $data | jsonify }});
+    const container = document.createElement('div');
+    document.currentScript.parentNode.insertBefore(container, document.currentScript);
+    const canvasElement = document.createElement("canvas");
+    container.appendChild(canvasElement);
+
+    // array of dates
+    var candidates = Object.values(raw.records).filter((record) => !(record.cancelled || record.actual_arrival === null));
+    var arrivalTimes = candidates.map((entry) => {
+      return entry.actual_arrival;
+    }).filter((item, index, list) => index === list.indexOf(item));
+    var labels = arrivalTimes.map((actual_arrival) => {
+      return moment('1970-01-01 ' + actual_arrival, 'YYYY-MM-DD hmma').toDate();
+    });
+
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Trains',
+        data: arrivalTimes.map((time) => candidates.filter((candidate) => candidate.actual_arrival === time).length),
+        backgroundColor: Defaults.blue,
+        borderColor: Defaults.blue,
+      }]
+    };
+
+    var config = {
+      type: 'bar',
+      data: data,
+      options: {
+        animation: {
+          duration: 0,
+        },
+        legend: {
+          display: false,
+        },
+        scales: {
+          xAxes: [{
+            type: 'time',
+            barPercentage: .5,
+            display: true,
+            time: {
+              tooltipFormat: 'HH:mm',
+            }
+          }],
+        },
+      }
+    };
+
+    const chart = new Chart(canvasElement.getContext("2d"), config);
+  })();
+</script>
