@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href=data:, rel=icon>
+    
+    <link rel="stylesheet" type="text/css" href="https://amtrak-on-time.jonathanhunsucker.com/style.min.d9fe226251cfc02a8739f8eacbaaafc0b9e27b93130d2d14a6c6ad0624924b42.css" />
+    <title>Amtrak On Time</title>
+  </head>
+  <body>
+    
+      <div class="container--column">
+        <h1>Amtrak On Time</h1>
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+  <script src="/js/core.js"></script>
+
+  
+  <script type="text/javascript">
+    const raw = JSON.parse("{\"destination\":{\"stop\":\"PDX\",\"time\":\"1200P\"},\"name\":\"Train 503\",\"origin\":{\"stop\":\"SEA\",\"time\":\"840A\"},\"records\":{\"2018-01-01\":{\"actual_arrival\":\"1251P\",\"cancelled\":false,\"delay\":51,\"experienced_service_disruption\":false,\"lines\":[{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"922A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"840A\",\"scheduled_departure_day\":1,\"stop\":\"SEA\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":null,\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"854A\",\"scheduled_departure_day\":1,\"stop\":\"TUK\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1011A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"925A\",\"scheduled_departure_day\":1,\"stop\":\"TAC\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1051A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"955A\",\"scheduled_departure_day\":1,\"stop\":\"OLW\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1112A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1015A\",\"scheduled_departure_day\":1,\"stop\":\"CTL\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":null,\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1055A\",\"scheduled_departure_day\":1,\"stop\":\"KEL\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1233P\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1131A\",\"scheduled_departure_day\":1,\"stop\":\"VAN\"},{\"actual_arrival\":\"1251P\",\"actual_arrival_day\":1,\"actual_departure\":null,\"actual_departure_day\":null,\"missing_data\":true,\"scheduled_arrival\":\"1200P\",\"scheduled_arrival_day\":1,\"scheduled_departure\":null,\"scheduled_departure_day\":null,\"stop\":\"PDX\"}],\"missing_data\":true}},\"route\":\"Amtrak Cascades\",\"stats\":{\"cancellations\":0,\"median\":51,\"p90\":51,\"service_disruptions\":0,\"valid_records\":1}}");
+    console.log(raw);
+  </script>
+
+  <p>← <a href="/routes/amtrak-cascades">Amtrak Cascades</a>
+</p>
+  <h2>Train 503</h2>
+  <table>
+    <tbody>
+      <tr>
+          <td>Itinerary</td>
+          <td>
+
+Departs from <a href="/stops/sea">SEA</a>
+ at 840A, bound for <a href="/stops/pdx">PDX</a>
+ at 1200P
+</td>
+      </tr>
+      <tr>
+          <td>Data</td>
+          <td>1 valid records found</td>
+      </tr>
+      <tr>
+          <td>Timeliness</td>
+          <td>
+
+Typically 
+
+
+
+
+51 minutes late
+, but occasionally 51 minutes late or worse
+</td>
+      </tr>
+      <tr>
+        <td>Disruptions</td>
+        <td>0 extreme delays and 0 cancellations</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Arrival delay over time</h3>
+  <p>One point per arrival, graphed over duration of the train's service. Note seasonal trends, if applicable.</p>
+  <script type="text/javascript">
+    (function () {
+      const container = document.createElement('div');
+      document.currentScript.parentNode.insertBefore(container, document.currentScript);
+      const canvasElement = document.createElement("canvas");
+      container.appendChild(canvasElement);
+
+      const context = canvasElement.getContext("2d");
+      const data = {
+        
+        labels: Object.keys(raw.records).map((yyyymmdd) => moment(yyyymmdd, 'YYYY-MM-DD').toDate()),
+        datasets: [{
+          fill: false,
+          showLabel: false,
+          label: 'Arrival delay (minutes)',
+          data: Object.values(raw.records).map((record) => record.cancelled || record.delay === null ? null : record.delay),
+          backgroundColor: Defaults.blue,
+          borderColor: Defaults.blue,
+          showLine: false,
+        }]
+      };
+      const options = {
+        type: 'line',
+        data: data,
+        options: {
+          animation: {
+            duration: 0,
+          },
+          responsive: true,
+          legend: {
+            display: false,
+          },
+          scales: {
+            xAxes: [{
+              type: 'time',
+              time: {
+                tooltipFormat: 'YYYY-MM-DD',
+              },
+              scaleLabel: {
+                display: true,
+                labelString: "Departure date",
+              }
+            }],
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: "Arrival delay (minutes)",
+              }
+            }]
+          }
+        }
+      }
+      const chart = new Chart(context, options);
+    })();
+  </script>
+
+  <h3>Arrival delay distribution</h3>
+  <p>One bar per arrival time. Height counts the number of trains arriving at that time. This builds out the probability distribution of arrival times.</p>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="/js/core.js"></script>
+<script type="text/javascript">
+  (function () {
+    const raw = JSON.parse("{\"destination\":{\"stop\":\"PDX\",\"time\":\"1200P\"},\"name\":\"Train 503\",\"origin\":{\"stop\":\"SEA\",\"time\":\"840A\"},\"records\":{\"2018-01-01\":{\"actual_arrival\":\"1251P\",\"cancelled\":false,\"delay\":51,\"experienced_service_disruption\":false,\"lines\":[{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"922A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"840A\",\"scheduled_departure_day\":1,\"stop\":\"SEA\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":null,\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"854A\",\"scheduled_departure_day\":1,\"stop\":\"TUK\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1011A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"925A\",\"scheduled_departure_day\":1,\"stop\":\"TAC\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1051A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"955A\",\"scheduled_departure_day\":1,\"stop\":\"OLW\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1112A\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1015A\",\"scheduled_departure_day\":1,\"stop\":\"CTL\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":null,\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1055A\",\"scheduled_departure_day\":1,\"stop\":\"KEL\"},{\"actual_arrival\":null,\"actual_arrival_day\":null,\"actual_departure\":\"1233P\",\"actual_departure_day\":1,\"missing_data\":true,\"scheduled_arrival\":null,\"scheduled_arrival_day\":null,\"scheduled_departure\":\"1131A\",\"scheduled_departure_day\":1,\"stop\":\"VAN\"},{\"actual_arrival\":\"1251P\",\"actual_arrival_day\":1,\"actual_departure\":null,\"actual_departure_day\":null,\"missing_data\":true,\"scheduled_arrival\":\"1200P\",\"scheduled_arrival_day\":1,\"scheduled_departure\":null,\"scheduled_departure_day\":null,\"stop\":\"PDX\"}],\"missing_data\":true}},\"route\":\"Amtrak Cascades\",\"stats\":{\"cancellations\":0,\"median\":51,\"p90\":51,\"service_disruptions\":0,\"valid_records\":1}}");
+    const container = document.createElement('div');
+    document.currentScript.parentNode.insertBefore(container, document.currentScript);
+    const canvasElement = document.createElement("canvas");
+    container.appendChild(canvasElement);
+
+    
+    var candidates = Object.values(raw.records).filter((record) => !(record.cancelled || record.actual_arrival === null));
+    var arrivalTimes = candidates.map((entry) => {
+      return entry.actual_arrival;
+    }).filter((item, index, list) => index === list.indexOf(item));
+    var labels = arrivalTimes.map((actual_arrival) => {
+      return moment('1970-01-01 ' + actual_arrival, 'YYYY-MM-DD hmma').toDate();
+    });
+
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Trains',
+        data: arrivalTimes.map((time) => candidates.filter((candidate) => candidate.actual_arrival === time).length),
+        backgroundColor: Defaults.blue,
+        borderColor: Defaults.blue,
+      }]
+    };
+
+    var config = {
+      type: 'bar',
+      data: data,
+      options: {
+        animation: {
+          duration: 0,
+        },
+        legend: {
+          display: false,
+        },
+        scales: {
+          xAxes: [{
+            type: 'time',
+            barPercentage: .5,
+            display: true,
+            time: {
+              tooltipFormat: 'h:mma',
+            },
+            scaleLabel: {
+              display: true,
+              labelString: "Actual arrival time",
+            },
+          }],
+          yAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: "Arrivals",
+            },
+          }],
+        },
+      }
+    };
+
+    const chart = new Chart(canvasElement.getContext("2d"), config);
+  })();
+</script>
+
+
+  <h3>Trip progress</h3>
+  <p>Start times are rebased onto January 2nd, 1970 (regardless of train's actual departure date), to stack their inineraries and highlight how arrival delays accrue over the trip.</p>
+  <script type="text/javascript">
+    (function () {
+      const container = document.createElement('div');
+      document.currentScript.parentNode.insertBefore(container, document.currentScript);
+      const canvasElement = document.createElement("canvas");
+      container.appendChild(canvasElement);
+
+      const context = canvasElement.getContext("2d");
+
+      function dataset(data, color, pointRadius) {
+        return {
+          fill: false,
+          lineTension: 0,
+          borderWidth: 1,
+          pointRadius: pointRadius !== undefined ? pointRadius : 2,
+          label: '',
+          data: data,
+          backgroundColor: color,
+          borderColor: color,
+        };
+      }
+
+      function toDate(hmma, days) {
+        return moment('1970-01-02 ' + hmma, 'YYYY-MM-DD hmma').add(days, 'days').toDate();
+      }
+
+      const datasets = [dataset(Object.values(raw.records)[0].lines.map((line, index) => {
+        const time = line.scheduled_departure || line.scheduled_arrival;
+        const days = line.scheduled_departure_day || line.scheduled_arrival_day;;
+        return {x: toDate(time, days), y: line.stop};
+      }), Defaults.red, 0)].concat(Object.entries(raw.records).map(([key, record]) => {
+        const data = record.lines.map((line, index) => {
+          if (line.actual_departure === null || index === record.lines.length - 1) {
+            time = line.actual_arrival;
+            days = line.actual_arrival_day;
+          } else {
+            time = line.actual_departure;
+            days = line.actual_departure_day;
+          }
+
+          if (!time) {
+              return null;
+          }
+
+          return {x: toDate(time, days), y: line.stop};
+        }).filter((point) => point !== null);
+
+        return dataset(data, Defaults.translucentBlue);
+      }));
+
+      const data = {
+        datasets: datasets
+      };
+
+      const stops = Object.values(raw.records)
+        .map((record) => record.lines.map((line) => line.stop))
+        .reduce((accumulation, stops) => {
+          const result = accumulation;
+          stops.forEach((stop, index) => {
+            if (result.indexOf(stop) !== -1) {
+              return;
+            }
+
+            const position = index === 0 ? 0 : result.indexOf(stops[index - 1]) + 1;
+            result.splice(position, 0, stop);
+          });
+          return result;
+        }, []);
+
+      const options = {
+        type: 'line',
+        data: data,
+        options: {
+          tooltips: {
+          
+          },
+          animation: {
+            duration: 0,
+          },
+          responsive: true,
+          legend: {
+            display: false,
+          },
+          scales: {
+            xAxes: [{
+              type: 'time',
+              scaleLabel: {
+                display: true,
+                labelString: "Time since depature",
+              }
+            }],
+            yAxes: [{
+              type: 'category',
+              labels: stops,
+              scaleLabel: {
+                display: true,
+                labelString: "Stop",
+              },
+            }]
+          }
+        }
+      }
+      const chart = new Chart(context, options);
+    })();
+  </script>
+
+      </div>
+    
+    <div class="container--column">
+      <hr>
+      <p>Data provided and maintained by <a href="http://dixielandsoftware.net/Amtrak/status/StatusMaps/">dixielandsoftware.net</a>. Site built by <a href="https://jonathanhunsucker.com">Jonathan Hunsucker</a>. Not affiliated with Amtrak.</p>
+    </div>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-10136968-10', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
