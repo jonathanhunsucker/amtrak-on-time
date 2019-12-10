@@ -33,6 +33,7 @@
   </table>
 
   <h3>Arrival delay over time</h3>
+  <p>One point per arrival, graphed over duration of the train's service. Note seasonal trends, if applicable.</p>
   <script type="text/javascript">
     (function () {
       const container = document.createElement('div');
@@ -47,7 +48,7 @@
         datasets: [{
           fill: false,
           showLabel: false,
-          label: 'Arrival delay',
+          label: 'Arrival delay (minutes)',
           data: Object.values(raw.records).map((record) => record.cancelled || record.delay === null ? null : record.delay),
           backgroundColor: Defaults.blue,
           borderColor: Defaults.blue,
@@ -73,12 +74,13 @@
               },
               scaleLabel: {
                 display: true,
-                labelString: "Date",
+                labelString: "Departure date",
               }
             }],
             yAxes: [{
               scaleLabel: {
                 display: true,
+                labelString: "Arrival delay (minutes)",
               }
             }]
           }
@@ -89,9 +91,11 @@
   </script>
 
   <h3>Arrival delay distribution</h3>
+  <p>One bar per arrival time. Height counts the number of trains arriving at that time. This builds out the probability distribution of arrival times.</p>
   {{ partial "train/arrival-delay-distribution" .Params.number }}
 
   <h3>Trip progress</h3>
+  <p>Start times are rebased onto January 2nd, 1970 (regardless of train's actual departure date), to stack their inineraries and highlight how arrival delays accrue over the trip.</p>
   <script type="text/javascript">
     (function () {
       const container = document.createElement('div');
@@ -107,7 +111,7 @@
           lineTension: 0,
           borderWidth: 1,
           pointRadius: pointRadius !== undefined ? pointRadius : 2,
-          label: 'Arrival delay',
+          label: '',
           data: data,
           backgroundColor: color,
           borderColor: color,
@@ -115,7 +119,7 @@
       }
 
       function toDate(hmma, days) {
-        return moment('2019-01-02 ' + hmma, 'YYYY-MM-DD hmma').add(days, 'days').toDate();
+        return moment('1970-01-02 ' + hmma, 'YYYY-MM-DD hmma').add(days, 'days').toDate();
       }
 
       const datasets = [dataset(Object.values(raw.records)[0].lines.map((line, index) => {
@@ -180,7 +184,7 @@
               type: 'time',
               scaleLabel: {
                 display: true,
-                labelString: "Date",
+                labelString: "Time since depature",
               }
             }],
             yAxes: [{
@@ -188,7 +192,8 @@
               labels: stops,
               scaleLabel: {
                 display: true,
-              }
+                labelString: "Stop",
+              },
             }]
           }
         }

@@ -46,8 +46,18 @@
             barPercentage: .5,
             display: true,
             time: {
-              tooltipFormat: 'HH:mm',
-            }
+              tooltipFormat: 'h:mma',
+            },
+            scaleLabel: {
+              display: true,
+              labelString: "Actual arrival time",
+            },
+          }],
+          yAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: "Arrivals",
+            },
           }],
         },
       }
