@@ -145,6 +145,22 @@
       const data = {
         datasets: datasets
       };
+
+      const stops = Object.values(raw.records)
+        .map((record) => record.lines.map((line) => line.stop))
+        .reduce((accumulation, stops) => {
+          const result = accumulation;
+          stops.forEach((stop, index) => {
+            if (result.indexOf(stop) !== -1) {
+              return;
+            }
+
+            const position = index === 0 ? 0 : result.indexOf(stops[index - 1]) + 1;
+            result.splice(position, 0, stop);
+          });
+          return result;
+        }, []);
+
       const options = {
         type: 'line',
         data: data,
@@ -169,7 +185,7 @@
             }],
             yAxes: [{
               type: 'category',
-              labels: Object.values(raw.records).reduce((accumulation, record) => accumulation.concat(record.lines.map((line) => line.stop)), []).reduce(Functional.unique, []),
+              labels: stops,
               scaleLabel: {
                 display: true,
               }
