@@ -1,6 +1,20 @@
 {{ define "content" }}
   <p>← <a href="../">Home</a></p>
   <h2>Routes</h2>
+  <h3>Popular with commuters</h3>
+  <ul>
+      <li>{{ partial "route/link" "Acela Express" }}</li>
+      <li>{{ partial "route/link" "Capitol Corridor" }}</li>
+      <li>{{ partial "route/link" "Northeast Regional" }}</li>
+  </ul>
+  <h3>Popular with travelers</h3>
+  <ul>
+      <li>{{ partial "route/link" "Adirondack" }}</li>
+      <li>{{ partial "route/link" "California Zephyr" }}</li>
+      <li>{{ partial "route/link" "Empire Builder" }}</li>
+      <li>{{ partial "route/link" "Pacific Surfliner" }}</li>
+  </ul>
+  <h3>All</h3>
   <ul>
     {{ range .Pages }}
       <li>{{ partial "route/link" .Params.route }}</li>
