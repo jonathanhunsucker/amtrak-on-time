@@ -226,7 +226,7 @@ class Line
     {
         $data = [
             'stop' => $this->stop(),
-            'raw' => $this->raw,
+            //'raw' => $this->raw,
         ];
 
         $data['missing_data'] = $this->missingData();
@@ -341,7 +341,7 @@ class Record
             'lines' => array_map(function ($line) {
                 return $line->getData();
             }, $this->lines()),
-            'raw' => $this->raw,
+            //'raw' => $this->raw,
         ];
     }
 
